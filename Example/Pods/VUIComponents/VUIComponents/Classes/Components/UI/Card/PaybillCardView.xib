@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaybillCardView">
+            <connections>
+                <outlet property="avatarImageView" destination="6J3-Fy-8dX" id="8fQ-j7-T6N"/>
+                <outlet property="buttonsView" destination="cyz-FT-wS8" id="nHa-Hf-yI0"/>
+                <outlet property="buttonsViewHeightConstraint" destination="c5T-qk-O6C" id="AeK-BX-Vsr"/>
+                <outlet property="contentView" destination="fHb-Hr-lM4" id="HMt-vS-eXh"/>
+                <outlet property="subTitleLabel" destination="fPH-Mc-l3k" id="94x-yv-1oM"/>
+                <outlet property="textFieldView" destination="R8M-Y4-W6M" id="p9L-SY-I7x"/>
+                <outlet property="textFieldViewHeightConstraint" destination="tL1-sK-P80" id="D26-Qd-DmP"/>
+                <outlet property="titleLabel" destination="fks-M1-fLX" id="D46-OU-q4a"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHb-Hr-lM4">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9af-yN-7Wk" userLabel="HeaderView">
+                            <rect key="frame" x="15" y="0.0" width="345" height="79"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VFLogoFlat" translatesAutoresizingMaskIntoConstraints="NO" id="6J3-Fy-8dX">
+                                    <rect key="frame" x="0.0" y="17" width="45" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="45" id="AXw-sS-csd"/>
+                                        <constraint firstAttribute="height" constant="45" id="VaS-AH-CR7"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fks-M1-fLX" customClass="AnaVodafoneLabel">
+                                    <rect key="frame" x="60" y="25" width="285" height="14"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="Simple Text">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="ignoresLanguageAllignment" value="NO"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPH-Mc-l3k" customClass="AnaVodafoneLabel">
+                                    <rect key="frame" x="60" y="44" width="285" height="14"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="Simple Text">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jV-9i-d6C">
+                                    <rect key="frame" x="0.0" y="78" width="345" height="1"/>
+                                    <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="ZjU-QX-R78"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="6J3-Fy-8dX" firstAttribute="left" secondItem="9af-yN-7Wk" secondAttribute="left" id="0gY-Lc-BzB"/>
+                                <constraint firstItem="fks-M1-fLX" firstAttribute="top" secondItem="9af-yN-7Wk" secondAttribute="top" constant="25" id="53f-av-krw"/>
+                                <constraint firstItem="fPH-Mc-l3k" firstAttribute="top" secondItem="fks-M1-fLX" secondAttribute="bottom" constant="5" id="6OQ-Az-ZNE"/>
+                                <constraint firstItem="6jV-9i-d6C" firstAttribute="width" secondItem="9af-yN-7Wk" secondAttribute="width" id="8pQ-8A-jKo"/>
+                                <constraint firstAttribute="right" secondItem="fks-M1-fLX" secondAttribute="right" id="LGc-nP-n5w"/>
+                                <constraint firstItem="6J3-Fy-8dX" firstAttribute="centerY" secondItem="9af-yN-7Wk" secondAttribute="centerY" id="LIp-uR-m3f"/>
+                                <constraint firstItem="fPH-Mc-l3k" firstAttribute="centerX" secondItem="fks-M1-fLX" secondAttribute="centerX" id="Nhp-i7-Kpu"/>
+                                <constraint firstAttribute="bottom" secondItem="6jV-9i-d6C" secondAttribute="bottom" id="e6T-6e-IyA"/>
+                                <constraint firstAttribute="bottom" secondItem="fPH-Mc-l3k" secondAttribute="bottom" constant="25" id="j3K-is-5MJ"/>
+                                <constraint firstItem="fPH-Mc-l3k" firstAttribute="width" secondItem="fks-M1-fLX" secondAttribute="width" id="oKR-7Z-AXe"/>
+                                <constraint firstItem="fks-M1-fLX" firstAttribute="left" secondItem="6J3-Fy-8dX" secondAttribute="right" constant="15" id="rkF-jK-RLP"/>
+                                <constraint firstItem="6jV-9i-d6C" firstAttribute="centerX" secondItem="9af-yN-7Wk" secondAttribute="centerX" id="yh6-Fd-kFC"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R8M-Y4-W6M">
+                            <rect key="frame" x="15" y="104" width="345" height="0.0"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" id="tL1-sK-P80"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="R8M-Y4-W6M" firstAttribute="width" secondItem="9af-yN-7Wk" secondAttribute="width" id="OtM-uq-aTw"/>
+                        <constraint firstItem="9af-yN-7Wk" firstAttribute="top" secondItem="fHb-Hr-lM4" secondAttribute="top" id="YFG-Fg-QTq"/>
+                        <constraint firstAttribute="bottom" secondItem="R8M-Y4-W6M" secondAttribute="bottom" constant="16" id="aM1-UT-45U"/>
+                        <constraint firstItem="R8M-Y4-W6M" firstAttribute="top" secondItem="9af-yN-7Wk" secondAttribute="bottom" constant="25" id="aVH-Ad-T8A"/>
+                        <constraint firstItem="9af-yN-7Wk" firstAttribute="width" secondItem="fHb-Hr-lM4" secondAttribute="width" constant="-30" id="fRQ-F0-pc6"/>
+                        <constraint firstItem="R8M-Y4-W6M" firstAttribute="centerX" secondItem="fHb-Hr-lM4" secondAttribute="centerX" id="rvW-94-piV"/>
+                        <constraint firstItem="9af-yN-7Wk" firstAttribute="centerX" secondItem="fHb-Hr-lM4" secondAttribute="centerX" id="y10-ey-MnG"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cyz-FT-wS8">
+                    <rect key="frame" x="0.0" y="120" width="375" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="c5T-qk-O6C"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="cyz-FT-wS8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5Nz-k7-QUS"/>
+                <constraint firstItem="cyz-FT-wS8" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="U3c-A6-DFP"/>
+                <constraint firstItem="fHb-Hr-lM4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="W9f-jS-7nr"/>
+                <constraint firstItem="cyz-FT-wS8" firstAttribute="top" secondItem="fHb-Hr-lM4" secondAttribute="bottom" id="ecc-Uh-fHG"/>
+                <constraint firstItem="fHb-Hr-lM4" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="g1B-bI-DRD"/>
+                <constraint firstAttribute="bottom" secondItem="cyz-FT-wS8" secondAttribute="bottom" id="kTt-b4-mwS"/>
+                <constraint firstItem="fHb-Hr-lM4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="w0z-5b-Cug"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="52.5" y="67"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="VFLogoFlat" width="1299" height="1299"/>
+    </resources>
+</document>

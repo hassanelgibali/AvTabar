@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="112" id="MSt-VF-VUT" customClass="BottomSheetTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MSt-VF-VUT" id="asO-TY-YWk">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="111.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BPy-ap-rCN">
+                        <rect key="frame" x="7" y="11" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Jvl-Fu-A68"/>
+                            <constraint firstAttribute="width" constant="20" id="NgG-Pu-gk9"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mastercard-logo" translatesAutoresizingMaskIntoConstraints="NO" id="ScW-HD-RE5">
+                        <rect key="frame" x="35" y="11" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="CIx-Et-Vdo"/>
+                            <constraint firstAttribute="height" constant="30" id="c4L-sF-lDz"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WyT-gL-Fzt">
+                        <rect key="frame" x="351" y="15" width="40" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="KMG-iB-6Sm"/>
+                            <constraint firstAttribute="height" constant="30" id="wZS-8X-3Ij"/>
+                        </constraints>
+                        <state key="normal" image="DeleteCard"/>
+                        <connections>
+                            <action selector="deleteCreditBtn:" destination="MSt-VF-VUT" eventType="touchUpInside" id="Cvj-zo-Wif"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Master Credit Card **** 2344" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTo-DP-jgN">
+                        <rect key="frame" x="73" y="10" width="263" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ScW-HD-RE5" firstAttribute="leading" secondItem="BPy-ap-rCN" secondAttribute="trailing" constant="8" id="30f-Pv-WAh"/>
+                    <constraint firstItem="BPy-ap-rCN" firstAttribute="leading" secondItem="asO-TY-YWk" secondAttribute="leading" constant="7" id="3gu-gH-mNa"/>
+                    <constraint firstItem="BPy-ap-rCN" firstAttribute="top" secondItem="asO-TY-YWk" secondAttribute="top" constant="11" id="HpC-2F-o9x"/>
+                    <constraint firstItem="NTo-DP-jgN" firstAttribute="leading" secondItem="ScW-HD-RE5" secondAttribute="trailing" constant="8" id="a91-2b-Muf"/>
+                    <constraint firstItem="ScW-HD-RE5" firstAttribute="top" secondItem="asO-TY-YWk" secondAttribute="topMargin" id="eB1-4G-v4I"/>
+                    <constraint firstItem="WyT-gL-Fzt" firstAttribute="top" secondItem="asO-TY-YWk" secondAttribute="top" constant="15" id="ene-zz-G4S"/>
+                    <constraint firstAttribute="trailing" secondItem="WyT-gL-Fzt" secondAttribute="trailing" constant="9" id="fwG-oc-BdJ"/>
+                    <constraint firstItem="NTo-DP-jgN" firstAttribute="top" secondItem="asO-TY-YWk" secondAttribute="top" constant="10" id="jsf-WZ-4pq"/>
+                    <constraint firstItem="WyT-gL-Fzt" firstAttribute="leading" secondItem="NTo-DP-jgN" secondAttribute="trailing" constant="15" id="pKB-yQ-d4X"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="correctImage" destination="BPy-ap-rCN" id="IXX-c3-svU"/>
+                <outlet property="creditCardImage" destination="ScW-HD-RE5" id="Xex-T5-bEp"/>
+                <outlet property="creditCardNumber" destination="NTo-DP-jgN" id="e0g-wb-hOJ"/>
+                <outlet property="removeImage" destination="WyT-gL-Fzt" id="KaK-gy-vxo"/>
+            </connections>
+            <point key="canvasLocation" x="-282" y="-136"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="DeleteCard" width="32" height="32"/>
+        <image name="Mastercard-logo" width="32" height="25"/>
+    </resources>
+</document>

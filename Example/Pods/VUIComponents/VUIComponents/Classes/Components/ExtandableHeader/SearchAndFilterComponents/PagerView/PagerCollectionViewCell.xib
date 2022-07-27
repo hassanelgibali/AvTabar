@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="VodafoneRg.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PagerCollectionViewCell" id="gTV-IL-0wX" customClass="PagerCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="147" height="147"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="147" height="147"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VMa-Bj-toB">
+                        <rect key="frame" x="0.0" y="0.0" width="147" height="147"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoK-fo-9nl">
+                                <rect key="frame" x="58.5" y="25" width="30" height="87"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="RSy-th-56q"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="ButtonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ari-du-pyA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rigester" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBf-Y1-vJT">
+                                <rect key="frame" x="46" y="117" width="55" height="20"/>
+                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="xoK-fo-9nl" firstAttribute="height" secondItem="VMa-Bj-toB" secondAttribute="height" constant="-60" id="2qd-0d-xht"/>
+                            <constraint firstItem="xoK-fo-9nl" firstAttribute="centerX" secondItem="VMa-Bj-toB" secondAttribute="centerX" id="AJJ-vn-u1g"/>
+                            <constraint firstItem="IBf-Y1-vJT" firstAttribute="centerX" secondItem="VMa-Bj-toB" secondAttribute="centerX" id="c11-nz-naQ"/>
+                            <constraint firstItem="xoK-fo-9nl" firstAttribute="top" secondItem="VMa-Bj-toB" secondAttribute="top" constant="25" id="pVz-VO-13q"/>
+                            <constraint firstItem="IBf-Y1-vJT" firstAttribute="top" secondItem="xoK-fo-9nl" secondAttribute="bottom" constant="5" id="tli-wc-CV0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="VMa-Bj-toB" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="Igb-ai-N31"/>
+                <constraint firstItem="VMa-Bj-toB" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="gdl-xk-nUU"/>
+                <constraint firstItem="VMa-Bj-toB" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="mgy-lh-gmY"/>
+                <constraint firstItem="VMa-Bj-toB" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="usr-py-6Bs"/>
+            </constraints>
+            <size key="customSize" width="130" height="88"/>
+            <connections>
+                <outlet property="buttonWidthConstraint" destination="RSy-th-56q" id="g5D-0U-D5p"/>
+                <outlet property="circleButton" destination="xoK-fo-9nl" id="Oew-nX-OCW"/>
+                <outlet property="textLabel" destination="IBf-Y1-vJT" id="vpw-vA-cz9"/>
+            </connections>
+            <point key="canvasLocation" x="-109" y="51"/>
+        </collectionViewCell>
+    </objects>
+</document>

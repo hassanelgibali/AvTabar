@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TableCardView">
+            <connections>
+                <outlet property="buttonsView" destination="Loo-9i-lbX" id="lJ3-Xb-HrH"/>
+                <outlet property="buttonsViewHeightConstraint" destination="i2g-mS-Zgk" id="mH8-d6-km0"/>
+                <outlet property="contentView" destination="XiO-BY-hRG" id="kIt-HP-epn"/>
+                <outlet property="tableView" destination="iol-HT-4Ly" id="tbw-0G-Brp"/>
+                <outlet property="tableViewTopConstraint" destination="w6r-S0-ZHE" id="3Id-nY-WgA"/>
+                <outlet property="titleLabel" destination="bRk-dK-Vua" id="HVI-Oc-ZX0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="mDh-Qg-8Bk">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="251"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XiO-BY-hRG">
+                    <rect key="frame" x="-0.5" y="-0.5" width="375" height="251.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRk-dK-Vua" customClass="AnaVodafoneLabel">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                            <attributedString key="attributedText"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="ignoresLanguageAllignment" value="NO"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iol-HT-4Ly">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="251.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </tableView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="iol-HT-4Ly" firstAttribute="width" secondItem="XiO-BY-hRG" secondAttribute="width" id="Td2-XM-aSL"/>
+                        <constraint firstItem="iol-HT-4Ly" firstAttribute="centerX" secondItem="XiO-BY-hRG" secondAttribute="centerX" id="UWo-Wc-Wer"/>
+                        <constraint firstItem="bRk-dK-Vua" firstAttribute="centerX" secondItem="XiO-BY-hRG" secondAttribute="centerX" id="bU2-9u-wal"/>
+                        <constraint firstAttribute="bottom" secondItem="iol-HT-4Ly" secondAttribute="bottom" id="g5V-qm-zGE"/>
+                        <constraint firstItem="bRk-dK-Vua" firstAttribute="width" secondItem="XiO-BY-hRG" secondAttribute="width" id="gji-Gi-ri8"/>
+                        <constraint firstItem="iol-HT-4Ly" firstAttribute="top" secondItem="bRk-dK-Vua" secondAttribute="bottom" id="w6r-S0-ZHE"/>
+                        <constraint firstItem="bRk-dK-Vua" firstAttribute="top" secondItem="XiO-BY-hRG" secondAttribute="top" id="zJB-lr-EJz"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Loo-9i-lbX">
+                    <rect key="frame" x="-0.5" y="251" width="375" height="0.0"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="i2g-mS-Zgk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Loo-9i-lbX" firstAttribute="centerX" secondItem="mDh-Qg-8Bk" secondAttribute="centerX" id="78P-rs-G5Q"/>
+                <constraint firstAttribute="bottom" secondItem="Loo-9i-lbX" secondAttribute="bottom" id="A7f-XH-dRl"/>
+                <constraint firstItem="Loo-9i-lbX" firstAttribute="width" secondItem="mDh-Qg-8Bk" secondAttribute="width" id="bp9-C5-D4H"/>
+                <constraint firstItem="Loo-9i-lbX" firstAttribute="top" secondItem="XiO-BY-hRG" secondAttribute="bottom" id="g2G-Cp-WtK"/>
+                <constraint firstItem="XiO-BY-hRG" firstAttribute="centerX" secondItem="mDh-Qg-8Bk" secondAttribute="centerX" id="iKb-dh-n2d"/>
+                <constraint firstItem="XiO-BY-hRG" firstAttribute="width" secondItem="mDh-Qg-8Bk" secondAttribute="width" id="idr-Bk-AdJ"/>
+                <constraint firstItem="XiO-BY-hRG" firstAttribute="top" secondItem="mDh-Qg-8Bk" secondAttribute="top" constant="-0.5" id="kZZ-bH-L4V"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="6.5" y="212.5"/>
+        </view>
+    </objects>
+</document>

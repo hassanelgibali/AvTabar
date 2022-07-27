@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="VodafoneRg.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeBackCard">
+            <connections>
+                <outlet property="alertImgView" destination="hgG-Gy-FoU" id="gyb-sp-9NY"/>
+                <outlet property="imageHeight" destination="dvM-7q-TGd" id="Uw6-W3-VY6"/>
+                <outlet property="imageTopConstraint" destination="GfN-wx-Vc4" id="UQT-qM-LYG"/>
+                <outlet property="imageWidth" destination="oqQ-SW-i75" id="oBk-6R-B62"/>
+                <outlet property="manageAccountBtnHeightConstraint" destination="ikP-Bc-bMH" id="Cop-tJ-7NT"/>
+                <outlet property="manageAccountBtnTopConstraint" destination="NDO-8g-fhB" id="ymO-KT-w5m"/>
+                <outlet property="startInvintingBtnTopConstraint" destination="vqm-bZ-CLS" id="ee0-I1-wBu"/>
+                <outlet property="startnvitingBtnHeightConstraint" destination="BiI-CF-eGK" id="gLQ-MV-9lM"/>
+                <outlet property="subTitleLableTopConstraint" destination="6Rj-fO-BzD" id="kuL-Ds-cVi"/>
+                <outlet property="subtitleLabel" destination="8Q5-nP-viW" id="H22-Xe-gIR"/>
+                <outlet property="titleLableTopConstraint" destination="Dzq-2g-Qm8" id="3wO-lJ-e6U"/>
+                <outlet property="titleLbl" destination="GbN-6Z-pEJ" id="7lF-H1-B9b"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="LV4-TT-NcR">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="449"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VFLogoFlat" translatesAutoresizingMaskIntoConstraints="NO" id="hgG-Gy-FoU">
+                    <rect key="frame" x="112.5" y="24" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="dvM-7q-TGd"/>
+                        <constraint firstAttribute="width" constant="150" id="oqQ-SW-i75"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Text Sample Text Sample Text Sample Text " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbN-6Z-pEJ" userLabel="Title Label" customClass="AnaVodafoneLabel">
+                    <rect key="frame" x="16" y="190" width="343" height="43"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                    <color key="textColor" red="0.49808244998507017" green="0.50301395939086291" blue="0.50301395939086291" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="ignoresLanguageAllignment" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7um-de-B97" userLabel="Manage Account Button" customClass="CustomButton">
+                    <rect key="frame" x="16" y="248.5" width="343" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ikP-Bc-bMH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="19"/>
+                    <state key="normal" title="Sample Text"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="styleFilePath" value="OverlayButtonPrimaryStyle"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="txt" value="Manage my account"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="manageAccountPressed:" destination="-1" eventType="touchUpInside" id="LVn-97-oF5"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Q5-nP-viW" userLabel="Sub Title Label" customClass="AnaVodafoneLabel">
+                    <rect key="frame" x="16" y="314.5" width="343" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.49808244998507017" green="0.50301395939086291" blue="0.50301395939086291" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="ignoresLanguageAllignment" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="useRegularFont" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMi-F5-QZn" userLabel="Start Inviting Button" customClass="CustomButton">
+                    <rect key="frame" x="16" y="350" width="343" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="BiI-CF-eGK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="19"/>
+                    <state key="normal" title="Sample Text"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="styleFilePath" value="CardButtonTertiaryStyle"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="txt" value="Start inviting friends"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="startInvitingPressed:" destination="-1" eventType="touchUpInside" id="6Yk-cM-9m9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="8XY-0T-TKS" firstAttribute="trailing" secondItem="JMi-F5-QZn" secondAttribute="trailing" constant="16" id="1gd-pI-SzU"/>
+                <constraint firstItem="8Q5-nP-viW" firstAttribute="top" secondItem="7um-de-B97" secondAttribute="bottom" constant="16" id="6Rj-fO-BzD"/>
+                <constraint firstItem="8Q5-nP-viW" firstAttribute="leading" secondItem="8XY-0T-TKS" secondAttribute="leading" constant="16" id="7pe-Wb-vDG"/>
+                <constraint firstItem="GbN-6Z-pEJ" firstAttribute="top" secondItem="hgG-Gy-FoU" secondAttribute="bottom" constant="16" id="Dzq-2g-Qm8"/>
+                <constraint firstItem="7um-de-B97" firstAttribute="leading" secondItem="8XY-0T-TKS" secondAttribute="leading" constant="16" id="G0O-jq-e4R"/>
+                <constraint firstItem="hgG-Gy-FoU" firstAttribute="top" secondItem="8XY-0T-TKS" secondAttribute="top" constant="24" id="GfN-wx-Vc4"/>
+                <constraint firstItem="hgG-Gy-FoU" firstAttribute="centerX" secondItem="LV4-TT-NcR" secondAttribute="centerX" id="I52-aZ-1Tg"/>
+                <constraint firstItem="GbN-6Z-pEJ" firstAttribute="leading" secondItem="8XY-0T-TKS" secondAttribute="leading" constant="16" id="Mgc-px-50p"/>
+                <constraint firstItem="7um-de-B97" firstAttribute="top" secondItem="GbN-6Z-pEJ" secondAttribute="bottom" constant="16" id="NDO-8g-fhB"/>
+                <constraint firstItem="8XY-0T-TKS" firstAttribute="trailing" secondItem="GbN-6Z-pEJ" secondAttribute="trailing" constant="16" id="PfA-yU-2Jr"/>
+                <constraint firstItem="8XY-0T-TKS" firstAttribute="trailing" secondItem="7um-de-B97" secondAttribute="trailing" constant="16" id="dGW-dJ-JlN"/>
+                <constraint firstItem="8XY-0T-TKS" firstAttribute="trailing" secondItem="8Q5-nP-viW" secondAttribute="trailing" constant="16" id="fXW-Ru-kFC"/>
+                <constraint firstItem="JMi-F5-QZn" firstAttribute="leading" secondItem="8XY-0T-TKS" secondAttribute="leading" constant="16" id="lUg-Jo-Vcc"/>
+                <constraint firstItem="JMi-F5-QZn" firstAttribute="top" secondItem="8Q5-nP-viW" secondAttribute="bottom" constant="16" id="vqm-bZ-CLS"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="8XY-0T-TKS"/>
+            <point key="canvasLocation" x="-610.5" y="-198.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="VFLogoFlat" width="1299" height="1299"/>
+    </resources>
+</document>

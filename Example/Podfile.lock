@@ -1,0 +1,131 @@
+PODS:
+  - Alamofire (5.3.0)
+  - AVTabBar (0.1.0)
+  - GSKStretchyHeaderView (1.0.4)
+  - INTUAnimationEngine (1.4.2):
+    - INTUAnimationEngine/SpringSolver (= 1.4.2)
+  - INTUAnimationEngine/SpringSolver (1.4.2)
+  - JSONModel (1.8.0)
+  - JWGCircleCounter (0.2.2)
+  - JWTDecode (2.6.3)
+  - Kingfisher (5.15.8):
+    - Kingfisher/Core (= 5.15.8)
+  - Kingfisher/Core (5.15.8)
+  - MOLH (1.4.3)
+  - "NSAttributedString+CCLFormat (1.2.0)"
+  - ObjectMapper (4.2.0)
+  - RSKImageCropper (4.0.0)
+  - RxAlamofire (5.6.2):
+    - RxAlamofire/Core (= 5.6.2)
+  - RxAlamofire/Core (5.6.2):
+    - Alamofire (~> 5.2)
+    - RxSwift (~> 5.1)
+  - RxCocoa (5.1.3):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.3):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.3)
+  - SnapKit (5.6.0)
+  - TrustKit (2.0.0)
+  - "UIColor+Hex (1.0.1)":
+    - "UIColor+Hex/NSColor (= 1.0.1)"
+    - "UIColor+Hex/UIColor (= 1.0.1)"
+  - "UIColor+Hex/UIColor (1.0.1)"
+  - VFAuthKeyCloak (0.0.10):
+    - JSONModel
+    - JWTDecode (~> 2.4)
+    - ObjectMapper
+    - RxCocoa
+    - VFEG-NetworkManager (~> 0.3.0)
+    - VUIComponents
+  - VFEG-NetworkManager (0.3.0):
+    - Alamofire (~> 5.3.0)
+    - ObjectMapper
+    - RxAlamofire (~> 5.6.2)
+    - RxCocoa
+    - RxSwift
+    - TrustKit
+  - VUIComponents (1.0.5):
+    - GSKStretchyHeaderView
+    - INTUAnimationEngine
+    - JWGCircleCounter
+    - MOLH
+    - "NSAttributedString+CCLFormat"
+    - RSKImageCropper
+    - SnapKit
+    - "UIColor+Hex"
+    - WYPopoverController
+  - WYPopoverController (0.3.9)
+
+DEPENDENCIES:
+  - AVTabBar (from `../`)
+  - Kingfisher (~> 5.15.8)
+  - SnapKit
+  - "VFAuthKeyCloak (from `https://Fadwa-Zaghlol@github.vodafone.com/VFEG-CICD/VFAuthKeyCloak.git`)"
+
+SPEC REPOS:
+  "https://Fadwa-Zaghlol@github.vodafone.com/VFEG-CICD/AnaVodafonePodSpecs.git":
+    - VFEG-NetworkManager
+    - VUIComponents
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - GSKStretchyHeaderView
+    - INTUAnimationEngine
+    - JSONModel
+    - JWGCircleCounter
+    - JWTDecode
+    - MOLH
+    - "NSAttributedString+CCLFormat"
+    - ObjectMapper
+    - RSKImageCropper
+    - RxAlamofire
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SnapKit
+    - TrustKit
+    - "UIColor+Hex"
+    - WYPopoverController
+  trunk:
+    - Kingfisher
+
+EXTERNAL SOURCES:
+  AVTabBar:
+    :path: "../"
+  VFAuthKeyCloak:
+    :git: "https://Fadwa-Zaghlol@github.vodafone.com/VFEG-CICD/VFAuthKeyCloak.git"
+
+CHECKOUT OPTIONS:
+  VFAuthKeyCloak:
+    :commit: de70143765052f6bb1a9c807e5b1823bb4e4f3d4
+    :git: "https://Fadwa-Zaghlol@github.vodafone.com/VFEG-CICD/VFAuthKeyCloak.git"
+
+SPEC CHECKSUMS:
+  Alamofire: 2c792affbdc2f18016e08fdbcacd60aebe1ba593
+  AVTabBar: 5afa0168f422d8180fc48c31c79acd9c0f972554
+  GSKStretchyHeaderView: 9743704c12bdc9cf7c7947bad3af8bf24f7061e3
+  INTUAnimationEngine: 3a7d63738cd51af573d16848a771feedea7cc9f2
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
+  JWGCircleCounter: 89e25c3d5e9eb41cf666a795427712bb5e52a1a1
+  JWTDecode: 33e5e26e5ddbd21b2065820894c08fef0cad9509
+  Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
+  MOLH: e45827d200aeb1310641090fd8cd03ad2b42ae72
+  "NSAttributedString+CCLFormat": 46d1e36b72b7ab0e093323705188818b21ba9763
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  RSKImageCropper: 90dfe482402fb8a40cabd5fea65186d9102cc425
+  RxAlamofire: aa949d345b1689eae02b7c7a217518878144f6df
+  RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
+  RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
+  RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  TrustKit: 610b8c71c07914756dd74c380040a3408a747798
+  "UIColor+Hex": 9fee91bb8e19f17dd40a79ae1e98949a6a84489d
+  VFAuthKeyCloak: dc54ae41f3bc25ff567144e8c19f84b9ee5f1970
+  VFEG-NetworkManager: 1921114503a95a082560b9aad2a0cb677451334e
+  VUIComponents: 28539b4d7aef6bbbcea9f43f43405d4a71465b90
+  WYPopoverController: a9db25ac2841a686acdc0f3a99bdb21545db32f4
+
+PODFILE CHECKSUM: 496127a680cfcda3d8d2468b91a1a93b734633ea
+
+COCOAPODS: 1.11.3

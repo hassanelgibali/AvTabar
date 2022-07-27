@@ -1,0 +1,16 @@
+{
+    "fontFamily":"VodafoneRg-Regular",
+    "fontSize": 16,
+    
+    "backgroundColor":"ffffff",
+    
+    "titleColor":"666666",
+    
+    "borderRadius":5.0,
+    "borderWidth": 0.0,
+    
+    "borderColor": "CCCCCC"
+   
+    
+}
+ 

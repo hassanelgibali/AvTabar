@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="VodafoneRg.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentInfoCardView">
+            <connections>
+                <outlet property="amountTextField" destination="dWR-db-c1g" id="9K8-Zh-rks"/>
+                <outlet property="amountValueTextField" destination="dWR-db-c1g" id="hfD-p8-p8q"/>
+                <outlet property="amountValueTextHeighConstraint" destination="pYz-EP-WA2" id="k9C-hO-tGo"/>
+                <outlet property="amountsStackView" destination="neb-AY-VkN" id="fkI-22-vSw"/>
+                <outlet property="cardImageView" destination="Odu-am-7Nt" id="2Iw-gA-v8C"/>
+                <outlet property="codeTextField" destination="ULG-Ga-0Kw" id="n3I-UG-4U7"/>
+                <outlet property="codeTextHeightConstraint" destination="2Mf-Ts-XuK" id="4Lj-xg-jcz"/>
+                <outlet property="confirmButton" destination="dip-z1-UXd" id="pNP-XU-B8s"/>
+                <outlet property="confirmButtonHeightConstraint" destination="naE-ks-ocT" id="Uor-Ne-lKZ"/>
+                <outlet property="deleteThisCardButton" destination="4ma-to-ceT" id="67q-eV-rgA"/>
+                <outlet property="deleteThisCardButtonHeightConstraint" destination="Y0n-zA-j4w" id="Mpm-nf-Tcd"/>
+                <outlet property="resendButtonHeightConstraint" destination="bHG-AI-r20" id="oQS-qT-iNP"/>
+                <outlet property="resendCodeButton" destination="BoE-yw-NmM" id="QoI-Kh-yJu"/>
+                <outlet property="titleLabel" destination="L38-ag-9lL" id="YSN-ui-wky"/>
+                <outletCollection property="amountsCollection" destination="Vzp-jI-ser" id="vyE-WL-GmG"/>
+                <outletCollection property="amountsCollection" destination="Lpd-tq-JzU" id="pRp-uq-mi4"/>
+                <outletCollection property="amountsCollection" destination="ZAg-LF-A6b" id="HdI-Pe-c7f"/>
+                <outletCollection property="amountsCollection" destination="tUT-IP-CUB" id="XBC-x4-OX0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="RfS-UJ-2BO">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="757"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creditCard" translatesAutoresizingMaskIntoConstraints="NO" id="Odu-am-7Nt" userLabel="Card Image View">
+                    <rect key="frame" x="140" y="80" width="135" height="125"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="125" id="Bq7-H2-Pgk"/>
+                        <constraint firstAttribute="width" constant="135" id="Muo-zu-eIf"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simple Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L38-ag-9lL" customClass="AnaVodafoneLabel">
+                    <rect key="frame" x="16" y="235" width="383" height="26.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="ignoresLanguageAllignment" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="txt" value="Enter your credit card CVV number"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RBA-K3-hyf">
+                    <rect key="frame" x="15" y="286.5" width="385" height="407.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yut-Qd-uFv">
+                            <rect key="frame" x="0.0" y="0.0" width="385" height="82.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="neb-AY-VkN" userLabel="Amounts Stack">
+                                    <rect key="frame" x="5" y="0.0" width="375" height="82.5"/>
+                                    <subviews>
+                                        <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vzp-jI-ser">
+                                            <rect key="frame" x="0.0" y="0.0" width="82.5" height="82.5"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Vzp-jI-ser" secondAttribute="height" multiplier="1:1" id="ruK-G3-nWQ"/>
+                                            </constraints>
+                                            <state key="normal" title="10" backgroundImage="grey_circle">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="amountPressed:" destination="-1" eventType="touchUpInside" id="s8G-tj-Fc6"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lpd-tq-JzU">
+                                            <rect key="frame" x="97.5" y="0.0" width="82.5" height="82.5"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Lpd-tq-JzU" secondAttribute="height" multiplier="1:1" id="zOv-c0-zJz"/>
+                                            </constraints>
+                                            <state key="normal" title="50" backgroundImage="grey_circle">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="amountPressed:" destination="-1" eventType="touchUpInside" id="QNR-r6-uop"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAg-LF-A6b">
+                                            <rect key="frame" x="195" y="0.0" width="82.5" height="82.5"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="ZAg-LF-A6b" secondAttribute="height" multiplier="1:1" id="mLj-SD-c3o"/>
+                                            </constraints>
+                                            <state key="normal" title="100" backgroundImage="grey_circle">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="amountPressed:" destination="-1" eventType="touchUpInside" id="wKh-GH-it1"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUT-IP-CUB">
+                                            <rect key="frame" x="292.5" y="0.0" width="82.5" height="82.5"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="tUT-IP-CUB" secondAttribute="height" multiplier="1:1" id="elk-5R-ivd"/>
+                                            </constraints>
+                                            <state key="normal" title="Others" backgroundImage="red_circle">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="amountPressed:" destination="-1" eventType="touchUpInside" id="m1N-CF-2hW"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="neb-AY-VkN" firstAttribute="top" secondItem="yut-Qd-uFv" secondAttribute="top" id="FXN-J8-wyU"/>
+                                <constraint firstAttribute="trailing" secondItem="neb-AY-VkN" secondAttribute="trailing" constant="5" id="WhY-Qd-S0N"/>
+                                <constraint firstItem="neb-AY-VkN" firstAttribute="leading" secondItem="yut-Qd-uFv" secondAttribute="leading" constant="5" id="c9u-tq-Jca"/>
+                                <constraint firstAttribute="bottom" secondItem="neb-AY-VkN" secondAttribute="bottom" id="zw8-Qi-yJW"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dWR-db-c1g">
+                            <rect key="frame" x="0.0" y="102.5" width="385" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="pYz-EP-WA2"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="25"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="addPadding" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ULG-Ga-0Kw">
+                            <rect key="frame" x="0.0" y="167.5" width="385" height="45"/>
+                            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="2Mf-Ts-XuK"/>
+                            </constraints>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="25"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="addPadding" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="aIM-6Q-7TP"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dip-z1-UXd" customClass="CustomButton">
+                            <rect key="frame" x="0.0" y="232.5" width="385" height="45"/>
+                            <color key="backgroundColor" red="0.90196078431372551" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="naE-ks-ocT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="22"/>
+                            <state key="normal" title="Confirm">
+                                <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="styleFilePath" value="CardButtonPrimaryStyle"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="txt" value="Confirm"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="confirmPressed:" destination="-1" eventType="touchUpInside" id="ri7-Eb-bB4"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ma-to-ceT" userLabel="Delete this card" customClass="CustomButton">
+                            <rect key="frame" x="0.0" y="297.5" width="385" height="45"/>
+                            <color key="backgroundColor" red="0.90196078430000004" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="Y0n-zA-j4w"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="22"/>
+                            <state key="normal" title="Remove this card">
+                                <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="styleFilePath" value="OverlayButtonSecondaryStyle"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="txt" value="Delete this card"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="deleteThisCardPressed:" destination="-1" eventType="touchUpInside" id="uEr-of-J5h"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoE-yw-NmM" customClass="CustomButton">
+                            <rect key="frame" x="0.0" y="362.5" width="385" height="45"/>
+                            <color key="backgroundColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="bHG-AI-r20"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="22"/>
+                            <state key="normal" title="Resend a code again">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="styleFilePath" value="OverlayButtonSecondaryStyle"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="txt" value="Resend a code again"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="resendCodePressed:" destination="-1" eventType="touchUpInside" id="lzL-5V-Xn7"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Odu-am-7Nt" firstAttribute="centerX" secondItem="RfS-UJ-2BO" secondAttribute="centerX" id="Bhb-Mo-yCM"/>
+                <constraint firstItem="RBA-K3-hyf" firstAttribute="leading" secondItem="lp1-qG-731" secondAttribute="leading" constant="15" id="RT3-KZ-Qzi"/>
+                <constraint firstItem="L38-ag-9lL" firstAttribute="top" secondItem="Odu-am-7Nt" secondAttribute="bottom" constant="30" id="RwZ-XV-mvN"/>
+                <constraint firstItem="L38-ag-9lL" firstAttribute="leading" secondItem="RfS-UJ-2BO" secondAttribute="leading" constant="16" id="YOA-E2-Tgq"/>
+                <constraint firstItem="lp1-qG-731" firstAttribute="trailing" secondItem="RBA-K3-hyf" secondAttribute="trailing" constant="15" id="bMn-uo-Phg"/>
+                <constraint firstAttribute="trailing" secondItem="L38-ag-9lL" secondAttribute="trailing" constant="16" id="gPE-as-HuI"/>
+                <constraint firstItem="RBA-K3-hyf" firstAttribute="top" secondItem="L38-ag-9lL" secondAttribute="bottom" constant="25" id="nCk-Ur-e9z"/>
+                <constraint firstItem="Odu-am-7Nt" firstAttribute="top" secondItem="lp1-qG-731" secondAttribute="top" constant="60" id="rdB-EG-Nve"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="lp1-qG-731"/>
+            <point key="canvasLocation" x="47.5" y="167.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="creditCard" width="33" height="22"/>
+        <image name="grey_circle" width="170.5" height="170.5"/>
+        <image name="red_circle" width="170.5" height="170.5"/>
+    </resources>
+</document>

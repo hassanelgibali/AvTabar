@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StepsDialog">
+            <connections>
+                <outlet property="BGView" destination="3Ax-C7-bCy" id="VJU-Ov-3ud"/>
+                <outlet property="containerView" destination="Htk-zE-aAp" id="lss-lq-7Ix"/>
+                <outlet property="contentView" destination="wn3-Zs-Ovh" id="7zF-LG-kmT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="286"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wn3-Zs-Ovh">
+                    <rect key="frame" x="-0.5" y="0.0" width="375" height="286"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ax-C7-bCy">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="286"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.55000000000000004" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Htk-zE-aAp">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="286"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Htk-zE-aAp" secondAttribute="bottom" id="1da-Ee-sTW"/>
+                        <constraint firstItem="Htk-zE-aAp" firstAttribute="centerX" secondItem="wn3-Zs-Ovh" secondAttribute="centerX" id="34d-zS-UjK"/>
+                        <constraint firstItem="3Ax-C7-bCy" firstAttribute="top" secondItem="wn3-Zs-Ovh" secondAttribute="top" id="KRb-uf-SkG"/>
+                        <constraint firstAttribute="trailing" secondItem="3Ax-C7-bCy" secondAttribute="trailing" id="LOX-jn-E1B"/>
+                        <constraint firstItem="3Ax-C7-bCy" firstAttribute="leading" secondItem="wn3-Zs-Ovh" secondAttribute="leading" id="Z8T-Qb-g8P"/>
+                        <constraint firstItem="Htk-zE-aAp" firstAttribute="top" secondItem="wn3-Zs-Ovh" secondAttribute="top" id="hgc-Id-Ohx"/>
+                        <constraint firstItem="Htk-zE-aAp" firstAttribute="width" secondItem="wn3-Zs-Ovh" secondAttribute="width" id="jZD-pn-mTp"/>
+                        <constraint firstAttribute="bottom" secondItem="3Ax-C7-bCy" secondAttribute="bottom" id="lnk-Mh-f3g"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="wn3-Zs-Ovh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="BTg-bF-qKD"/>
+                <constraint firstItem="wn3-Zs-Ovh" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="ZFM-d8-Reb"/>
+                <constraint firstItem="wn3-Zs-Ovh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="h9K-mF-D5Q"/>
+                <constraint firstItem="wn3-Zs-Ovh" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="srC-eH-mld"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-252" y="9"/>
+        </view>
+    </objects>
+</document>

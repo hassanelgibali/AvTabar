@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="VodafoneRg.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CellCardViewImgWithSelectedOnly">
+            <connections>
+                <outlet property="arrowImgView" destination="jLD-bH-h2Y" id="jOJ-qQ-QIO"/>
+                <outlet property="arrowImgViewWidthConstraint" destination="X7p-Bv-58R" id="hHR-VL-CAL"/>
+                <outlet property="avatarImageView" destination="FxW-Za-kB5" id="0sq-Mm-DmB"/>
+                <outlet property="contentView" destination="TDr-SU-fiX" id="NgT-fJ-2ik"/>
+                <outlet property="imgView" destination="KsF-Qs-DvE" id="jZu-21-vZQ"/>
+                <outlet property="imgViewWidthConstraint" destination="I7S-ic-GeF" id="yG2-Qm-e3C"/>
+                <outlet property="signImageRightMarginConstraint" destination="Lb3-CP-2aH" id="sIb-bg-KNx"/>
+                <outlet property="subTitleLabel" destination="QF4-rV-Qi2" id="60c-V6-tsV"/>
+                <outlet property="titleLabel" destination="gkQ-rh-tpZ" id="9Gp-Hz-LpF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="B7H-qY-Kjf">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="96"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TDr-SU-fiX">
+                    <rect key="frame" x="0.0" y="0.0" width="366" height="96"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkQ-rh-tpZ">
+                            <rect key="frame" x="70" y="12" width="192" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="UWe-yy-XNS"/>
+                            </constraints>
+                            <attributedString key="attributedText">
+                                <fragment content="Label">
+                                    <attributes>
+                                        <font key="NSFont" metaFont="system" size="17"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardArrow" translatesAutoresizingMaskIntoConstraints="NO" id="jLD-bH-h2Y">
+                            <rect key="frame" x="327" y="36" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="X7p-Bv-58R"/>
+                                <constraint firstAttribute="height" constant="24" id="fLw-ak-TzJ"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QF4-rV-Qi2">
+                            <rect key="frame" x="70" y="38" width="192" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="Bog-UL-LyT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KsF-Qs-DvE">
+                            <rect key="frame" x="277" y="30.5" width="35" height="35"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="I7S-ic-GeF"/>
+                                <constraint firstAttribute="height" constant="35" id="QLo-b3-byL"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kl8-te-cBJ">
+                            <rect key="frame" x="20" y="95" width="326" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="AEc-o9-wyI"/>
+                            </constraints>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FxW-Za-kB5">
+                            <rect key="frame" x="10" y="25.5" width="45" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="SpF-VF-qLs"/>
+                                <constraint firstAttribute="height" constant="45" id="z5F-BC-Ma6"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="gkQ-rh-tpZ" firstAttribute="top" secondItem="TDr-SU-fiX" secondAttribute="top" constant="12" id="0DV-s0-79W"/>
+                        <constraint firstItem="gkQ-rh-tpZ" firstAttribute="leading" secondItem="FxW-Za-kB5" secondAttribute="trailing" constant="15" id="3Ug-8e-5l8"/>
+                        <constraint firstItem="QF4-rV-Qi2" firstAttribute="top" secondItem="gkQ-rh-tpZ" secondAttribute="bottom" constant="5" id="5kN-US-LCo"/>
+                        <constraint firstItem="Kl8-te-cBJ" firstAttribute="centerX" secondItem="TDr-SU-fiX" secondAttribute="centerX" id="ABh-AO-aPM"/>
+                        <constraint firstAttribute="bottom" secondItem="Kl8-te-cBJ" secondAttribute="bottom" id="C4z-OY-m7O"/>
+                        <constraint firstAttribute="trailing" secondItem="jLD-bH-h2Y" secondAttribute="trailing" constant="15" id="Jn3-a6-Io9"/>
+                        <constraint firstItem="jLD-bH-h2Y" firstAttribute="leading" secondItem="KsF-Qs-DvE" secondAttribute="trailing" constant="15" id="Lb3-CP-2aH"/>
+                        <constraint firstItem="KsF-Qs-DvE" firstAttribute="centerY" secondItem="jLD-bH-h2Y" secondAttribute="centerY" id="RPJ-uB-yyZ"/>
+                        <constraint firstItem="KsF-Qs-DvE" firstAttribute="leading" secondItem="gkQ-rh-tpZ" secondAttribute="trailing" constant="15" id="UHC-IO-5yH"/>
+                        <constraint firstItem="Kl8-te-cBJ" firstAttribute="width" secondItem="TDr-SU-fiX" secondAttribute="width" constant="-40" id="eLA-wh-0Of"/>
+                        <constraint firstItem="FxW-Za-kB5" firstAttribute="leading" secondItem="TDr-SU-fiX" secondAttribute="leading" constant="10" id="eYa-dv-TbD"/>
+                        <constraint firstItem="QF4-rV-Qi2" firstAttribute="centerX" secondItem="gkQ-rh-tpZ" secondAttribute="centerX" id="edg-fI-n1b"/>
+                        <constraint firstItem="QF4-rV-Qi2" firstAttribute="width" secondItem="gkQ-rh-tpZ" secondAttribute="width" id="pDc-e9-8LF"/>
+                        <constraint firstItem="jLD-bH-h2Y" firstAttribute="centerY" secondItem="TDr-SU-fiX" secondAttribute="centerY" id="pJr-w3-2Jy"/>
+                        <constraint firstItem="FxW-Za-kB5" firstAttribute="centerY" secondItem="TDr-SU-fiX" secondAttribute="centerY" id="wka-tK-GIf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TDr-SU-fiX" firstAttribute="width" secondItem="B7H-qY-Kjf" secondAttribute="width" id="G3y-Mh-Mda"/>
+                <constraint firstItem="TDr-SU-fiX" firstAttribute="centerY" secondItem="B7H-qY-Kjf" secondAttribute="centerY" id="HIA-Ob-wpD"/>
+                <constraint firstItem="TDr-SU-fiX" firstAttribute="centerX" secondItem="B7H-qY-Kjf" secondAttribute="centerX" id="Rcp-dK-Khe"/>
+                <constraint firstItem="TDr-SU-fiX" firstAttribute="height" secondItem="B7H-qY-Kjf" secondAttribute="height" id="gg2-36-EUg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="28" y="56"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cardArrow" width="64" height="64"/>
+    </resources>
+</document>

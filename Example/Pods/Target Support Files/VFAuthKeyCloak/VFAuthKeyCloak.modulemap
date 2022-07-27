@@ -1,0 +1,6 @@
+framework module VFAuthKeyCloak {
+  umbrella header "VFAuthKeyCloak-umbrella.h"
+
+  export *
+  module * { export * }
+}

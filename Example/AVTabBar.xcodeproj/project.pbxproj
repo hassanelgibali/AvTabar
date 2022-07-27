@@ -15,6 +15,13 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		66208564ED43A4C74B17710F /* Pods_AVTabBar_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF97981B079566BD6D006D0 /* Pods_AVTabBar_Tests.framework */; };
 		C84F183FF848990991AB7709 /* Pods_AVTabBar_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2750761520B0D50132286DE8 /* Pods_AVTabBar_Example.framework */; };
+		F705B6A3288815BC00EAB0A8 /* ItemBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F705B6A1288815BC00EAB0A8 /* ItemBarView.swift */; };
+		F705B6A4288815BC00EAB0A8 /* ItemBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F705B6A2288815BC00EAB0A8 /* ItemBarView.xib */; };
+		F76139DB288EB35400371D70 /* RollingPitTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76139DA288EB35400371D70 /* RollingPitTabBar.swift */; };
+		F7E9614C288EBB2900F00504 /* DashboardTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7E9614B288EBB2900F00504 /* DashboardTabBar.xib */; };
+		F7E9614E288EBCBA00F00504 /* DashboardTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E9614D288EBCBA00F00504 /* DashboardTabBar.swift */; };
+		F7FE7F7D28882C19008ACF81 /* CircleItemBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FE7F7C28882C17008ACF81 /* CircleItemBarView.swift */; };
+		F7FE7F7F28883D7E008ACF81 /* CircleItemBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7FE7F7E28883D7E008ACF81 /* CircleItemBarView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E97C6B3E4BA6DD64040FB8C /* AVTabBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AVTabBar.podspec; path = ../AVTabBar.podspec; sourceTree = "<group>"; };
+		1E97C6B3E4BA6DD64040FB8C /* AVTabBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AVTabBar.podspec; path = ../AVTabBar.podspec; sourceTree = "<group>"; };
 		2750761520B0D50132286DE8 /* Pods_AVTabBar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVTabBar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A87F1779C8EFA037DF34B3A /* Pods-AVTabBar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVTabBar_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AVTabBar_Tests/Pods-AVTabBar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AVTabBar_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVTabBar_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,10 +50,17 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		712B19E3BBDB196A90CDCE4F /* Pods-AVTabBar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVTabBar_Tests.release.xcconfig"; path = "Target Support Files/Pods-AVTabBar_Tests/Pods-AVTabBar_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9CF97981B079566BD6D006D0 /* Pods_AVTabBar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVTabBar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADCB1378E9D6171476F08D62 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		ADCB1378E9D6171476F08D62 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D4B5306D58F2E31CEEEBBD97 /* Pods-AVTabBar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVTabBar_Example.debug.xcconfig"; path = "Target Support Files/Pods-AVTabBar_Example/Pods-AVTabBar_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D6465704B143AE66951A1367 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D6465704B143AE66951A1367 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DD474529F4752D9F43F13176 /* Pods-AVTabBar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVTabBar_Example.release.xcconfig"; path = "Target Support Files/Pods-AVTabBar_Example/Pods-AVTabBar_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F705B6A1288815BC00EAB0A8 /* ItemBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemBarView.swift; sourceTree = "<group>"; };
+		F705B6A2288815BC00EAB0A8 /* ItemBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemBarView.xib; sourceTree = "<group>"; };
+		F76139DA288EB35400371D70 /* RollingPitTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingPitTabBar.swift; sourceTree = "<group>"; };
+		F7E9614B288EBB2900F00504 /* DashboardTabBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardTabBar.xib; sourceTree = "<group>"; };
+		F7E9614D288EBCBA00F00504 /* DashboardTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTabBar.swift; sourceTree = "<group>"; };
+		F7FE7F7C28882C17008ACF81 /* CircleItemBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleItemBarView.swift; sourceTree = "<group>"; };
+		F7FE7F7E28883D7E008ACF81 /* CircleItemBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircleItemBarView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +91,6 @@
 				2A87F1779C8EFA037DF34B3A /* Pods-AVTabBar_Tests.debug.xcconfig */,
 				712B19E3BBDB196A90CDCE4F /* Pods-AVTabBar_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -105,6 +118,8 @@
 		607FACD21AFB9204008FA782 /* Example for AVTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				F76139D9288EB32700371D70 /* RollingPitTabBar */,
+				F705B6A0288815A100EAB0A8 /* TabBarView */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -149,6 +164,27 @@
 				D6465704B143AE66951A1367 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		F705B6A0288815A100EAB0A8 /* TabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				F7FE7F7C28882C17008ACF81 /* CircleItemBarView.swift */,
+				F705B6A1288815BC00EAB0A8 /* ItemBarView.swift */,
+				F7FE7F7E28883D7E008ACF81 /* CircleItemBarView.xib */,
+				F705B6A2288815BC00EAB0A8 /* ItemBarView.xib */,
+				F7E9614B288EBB2900F00504 /* DashboardTabBar.xib */,
+				F7E9614D288EBCBA00F00504 /* DashboardTabBar.swift */,
+			);
+			name = TabBarView;
+			sourceTree = "<group>";
+		};
+		F76139D9288EB32700371D70 /* RollingPitTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				F76139DA288EB35400371D70 /* RollingPitTabBar.swift */,
+			);
+			name = RollingPitTabBar;
 			sourceTree = "<group>";
 		};
 		FDD19606AF2FEEBCB13FE56C /* Frameworks */ = {
@@ -213,10 +249,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 8FN6JYTJBN;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 8FN6JYTJBN;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +265,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -246,9 +285,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7E9614C288EBB2900F00504 /* DashboardTabBar.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				F7FE7F7F28883D7E008ACF81 /* CircleItemBarView.xib in Resources */,
+				F705B6A4288815BC00EAB0A8 /* ItemBarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,10 +312,54 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AVTabBar_Example/Pods-AVTabBar_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AVTabBar/AVTabBar.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GSKStretchyHeaderView/GSKStretchyHeaderView.framework",
+				"${BUILT_PRODUCTS_DIR}/INTUAnimationEngine/INTUAnimationEngine.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/JWGCircleCounter/JWGCircleCounter.framework",
+				"${BUILT_PRODUCTS_DIR}/JWTDecode/JWTDecode.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MOLH/MOLH.framework",
+				"${BUILT_PRODUCTS_DIR}/NSAttributedString+CCLFormat/NSAttributedString_CCLFormat.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RSKImageCropper/RSKImageCropper.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/TrustKit/TrustKit.framework",
+				"${BUILT_PRODUCTS_DIR}/UIColor+Hex/UIColor_Hex.framework",
+				"${BUILT_PRODUCTS_DIR}/VFAuthKeyCloak/VFAuthKeyCloak.framework",
+				"${BUILT_PRODUCTS_DIR}/VFEG-NetworkManager/VFEG_NetworkManager.framework",
+				"${BUILT_PRODUCTS_DIR}/VUIComponents/VUIComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/WYPopoverController/WYPopoverController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AVTabBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GSKStretchyHeaderView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/INTUAnimationEngine.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWGCircleCounter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWTDecode.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MOLH.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSAttributedString_CCLFormat.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSKImageCropper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TrustKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIColor_Hex.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VFAuthKeyCloak.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VFEG_NetworkManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VUIComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WYPopoverController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -332,7 +418,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				F705B6A3288815BC00EAB0A8 /* ItemBarView.swift in Sources */,
+				F7E9614E288EBCBA00F00504 /* DashboardTabBar.swift in Sources */,
+				F76139DB288EB35400371D70 /* RollingPitTabBar.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				F7FE7F7D28882C19008ACF81 /* CircleItemBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +509,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +555,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -478,13 +568,15 @@
 			baseConfigurationReference = D4B5306D58F2E31CEEEBBD97 /* Pods-AVTabBar_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8FN6JYTJBN;
 				INFOPLIST_FILE = AVTabBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -493,13 +585,15 @@
 			baseConfigurationReference = DD474529F4752D9F43F13176 /* Pods-AVTabBar_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8FN6JYTJBN;
 				INFOPLIST_FILE = AVTabBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -507,6 +601,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2A87F1779C8EFA037DF34B3A /* Pods-AVTabBar_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 8FN6JYTJBN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -529,6 +624,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 712B19E3BBDB196A90CDCE4F /* Pods-AVTabBar_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 8FN6JYTJBN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PointsDetailsCardView">
+            <connections>
+                <outlet property="additionDateCell" destination="ua4-c6-xks" id="w4m-zc-yie"/>
+                <outlet property="contentView" destination="mxV-ya-lOR" id="5wB-ew-ZUp"/>
+                <outlet property="expiryDateCell" destination="e8C-EG-24c" id="m3c-Tx-ZGN"/>
+                <outlet property="pointsCell" destination="AhG-mw-2c7" id="O6W-RF-CQI"/>
+                <outlet property="stutesCell" destination="PYT-Gb-cEy" id="SvS-dw-YtO"/>
+                <outlet property="transtionCell" destination="ypw-9R-FL3" id="iv3-1B-3CD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="351"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mxV-ya-lOR">
+                    <rect key="frame" x="-0.5" y="0.0" width="375" height="351"/>
+                    <subviews>
+                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="m48-Ky-Wde" style="IBUITableViewCellStyleDefault" translatesAutoresizingMaskIntoConstraints="NO" id="AhG-mw-2c7">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AhG-mw-2c7" id="ACk-La-YZw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m48-Ky-Wde" customClass="AnaVodafoneLabel">
+                                        <rect key="frame" x="15" y="0.0" width="345" height="69.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ignoresLanguageAllignment" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="useBoldFont" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                            </tableViewCellContentView>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="2H7-1Y-TbL"/>
+                            </constraints>
+                            <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                        </tableViewCell>
+                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="D5x-j6-DgF" detailTextLabel="31a-C6-OYU" style="IBUITableViewCellStyleValue1" translatesAutoresizingMaskIntoConstraints="NO" id="ypw-9R-FL3">
+                            <rect key="frame" x="0.0" y="70" width="375" height="70.5"/>
+                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ypw-9R-FL3" id="2eb-3o-vUb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="D5x-j6-DgF" customClass="AnaVodafoneLabel">
+                                        <rect key="frame" x="15" y="25" width="33.5" height="20.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ignoresLanguageAllignment" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="useRegularFont" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="txt" value="Transaction Type"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="31a-C6-OYU" customClass="AnaVodafoneLabel">
+                                        <rect key="frame" x="316" y="25" width="44" height="20.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.64657059911472847" blue="0.65268083756345185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </tableViewCellContentView>
+                            <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                        </tableViewCell>
+                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="fRX-kz-aIp" detailTextLabel="j8v-uu-OBJ" style="IBUITableViewCellStyleValue1" translatesAutoresizingMaskIntoConstraints="NO" id="ua4-c6-xks">
+                            <rect key="frame" x="0.0" y="140.5" width="375" height="70"/>
+                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ua4-c6-xks" id="mRZ-2C-iNj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fRX-kz-aIp" customClass="AnaVodafoneLabel">
+                                        <rect key="frame" x="15" y="25" width="33.5" height="20.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="useRegularFont" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ignoresLanguageAllignment" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="txt" value="Addition Date"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="j8v-uu-OBJ" customClass="AnaVodafoneLabel">
+                                        <rect key="frame" x="316" y="25" width="44" height="20.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.64657059910000003" blue="0.65268083759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="useRegularFont" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ignoresLanguageAllignment" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                            </tableViewCellContentView>
+                            <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                        </tableViewCell>
+                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="omm-5o-baN" detailTextLabel="JIZ-72-PRH" style="IBUITableViewCellStyleValue1" translatesAutoresizingMaskIntoConstraints="NO" id="e8C-EG-24c">
+                            <rect key="frame" x="0.0" y="210.5" width="375" height="70.5"/>
+                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e8C-EG-24c" id="d5S-Np-TEJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="omm-5o-baN" customClass="AnaVodafoneLabel">
+                                        <rect key="frame" x="15" y="25" width="33.5" height="20.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="useRegularFont" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ignoresLanguageAllignment" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="txt" value="Expiry Date"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JIZ-72-PRH" customClass="AnaVodafoneLabel">
+                                        <rect key="frame" x="316" y="25" width="44" height="20.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.64657059910000003" blue="0.65268083759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="useRegularFont" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ignoresLanguageAllignment" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                            </tableViewCellContentView>
+                            <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                        </tableViewCell>
+                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="DrG-Nx-AuU" detailTextLabel="xWZ-vW-xkl" style="IBUITableViewCellStyleValue1" translatesAutoresizingMaskIntoConstraints="NO" id="PYT-Gb-cEy">
+                            <rect key="frame" x="0.0" y="281" width="375" height="70"/>
+                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PYT-Gb-cEy" id="e5f-ep-uca">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DrG-Nx-AuU" customClass="AnaVodafoneLabel">
+                                        <rect key="frame" x="15" y="25" width="33.5" height="20.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="useRegularFont" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ignoresLanguageAllignment" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="txt" value="Redemption Type"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xWZ-vW-xkl" customClass="AnaVodafoneLabel">
+                                        <rect key="frame" x="316" y="25" width="44" height="20.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.64657059910000003" blue="0.65268083759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="useRegularFont" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ignoresLanguageAllignment" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                            </tableViewCellContentView>
+                            <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                        </tableViewCell>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ypw-9R-FL3" firstAttribute="width" secondItem="AhG-mw-2c7" secondAttribute="width" id="05N-6N-rTw"/>
+                        <constraint firstItem="PYT-Gb-cEy" firstAttribute="top" secondItem="e8C-EG-24c" secondAttribute="bottom" id="1pl-ih-tb8"/>
+                        <constraint firstItem="ypw-9R-FL3" firstAttribute="top" secondItem="AhG-mw-2c7" secondAttribute="bottom" id="4d6-7B-ngo"/>
+                        <constraint firstItem="e8C-EG-24c" firstAttribute="width" secondItem="ua4-c6-xks" secondAttribute="width" id="7NP-fv-tae"/>
+                        <constraint firstItem="e8C-EG-24c" firstAttribute="height" secondItem="ua4-c6-xks" secondAttribute="height" id="A6W-66-1Ib"/>
+                        <constraint firstItem="ypw-9R-FL3" firstAttribute="centerX" secondItem="AhG-mw-2c7" secondAttribute="centerX" id="FG4-lq-79o"/>
+                        <constraint firstItem="AhG-mw-2c7" firstAttribute="width" secondItem="mxV-ya-lOR" secondAttribute="width" id="FRh-hw-Bq6"/>
+                        <constraint firstItem="ua4-c6-xks" firstAttribute="top" secondItem="ypw-9R-FL3" secondAttribute="bottom" id="Mhc-Gk-2RH"/>
+                        <constraint firstItem="AhG-mw-2c7" firstAttribute="top" secondItem="mxV-ya-lOR" secondAttribute="top" id="QXr-dW-kk1"/>
+                        <constraint firstAttribute="height" constant="351" id="Upl-gE-cNe"/>
+                        <constraint firstItem="ua4-c6-xks" firstAttribute="centerX" secondItem="ypw-9R-FL3" secondAttribute="centerX" id="V1b-sg-vSd"/>
+                        <constraint firstItem="PYT-Gb-cEy" firstAttribute="height" secondItem="e8C-EG-24c" secondAttribute="height" id="WKV-LZ-i4w"/>
+                        <constraint firstItem="PYT-Gb-cEy" firstAttribute="width" secondItem="e8C-EG-24c" secondAttribute="width" id="cSJ-mG-iSt"/>
+                        <constraint firstItem="ua4-c6-xks" firstAttribute="width" secondItem="ypw-9R-FL3" secondAttribute="width" id="gw8-8q-IXg"/>
+                        <constraint firstItem="e8C-EG-24c" firstAttribute="top" secondItem="ua4-c6-xks" secondAttribute="bottom" id="i16-QL-Qna"/>
+                        <constraint firstItem="e8C-EG-24c" firstAttribute="centerX" secondItem="ua4-c6-xks" secondAttribute="centerX" id="iSp-Pd-SdQ"/>
+                        <constraint firstItem="AhG-mw-2c7" firstAttribute="centerX" secondItem="mxV-ya-lOR" secondAttribute="centerX" id="nRR-Ni-zIs"/>
+                        <constraint firstItem="ua4-c6-xks" firstAttribute="height" secondItem="ypw-9R-FL3" secondAttribute="height" id="qUr-g4-nhE"/>
+                        <constraint firstItem="PYT-Gb-cEy" firstAttribute="centerX" secondItem="e8C-EG-24c" secondAttribute="centerX" id="qda-7a-ang"/>
+                        <constraint firstItem="ypw-9R-FL3" firstAttribute="height" secondItem="AhG-mw-2c7" secondAttribute="height" id="yL3-3a-VZx"/>
+                        <constraint firstAttribute="bottom" secondItem="PYT-Gb-cEy" secondAttribute="bottom" id="yhh-hb-iYR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="mxV-ya-lOR" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="GzY-4g-c0O"/>
+                <constraint firstItem="mxV-ya-lOR" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Uzo-bL-hO0"/>
+                <constraint firstItem="mxV-ya-lOR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="rnL-Nz-dc3"/>
+                <constraint firstItem="mxV-ya-lOR" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="yqL-o0-5QZ"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="92.5" y="328.5"/>
+        </view>
+    </objects>
+</document>

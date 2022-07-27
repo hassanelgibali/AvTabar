@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StatusConfirmationCardView">
+            <connections>
+                <outlet property="ButtonWidthConstraint" destination="brH-3J-Dq0" id="TgT-pZ-Djg"/>
+                <outlet property="buttonLeadingSpacing" destination="6xV-kX-lxE" id="hoW-7g-a6D"/>
+                <outlet property="contentView" destination="YfQ-Cc-dSn" id="FLD-9u-BjO"/>
+                <outlet property="customButton" destination="QHf-si-AlV" id="a9J-Un-l05"/>
+                <outlet property="imageView" destination="ttj-tz-QyY" id="JDm-Jf-bH3"/>
+                <outlet property="textLabel" destination="eXO-wk-XVk" id="mbr-5V-RMr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YfQ-Cc-dSn">
+                    <rect key="frame" x="0.0" y="0.5" width="375" height="69.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXO-wk-XVk" customClass="AnaVodafoneLabel">
+                            <rect key="frame" x="60" y="23" width="300" height="23.5"/>
+                            <attributedString key="attributedText">
+                                <fragment content="Sample Text">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <font key="NSFont" metaFont="system" size="20"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="ignoresLanguageAllignment" value="NO"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="useRegularFont" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="ttj-tz-QyY">
+                            <rect key="frame" x="15" y="19.5" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="BH2-HB-WQm"/>
+                                <constraint firstAttribute="height" constant="30" id="xu0-0f-GhL"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHf-si-AlV" customClass="CustomButton">
+                            <rect key="frame" x="360" y="12" width="0.0" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="TdP-hw-m9D"/>
+                                <constraint firstAttribute="width" id="brH-3J-Dq0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="eXO-wk-XVk" secondAttribute="bottom" constant="23" id="1EM-U5-lQ0"/>
+                        <constraint firstItem="QHf-si-AlV" firstAttribute="leading" secondItem="eXO-wk-XVk" secondAttribute="trailing" id="6xV-kX-lxE"/>
+                        <constraint firstItem="ttj-tz-QyY" firstAttribute="left" secondItem="YfQ-Cc-dSn" secondAttribute="left" constant="15" id="RlE-Jn-kRY"/>
+                        <constraint firstItem="QHf-si-AlV" firstAttribute="centerY" secondItem="YfQ-Cc-dSn" secondAttribute="centerY" id="Srh-eI-bce"/>
+                        <constraint firstItem="ttj-tz-QyY" firstAttribute="centerY" secondItem="YfQ-Cc-dSn" secondAttribute="centerY" id="UtV-ql-eDB"/>
+                        <constraint firstAttribute="trailing" secondItem="QHf-si-AlV" secondAttribute="trailing" constant="15" id="VRZ-SU-3Nd"/>
+                        <constraint firstItem="eXO-wk-XVk" firstAttribute="top" secondItem="YfQ-Cc-dSn" secondAttribute="top" constant="23" id="Y94-8S-eb0"/>
+                        <constraint firstItem="eXO-wk-XVk" firstAttribute="left" secondItem="ttj-tz-QyY" secondAttribute="right" constant="15" id="pIj-if-IQc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="YfQ-Cc-dSn" secondAttribute="bottom" id="ajR-Nf-bKV"/>
+                <constraint firstItem="YfQ-Cc-dSn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="iec-3B-4g3"/>
+                <constraint firstAttribute="trailing" secondItem="YfQ-Cc-dSn" secondAttribute="trailing" id="uqV-wf-lQF"/>
+                <constraint firstItem="YfQ-Cc-dSn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uss-Bs-6I7"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-3.5" y="66"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="correct" width="20" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,25 @@
+{
+    "normalBackgroundColor": "FFFFFF",
+    "highlightedBackgroundColor": "F4F4F4",
+    "disabledBackgrounddColor": "CCCCCC",
+    
+    "normalBackgroundAlpha":1.0,
+    "highlightedBackgroundAlpha":1.0,
+    "disabledBackgroundlpha":1.0,
+    
+    "normalTitleColor":"333333",
+    "highlightedTitleColor":"333333",
+    "disabledTitleColor":"FFFFFF",
+    
+    "normalCornerRadius":6.0,
+    "highlightedCornerRadius":6.0,
+    "disabledCornerRadius":6.0,
+    
+    "normalBorderWidth": 0.0,
+    "highlightedBorderWidth": 0.0,
+    "disabledBorderWidth": 0.0,
+    
+    "normalBorderColor": "999999",
+    "highlightedBorderColor": "999999",
+    "disabledBorderColor": "CCCCCC"
+}

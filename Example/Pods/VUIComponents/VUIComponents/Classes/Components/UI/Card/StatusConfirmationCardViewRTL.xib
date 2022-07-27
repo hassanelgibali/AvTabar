@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StatusConfirmationCardView">
+            <connections>
+                <outlet property="ButtonWidthConstraint" destination="ZV4-AB-sc7" id="982-do-50T"/>
+                <outlet property="buttonLeadingSpacing" destination="8px-sV-ck0" id="gaR-48-ZCI"/>
+                <outlet property="contentView" destination="6so-PT-TXp" id="Lpr-fO-d1d"/>
+                <outlet property="customButton" destination="PCX-Aw-TpC" id="2e8-xU-RvD"/>
+                <outlet property="imageView" destination="kGO-eq-10I" id="TKh-fH-TG4"/>
+                <outlet property="textLabel" destination="eos-H1-Zyr" id="NaI-j7-7e4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ooC-EQ-2WO">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6so-PT-TXp">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eos-H1-Zyr" customClass="AnaVodafoneLabel">
+                            <rect key="frame" x="15" y="23" width="300" height="24"/>
+                            <attributedString key="attributedText">
+                                <fragment content="Sample Text">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <font key="NSFont" metaFont="system" size="20"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="ignoresLanguageAllignment" value="NO"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="useRegularFont" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="kGO-eq-10I">
+                            <rect key="frame" x="330" y="20" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="G1Q-2W-p09"/>
+                                <constraint firstAttribute="height" constant="30" id="YkP-No-iOe"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCX-Aw-TpC" customClass="CustomButton">
+                            <rect key="frame" x="15" y="12.5" width="0.0" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" id="ZV4-AB-sc7"/>
+                                <constraint firstAttribute="height" constant="45" id="o6G-be-GJC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="PCX-Aw-TpC" firstAttribute="left" secondItem="6so-PT-TXp" secondAttribute="left" constant="15" id="8px-sV-ck0"/>
+                        <constraint firstItem="eos-H1-Zyr" firstAttribute="left" secondItem="PCX-Aw-TpC" secondAttribute="right" id="Dwj-3H-cWu"/>
+                        <constraint firstItem="eos-H1-Zyr" firstAttribute="top" secondItem="6so-PT-TXp" secondAttribute="top" constant="23" id="Xye-0W-X7U"/>
+                        <constraint firstAttribute="bottom" secondItem="eos-H1-Zyr" secondAttribute="bottom" constant="23" id="dd5-Gu-sP7"/>
+                        <constraint firstItem="kGO-eq-10I" firstAttribute="centerY" secondItem="6so-PT-TXp" secondAttribute="centerY" id="fmT-Nx-iel"/>
+                        <constraint firstItem="PCX-Aw-TpC" firstAttribute="centerY" secondItem="6so-PT-TXp" secondAttribute="centerY" id="jtK-VQ-bvI"/>
+                        <constraint firstAttribute="right" secondItem="kGO-eq-10I" secondAttribute="right" constant="15" id="wfk-Jn-JWW"/>
+                        <constraint firstItem="kGO-eq-10I" firstAttribute="left" secondItem="eos-H1-Zyr" secondAttribute="right" constant="15" id="wlQ-97-HXg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="6so-PT-TXp" firstAttribute="width" secondItem="ooC-EQ-2WO" secondAttribute="width" id="Ih2-dE-3pE"/>
+                <constraint firstItem="6so-PT-TXp" firstAttribute="centerY" secondItem="ooC-EQ-2WO" secondAttribute="centerY" id="Lpw-Is-S27"/>
+                <constraint firstItem="6so-PT-TXp" firstAttribute="centerX" secondItem="ooC-EQ-2WO" secondAttribute="centerX" id="cxa-hu-nVi"/>
+                <constraint firstItem="6so-PT-TXp" firstAttribute="height" secondItem="ooC-EQ-2WO" secondAttribute="height" id="zVH-ba-pej"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-21" y="45"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="correct" width="20" height="20"/>
+    </resources>
+</document>

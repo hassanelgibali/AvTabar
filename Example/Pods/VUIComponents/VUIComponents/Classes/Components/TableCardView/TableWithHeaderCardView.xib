@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TableWithHeaderCardView">
+            <connections>
+                <outlet property="buttonsView" destination="DJI-ei-DWN" id="e2c-uC-gan"/>
+                <outlet property="buttonsViewHeightConstraint" destination="JaT-2A-FGp" id="LjW-BB-lvZ"/>
+                <outlet property="cardImageView" destination="cos-B1-qrd" id="UfG-O9-uD4"/>
+                <outlet property="cardImageViewHeightConstraint" destination="fGn-Gy-jz0" id="oT2-Hb-xXg"/>
+                <outlet property="contentView" destination="2kE-8f-eqj" id="4Qh-e0-pfx"/>
+                <outlet property="tableView" destination="51D-Bp-N8Y" id="LMP-6k-aS5"/>
+                <outlet property="tableViewTopConstraint" destination="spZ-Bg-LE3" id="bTG-Z1-87N"/>
+                <outlet property="titleLabel" destination="cAE-qw-K4Z" id="sbh-Ij-c6e"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="251"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2kE-8f-eqj">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="251"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cos-B1-qrd">
+                            <rect key="frame" x="187.5" y="0.0" width="0.0" height="0.0"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="cos-B1-qrd" secondAttribute="height" multiplier="1:1" id="5eW-5Y-0aI"/>
+                                <constraint firstAttribute="height" id="fGn-Gy-jz0"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAE-qw-K4Z" customClass="AnaVodafoneLabel">
+                            <rect key="frame" x="15" y="16" width="345" height="0.0"/>
+                            <attributedString key="attributedText"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="ignoresLanguageAllignment" value="NO"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="useRegularFont" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="51D-Bp-N8Y">
+                            <rect key="frame" x="0.0" y="16" width="375" height="235"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJI-ei-DWN">
+                            <rect key="frame" x="0.0" y="251" width="375" height="0.0"/>
+                            <constraints>
+                                <constraint firstAttribute="height" id="JaT-2A-FGp"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="DJI-ei-DWN" firstAttribute="top" secondItem="51D-Bp-N8Y" secondAttribute="bottom" id="5zc-Yv-gfS"/>
+                        <constraint firstItem="51D-Bp-N8Y" firstAttribute="centerX" secondItem="2kE-8f-eqj" secondAttribute="centerX" id="90D-YL-u1r"/>
+                        <constraint firstItem="cAE-qw-K4Z" firstAttribute="width" secondItem="2kE-8f-eqj" secondAttribute="width" constant="-30" id="DPE-eb-u6A"/>
+                        <constraint firstItem="cos-B1-qrd" firstAttribute="top" secondItem="2kE-8f-eqj" secondAttribute="top" id="ZYW-oL-gQv"/>
+                        <constraint firstItem="cos-B1-qrd" firstAttribute="centerX" secondItem="2kE-8f-eqj" secondAttribute="centerX" id="eFg-ou-14q"/>
+                        <constraint firstItem="DJI-ei-DWN" firstAttribute="centerX" secondItem="2kE-8f-eqj" secondAttribute="centerX" id="egE-Gm-wPa"/>
+                        <constraint firstAttribute="bottom" secondItem="DJI-ei-DWN" secondAttribute="bottom" id="fpH-eh-5KQ"/>
+                        <constraint firstItem="cAE-qw-K4Z" firstAttribute="top" secondItem="cos-B1-qrd" secondAttribute="bottom" constant="16" id="hrf-vI-gvE"/>
+                        <constraint firstItem="cAE-qw-K4Z" firstAttribute="centerX" secondItem="2kE-8f-eqj" secondAttribute="centerX" id="kFa-hX-h5j"/>
+                        <constraint firstItem="DJI-ei-DWN" firstAttribute="width" secondItem="2kE-8f-eqj" secondAttribute="width" id="rqX-3s-UHF"/>
+                        <constraint firstItem="51D-Bp-N8Y" firstAttribute="top" secondItem="cAE-qw-K4Z" secondAttribute="bottom" id="spZ-Bg-LE3"/>
+                        <constraint firstItem="51D-Bp-N8Y" firstAttribute="width" secondItem="2kE-8f-eqj" secondAttribute="width" id="xDP-B2-IhR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="2kE-8f-eqj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7yD-lW-0cE"/>
+                <constraint firstItem="2kE-8f-eqj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="K6c-3w-mDc"/>
+                <constraint firstItem="2kE-8f-eqj" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Lf8-uv-GKK"/>
+                <constraint firstAttribute="bottom" secondItem="2kE-8f-eqj" secondAttribute="bottom" id="wTV-oC-1Mb"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="6.5" y="212.5"/>
+        </view>
+    </objects>
+</document>

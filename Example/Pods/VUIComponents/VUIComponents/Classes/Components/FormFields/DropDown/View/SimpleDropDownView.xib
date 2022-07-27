@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="VodafoneRg.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SimpleDropDownView">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="withArrowImage" value="NO"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="arrowImg" destination="luj-zA-2xR" id="Jlz-6L-NNk"/>
+                <outlet property="arrowImgWidthConstraint" destination="eJ0-1y-FFr" id="DEc-Al-AXg"/>
+                <outlet property="titleLabel" destination="dMk-VQ-wRJ" id="rSG-K4-9mx"/>
+                <outlet property="titleLabelLeadingConstraint" destination="rTI-dM-yhK" id="SjU-1t-HgY"/>
+                <outlet property="titleLableTrailingConstraint" destination="cp2-Am-bCv" id="vV6-aG-EoG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" minimumScaleFactor="0.01" translatesAutoresizingMaskIntoConstraints="NO" id="dMk-VQ-wRJ">
+                    <rect key="frame" x="16" y="0.0" width="309" height="45"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrow2" translatesAutoresizingMaskIntoConstraints="NO" id="luj-zA-2xR">
+                    <rect key="frame" x="340" y="15" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="I9S-IO-stI"/>
+                        <constraint firstAttribute="width" constant="15" id="eJ0-1y-FFr"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="luj-zA-2xR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="IaZ-W2-NmA"/>
+                <constraint firstItem="dMk-VQ-wRJ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TfC-Jm-9eN"/>
+                <constraint firstAttribute="right" secondItem="luj-zA-2xR" secondAttribute="right" constant="20" id="UX7-Uc-T5m"/>
+                <constraint firstItem="dMk-VQ-wRJ" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="ZX4-1i-0H6"/>
+                <constraint firstAttribute="right" secondItem="dMk-VQ-wRJ" secondAttribute="right" constant="50" id="cp2-Am-bCv"/>
+                <constraint firstItem="dMk-VQ-wRJ" firstAttribute="left" secondItem="iN0-l3-epB" secondAttribute="left" constant="16" id="rTI-dM-yhK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-622" y="-217"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="downArrow2" width="16" height="16"/>
+    </resources>
+</document>

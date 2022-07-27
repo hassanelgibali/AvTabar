@@ -1,9 +1,18 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '12.0'
+
+inhibit_all_warnings!
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://Fadwa-Zaghlol@github.vodafone.com/VFEG-CICD/AnaVodafonePodSpecs.git'
+source 'https://Fadwa-Zaghlol@github.vodafone.com/VFEG-CICD/VFAuthKeyCloak.git'
 
 target 'AVTabBar_Example' do
   pod 'AVTabBar', :path => '../'
+  pod 'Kingfisher' , '~> 5.15.8'
+  pod 'SnapKit'
+  pod 'VFAuthKeyCloak', :git => "https://Fadwa-Zaghlol@github.vodafone.com/VFEG-CICD/VFAuthKeyCloak.git"
+
 
   target 'AVTabBar_Tests' do
     inherit! :search_paths

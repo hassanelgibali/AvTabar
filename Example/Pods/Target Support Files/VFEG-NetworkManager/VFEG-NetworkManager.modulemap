@@ -1,0 +1,6 @@
+framework module VFEG_NetworkManager {
+  umbrella header "VFEG-NetworkManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

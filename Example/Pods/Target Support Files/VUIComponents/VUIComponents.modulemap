@@ -1,0 +1,6 @@
+framework module VUIComponents {
+  umbrella header "VUIComponents-umbrella.h"
+
+  export *
+  module * { export * }
+}

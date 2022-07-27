@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12120"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StepperCardViewWithLabels">
+            <connections>
+                <outlet property="contentView" destination="8Lc-RK-U1y" id="6i2-B1-xbr"/>
+                <outlet property="labelContainer" destination="69z-lx-UtU" id="l3A-1C-Rgr"/>
+                <outlet property="labelContainerHeightConstraint" destination="DcH-pe-wiW" id="Xf9-II-3aF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Lc-RK-U1y">
+                    <rect key="frame" x="-0.5" y="0.0" width="375" height="130"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="69z-lx-UtU">
+                            <rect key="frame" x="0.0" y="1" width="375" height="79"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="79" id="DcH-pe-wiW"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="69z-lx-UtU" firstAttribute="width" secondItem="8Lc-RK-U1y" secondAttribute="width" id="9Fl-3S-A2A"/>
+                        <constraint firstItem="69z-lx-UtU" firstAttribute="centerX" secondItem="8Lc-RK-U1y" secondAttribute="centerX" id="JFR-Yd-jT8"/>
+                        <constraint firstItem="69z-lx-UtU" firstAttribute="top" secondItem="8Lc-RK-U1y" secondAttribute="top" constant="1" id="sfZ-nV-HW8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="8Lc-RK-U1y" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="6zJ-hs-cy3"/>
+                <constraint firstItem="8Lc-RK-U1y" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="VUM-PM-tQ2"/>
+                <constraint firstItem="8Lc-RK-U1y" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="abj-MJ-2a5"/>
+                <constraint firstItem="8Lc-RK-U1y" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pcp-iS-1un"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="32.5" y="327"/>
+        </view>
+    </objects>
+</document>

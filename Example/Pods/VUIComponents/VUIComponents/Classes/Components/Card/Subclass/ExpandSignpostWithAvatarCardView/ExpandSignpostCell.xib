@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<device id="retina4_7" orientation="portrait">
+<adaptation id="fullscreen"/>
+</device>
+<dependencies>
+<deployment identifier="iOS"/>
+<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+<capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+</dependencies>
+<customFonts key="customFonts">
+<array key="VodafoneRg.ttf">
+<string>VodafoneRg-Regular</string>
+</array>
+<array key="VodafoneRgBd.ttf">
+<string>VodafoneRg-Bold</string>
+</array>
+</customFonts>
+<objects>
+<placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+<placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+<tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExpandSignpostCell" id="KGk-i7-Jjw" customClass="ExpandSignpostCell">
+<rect key="frame" x="0.0" y="0.0" width="332" height="44"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+<rect key="frame" x="0.0" y="0.0" width="332" height="43.5"/>
+<autoresizingMask key="autoresizingMask"/>
+<subviews>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Teb-jl-xeT">
+<rect key="frame" x="20" y="22" width="0.0" height="0.0"/>
+<fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+<color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardArrow" translatesAutoresizingMaskIntoConstraints="NO" id="9ve-E1-x2e">
+<rect key="frame" x="221" y="9.5" width="63" height="25"/>
+<constraints>
+<constraint firstAttribute="height" constant="25" id="Vt0-YM-Bwo"/>
+<constraint firstAttribute="width" constant="63" id="ltk-sZ-ia3"/>
+</constraints>
+</imageView>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6a-7o-siS">
+<rect key="frame" x="284" y="22" width="0.0" height="0.0"/>
+<fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="16"/>
+<color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a9Z-l2-WhF" userLabel="leftImgView">
+<rect key="frame" x="10" y="22" width="0.0" height="0.0"/>
+<constraints>
+<constraint firstAttribute="width" id="0k8-MV-w2P"/>
+<constraint firstAttribute="width" secondItem="a9Z-l2-WhF" secondAttribute="height" multiplier="1:1" id="L0n-ss-7uN"/>
+</constraints>
+</imageView>
+</subviews>
+<color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+<constraints>
+<constraint firstItem="Teb-jl-xeT" firstAttribute="leading" secondItem="a9Z-l2-WhF" secondAttribute="trailing" constant="10" id="312-X9-5KL"/>
+<constraint firstItem="Teb-jl-xeT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="36T-W9-yne"/>
+<constraint firstItem="a9Z-l2-WhF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="TPj-Sf-BhP"/>
+<constraint firstItem="a9Z-l2-WhF" firstAttribute="centerY" secondItem="Teb-jl-xeT" secondAttribute="centerY" id="UAN-yR-RZx"/>
+<constraint firstItem="9ve-E1-x2e" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bfm-lo-tHB"/>
+<constraint firstAttribute="rightMargin" secondItem="9ve-E1-x2e" secondAttribute="right" constant="32" id="dwy-CE-Siq"/>
+<constraint firstItem="h6a-7o-siS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pFM-au-IgZ"/>
+<constraint firstAttribute="rightMargin" secondItem="h6a-7o-siS" secondAttribute="right" constant="32" id="sb2-eQ-rF3"/>
+<constraint firstAttribute="rightMargin" secondItem="9ve-E1-x2e" secondAttribute="right" constant="32" id="zih-Yc-X2x"/>
+</constraints>
+</tableViewCellContentView>
+<color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+<connections>
+<outlet property="imgView" destination="9ve-E1-x2e" id="vGP-U4-LBp"/>
+<outlet property="leftImgView" destination="a9Z-l2-WhF" id="1K2-UW-fd8"/>
+<outlet property="leftLabel" destination="Teb-jl-xeT" id="K4e-nZ-k3g"/>
+<outlet property="rightLabel" destination="h6a-7o-siS" id="SHQ-rx-iny"/>
+<outlet property="widthLeftImg" destination="0k8-MV-w2P" id="EaG-IE-4c0"/>
+</connections>
+<point key="canvasLocation" x="-20.800000000000001" y="32.383808095952027"/>
+</tableViewCell>
+</objects>
+<resources>
+<image name="cardArrow" width="102.40000152587891" height="102.40000152587891"/>
+</resources>
+</document>

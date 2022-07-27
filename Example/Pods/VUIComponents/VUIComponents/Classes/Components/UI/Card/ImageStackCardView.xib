@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageStackCardView">
+            <connections>
+                <outlet property="alertLabel" destination="rl4-wT-Ks1" id="H4w-97-KW3"/>
+                <outlet property="alertStackView" destination="RyG-PM-dAk" id="Sve-nE-5w0"/>
+                <outlet property="buttonsView" destination="u2Y-m8-zZl" id="98x-go-kpo"/>
+                <outlet property="buttonsViewHeightConstraint" destination="gJT-Zb-kKz" id="Wto-vD-aEs"/>
+                <outlet property="contentView" destination="v4x-QF-Rng" id="xLE-Be-dJ5"/>
+                <outlet property="stackHeight" destination="euS-mq-Wul" id="LdZ-oV-RjX"/>
+                <outlet property="stackTopConstraint" destination="qBn-Ob-yaB" id="uKQ-pP-6Ip"/>
+                <outlet property="stackWidth" destination="Zio-lj-zku" id="iX6-LN-a9R"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="dj9-nj-qhi">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="388"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v4x-QF-Rng">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="388"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RyG-PM-dAk">
+                            <rect key="frame" x="187" y="70" width="0.0" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" id="Zio-lj-zku"/>
+                                <constraint firstAttribute="height" constant="50" id="euS-mq-Wul"/>
+                            </constraints>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rl4-wT-Ks1" customClass="AnaVodafoneLabel">
+                            <rect key="frame" x="14.5" y="120" width="345" height="252"/>
+                            <attributedString key="attributedText">
+                                <fragment content="Simple Text">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <font key="NSFont" size="18" name=".AppleSystemUIFont"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="ignoresLanguageAllignment" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="rl4-wT-Ks1" firstAttribute="width" secondItem="v4x-QF-Rng" secondAttribute="width" constant="-30" id="IPV-lO-L5A"/>
+                        <constraint firstItem="rl4-wT-Ks1" firstAttribute="top" secondItem="RyG-PM-dAk" secondAttribute="bottom" id="JiZ-pv-Aze"/>
+                        <constraint firstAttribute="bottom" secondItem="rl4-wT-Ks1" secondAttribute="bottom" constant="16" id="eEW-3c-wZi"/>
+                        <constraint firstItem="RyG-PM-dAk" firstAttribute="centerX" secondItem="v4x-QF-Rng" secondAttribute="centerX" id="ed5-Hh-hYT"/>
+                        <constraint firstItem="rl4-wT-Ks1" firstAttribute="centerX" secondItem="RyG-PM-dAk" secondAttribute="centerX" id="jSL-u1-sFj"/>
+                        <constraint firstItem="RyG-PM-dAk" firstAttribute="top" secondItem="v4x-QF-Rng" secondAttribute="top" constant="70" id="qBn-Ob-yaB"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u2Y-m8-zZl">
+                    <rect key="frame" x="0.0" y="388" width="375" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="gJT-Zb-kKz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="u2Y-m8-zZl" firstAttribute="centerX" secondItem="dj9-nj-qhi" secondAttribute="centerX" id="BTz-Xe-abK"/>
+                <constraint firstItem="v4x-QF-Rng" firstAttribute="centerX" secondItem="dj9-nj-qhi" secondAttribute="centerX" id="TUh-g9-l7S"/>
+                <constraint firstItem="u2Y-m8-zZl" firstAttribute="top" secondItem="v4x-QF-Rng" secondAttribute="bottom" id="WGm-vm-5fD"/>
+                <constraint firstAttribute="bottom" secondItem="u2Y-m8-zZl" secondAttribute="bottom" id="e11-HP-cwz"/>
+                <constraint firstItem="v4x-QF-Rng" firstAttribute="top" secondItem="dj9-nj-qhi" secondAttribute="top" id="e3X-og-Pn0"/>
+                <constraint firstItem="u2Y-m8-zZl" firstAttribute="width" secondItem="dj9-nj-qhi" secondAttribute="width" id="oIn-WM-WqW"/>
+                <constraint firstItem="v4x-QF-Rng" firstAttribute="width" secondItem="dj9-nj-qhi" secondAttribute="width" id="vnQ-FE-Fku"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-610.5" y="-229"/>
+        </view>
+    </objects>
+</document>

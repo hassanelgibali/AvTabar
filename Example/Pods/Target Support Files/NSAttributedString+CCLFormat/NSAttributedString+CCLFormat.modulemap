@@ -1,0 +1,6 @@
+framework module NSAttributedString_CCLFormat {
+  umbrella header "NSAttributedString+CCLFormat-umbrella.h"
+
+  export *
+  module * { export * }
+}

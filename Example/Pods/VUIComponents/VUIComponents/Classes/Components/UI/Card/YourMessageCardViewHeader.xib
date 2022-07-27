@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="VodafoneRgBd.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YourMessageCardViewHeader">
+            <connections>
+                <outlet property="contentView" destination="Azc-Wy-2QE" id="Bgv-9N-hgP"/>
+                <outlet property="monthLabel" destination="q1x-Tg-9G4" id="0NP-RD-2mZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cLk-9C-36q">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="353"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Azc-Wy-2QE">
+                    <rect key="frame" x="0.0" y="0.0" width="339" height="353"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB">
+                            <rect key="frame" x="0.0" y="-0.5" width="339" height="353"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample text" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1x-Tg-9G4" customClass="AnaVodafoneLabel">
+                                    <rect key="frame" x="15" y="15" width="309" height="323"/>
+                                    <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="18"/>
+                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u2B-wX-H2V">
+                                    <rect key="frame" x="0.0" y="352" width="339" height="1"/>
+                                    <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="BuU-z5-PLu"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="q1x-Tg-9G4" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" constant="-30" id="NkD-Gi-NcX"/>
+                                <constraint firstAttribute="bottom" secondItem="u2B-wX-H2V" secondAttribute="bottom" id="fiM-JK-8yg"/>
+                                <constraint firstItem="q1x-Tg-9G4" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" constant="-30" id="gwy-dw-h7N"/>
+                                <constraint firstItem="u2B-wX-H2V" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="ouX-jW-aY3"/>
+                                <constraint firstItem="u2B-wX-H2V" firstAttribute="centerX" secondItem="q1x-Tg-9G4" secondAttribute="centerX" id="rVI-kj-ltn"/>
+                                <constraint firstItem="q1x-Tg-9G4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="u39-BA-Fra"/>
+                                <constraint firstItem="q1x-Tg-9G4" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="yrE-gk-bOp"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="iN0-l3-epB" firstAttribute="width" secondItem="Azc-Wy-2QE" secondAttribute="width" id="3Ly-eh-ggN"/>
+                        <constraint firstItem="iN0-l3-epB" firstAttribute="centerX" secondItem="Azc-Wy-2QE" secondAttribute="centerX" id="Cbg-3l-h7r"/>
+                        <constraint firstItem="iN0-l3-epB" firstAttribute="centerY" secondItem="Azc-Wy-2QE" secondAttribute="centerY" id="e1z-6o-5fW"/>
+                        <constraint firstItem="iN0-l3-epB" firstAttribute="height" secondItem="Azc-Wy-2QE" secondAttribute="height" id="viI-TL-dhw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Azc-Wy-2QE" secondAttribute="bottom" id="Yxm-NJ-NE2"/>
+                <constraint firstItem="Azc-Wy-2QE" firstAttribute="centerX" secondItem="cLk-9C-36q" secondAttribute="centerX" id="bFs-Qa-QBw"/>
+                <constraint firstItem="Azc-Wy-2QE" firstAttribute="top" secondItem="cLk-9C-36q" secondAttribute="top" id="sUf-wN-Dyu"/>
+                <constraint firstItem="Azc-Wy-2QE" firstAttribute="width" secondItem="cLk-9C-36q" secondAttribute="width" id="vJy-oy-R4i"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="34" y="-27"/>
+        </view>
+    </objects>
+</document>

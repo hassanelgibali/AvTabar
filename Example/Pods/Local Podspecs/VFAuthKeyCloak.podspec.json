@@ -1,0 +1,52 @@
+{
+  "name": "VFAuthKeyCloak",
+  "requires_arc": true,
+  "version": "0.0.10",
+  "summary": "VFAuthKeyCloak A CocaPod Library written in swift to share Auth between our Applications",
+  "description": "This CocoaPods library helps us to use keyCloak in AVA and VBA - VFAuthKeyCloak A CocaPod Library written in swift to share Auth between our Applications",
+  "homepage": "https://github.vodafone.com/VFEG-CICD/VFAuthKeyCloak",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "VodafoneEgypt": "khaled.mahmoud-saad@vodafone.com"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "VFAuthKeyCloak/Classes/**/*.{h,m,swift}",
+  "resource_bundles": {
+    "VFAuthKeyCloak": [
+      "VFAuthKeyCloak/**/*.{xcdatamodeld,momd,xcdatamodel}"
+    ]
+  },
+  "frameworks": [
+    "CoreData",
+    "Foundation"
+  ],
+  "source": {
+    "git": "https://github.vodafone.com/VFEG-CICD/VFAuthKeyCloak.git",
+    "tag": "0.0.10"
+  },
+  "dependencies": {
+    "ObjectMapper": [
+
+    ],
+    "RxCocoa": [
+
+    ],
+    "JSONModel": [
+
+    ],
+    "VUIComponents": [
+
+    ],
+    "VFEG-NetworkManager": [
+      "~> 0.3.0"
+    ],
+    "JWTDecode": [
+      "~> 2.4"
+    ]
+  }
+}

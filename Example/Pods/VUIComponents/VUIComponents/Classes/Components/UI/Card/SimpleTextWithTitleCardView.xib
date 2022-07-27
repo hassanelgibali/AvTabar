@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<device id="retina4_7" orientation="portrait">
+<adaptation id="fullscreen"/>
+</device>
+<dependencies>
+<deployment identifier="iOS"/>
+<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+<capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+</dependencies>
+<objects>
+<placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SimpleTextWithTitleCardView">
+<connections>
+<outlet property="buttonsView" destination="FwE-Sh-i3P" id="V9s-XE-9rK"/>
+<outlet property="buttonsViewHeightConstraint" destination="RZb-2F-DG7" id="sDh-eZ-M5p"/>
+<outlet property="contentView" destination="gi8-eY-Kk1" id="KvQ-yE-1kh"/>
+<outlet property="descLabel" destination="2qp-fp-kSd" id="40i-Pf-bbV"/>
+<outlet property="sepratorTopConstraint" destination="tai-wu-us8" id="dIq-dl-kFL"/>
+<outlet property="sepratorView" destination="dot-iQ-6fd" id="Hxz-xr-YEd"/>
+<outlet property="titleLabel" destination="6fF-DZ-NlD" id="0Zp-hp-v4y"/>
+</connections>
+</placeholder>
+<placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+<view contentMode="scaleToFill" id="JwR-rm-6KR">
+<rect key="frame" x="0.0" y="0.0" width="339" height="228"/>
+<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<subviews>
+<view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gi8-eY-Kk1">
+<rect key="frame" x="0.0" y="0.0" width="339" height="228"/>
+<subviews>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB">
+<rect key="frame" x="0.0" y="0.0" width="339" height="228"/>
+<subviews>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ScF-Mz-2LI">
+<rect key="frame" x="15" y="20" width="309" height="276"/>
+<subviews>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fF-DZ-NlD" customClass="AnaVodafoneLabel">
+<rect key="frame" x="0.0" y="0.0" width="309" height="14"/>
+<color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+<constraints>
+<constraint firstAttribute="height" relation="greaterThanOrEqual" id="1cY-DU-0zI"/>
+</constraints>
+<attributedString key="attributedText">
+<fragment content="Sample Text Sample Text">
+<attributes>
+<font key="NSFont" size="12" name="Helvetica"/>
+<paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+</attributes>
+</fragment>
+</attributedString>
+<nil key="highlightedColor"/>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="boolean" keyPath="ignoresLanguageAllignment" value="NO"/>
+</userDefinedRuntimeAttributes>
+</label>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dot-iQ-6fd" userLabel="separator">
+<rect key="frame" x="0.0" y="34" width="309" height="1"/>
+<color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstAttribute="height" constant="1" id="P2B-wD-pma"/>
+</constraints>
+</view>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qp-fp-kSd" customClass="AnaVodafoneLabel">
+<rect key="frame" x="0.0" y="55" width="309" height="221"/>
+<color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+<attributedString key="attributedText">
+<fragment>
+<string key="content">Sample Text Sample Text Sample TextSample TextSample TextSample TextSample TextSample Text Sample Text Sample TextSample Text  Sample Text Sample Text Sample Text Sample Text Sample TextSample TextSample TextSample TextSample TextSample Text Sample Text Sample TextSample Text  Sample Text Sample Text Sample Text Sample Text Sample TextSample TextSample TextSample TextSample TextSample Text Sample Text Sample TextSample Text  Sample Text Sample Text Sample Text Sample Text Sample TextSample TextSample TextSample TextSample TextSample Text Sample Text Sample TextSample Text  Sample Text Sample Text Sample Text Sample Text Sample TextSample TextSample TextSample TextSample TextSample Text Sample Text Sample TextSample Text  Sample Text Sample Text </string>
+<attributes>
+<font key="NSFont" size="12" name="Helvetica"/>
+<paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+</attributes>
+</fragment>
+</attributedString>
+<nil key="highlightedColor"/>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="boolean" keyPath="ignoresLanguageAllignment" value="NO"/>
+<userDefinedRuntimeAttribute type="boolean" keyPath="useRegularFont" value="YES"/>
+</userDefinedRuntimeAttributes>
+</label>
+</subviews>
+<color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+<constraints>
+<constraint firstItem="2qp-fp-kSd" firstAttribute="top" secondItem="dot-iQ-6fd" secondAttribute="bottom" constant="20" id="MWz-36-9LF"/>
+<constraint firstAttribute="bottom" secondItem="2qp-fp-kSd" secondAttribute="bottom" id="Mzd-3f-Zcm"/>
+<constraint firstItem="2qp-fp-kSd" firstAttribute="width" secondItem="6fF-DZ-NlD" secondAttribute="width" id="RGA-e6-ekO"/>
+<constraint firstItem="dot-iQ-6fd" firstAttribute="centerX" secondItem="6fF-DZ-NlD" secondAttribute="centerX" id="RiW-go-6Nf"/>
+<constraint firstItem="2qp-fp-kSd" firstAttribute="centerX" secondItem="6fF-DZ-NlD" secondAttribute="centerX" id="Sc6-sD-yu9"/>
+<constraint firstItem="6fF-DZ-NlD" firstAttribute="centerX" secondItem="ScF-Mz-2LI" secondAttribute="centerX" id="TeR-i9-wvU"/>
+<constraint firstItem="6fF-DZ-NlD" firstAttribute="top" secondItem="ScF-Mz-2LI" secondAttribute="top" id="gBf-tB-QlR"/>
+<constraint firstItem="dot-iQ-6fd" firstAttribute="width" secondItem="6fF-DZ-NlD" secondAttribute="width" id="hif-TD-bX4"/>
+<constraint firstItem="6fF-DZ-NlD" firstAttribute="width" secondItem="ScF-Mz-2LI" secondAttribute="width" id="qbq-dG-5tE"/>
+<constraint firstItem="dot-iQ-6fd" firstAttribute="top" secondItem="6fF-DZ-NlD" secondAttribute="bottom" constant="20" id="tai-wu-us8"/>
+</constraints>
+</view>
+</subviews>
+<color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstItem="ScF-Mz-2LI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="3d5-Z8-cdN"/>
+<constraint firstItem="ScF-Mz-2LI" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" constant="-30" id="Js6-lp-agi"/>
+<constraint firstItem="ScF-Mz-2LI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NWf-Yb-w8h"/>
+</constraints>
+</view>
+</subviews>
+<color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+<constraints>
+<constraint firstItem="iN0-l3-epB" firstAttribute="width" secondItem="gi8-eY-Kk1" secondAttribute="width" id="Aj4-Jn-y5J"/>
+<constraint firstItem="iN0-l3-epB" firstAttribute="centerX" secondItem="gi8-eY-Kk1" secondAttribute="centerX" id="HMO-DV-kFw"/>
+<constraint firstItem="iN0-l3-epB" firstAttribute="top" secondItem="gi8-eY-Kk1" secondAttribute="top" id="a1a-Ki-ccz"/>
+<constraint firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="gaf-FU-mIS"/>
+</constraints>
+</view>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FwE-Sh-i3P">
+<rect key="frame" x="0.0" y="228" width="339" height="0.0"/>
+<color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+<constraints>
+<constraint firstAttribute="height" id="RZb-2F-DG7"/>
+</constraints>
+</view>
+</subviews>
+<color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+<constraints>
+<constraint firstItem="FwE-Sh-i3P" firstAttribute="width" secondItem="JwR-rm-6KR" secondAttribute="width" id="0KS-54-Z0i"/>
+<constraint firstItem="gi8-eY-Kk1" firstAttribute="centerX" secondItem="JwR-rm-6KR" secondAttribute="centerX" id="9Cg-92-rcE"/>
+<constraint firstItem="FwE-Sh-i3P" firstAttribute="centerX" secondItem="JwR-rm-6KR" secondAttribute="centerX" id="Qb5-Rh-0CN"/>
+<constraint firstItem="gi8-eY-Kk1" firstAttribute="top" secondItem="JwR-rm-6KR" secondAttribute="top" id="SAX-Ol-YzQ"/>
+<constraint firstItem="FwE-Sh-i3P" firstAttribute="top" secondItem="gi8-eY-Kk1" secondAttribute="bottom" id="gU9-RX-hNg"/>
+<constraint firstItem="gi8-eY-Kk1" firstAttribute="width" secondItem="JwR-rm-6KR" secondAttribute="width" id="nd0-Jh-x3O"/>
+<constraint firstAttribute="bottom" secondItem="FwE-Sh-i3P" secondAttribute="bottom" id="pt6-nC-g0c"/>
+</constraints>
+<nil key="simulatedStatusBarMetrics"/>
+<nil key="simulatedTopBarMetrics"/>
+<nil key="simulatedBottomBarMetrics"/>
+<freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+<point key="canvasLocation" x="32.799999999999997" y="-83.658170914542737"/>
+</view>
+</objects>
+</document>

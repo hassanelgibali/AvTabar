@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VoiceOfVodafoneNotificationCardView">
+            <connections>
+                <outlet property="buttonsView" destination="3rG-a1-09s" id="EZi-hS-7hL"/>
+                <outlet property="buttonsViewHeightConstraint" destination="b7r-OW-pOz" id="m1w-P9-Ryh"/>
+                <outlet property="containerView" destination="Uc8-AV-tof" id="ABS-Cj-GvM"/>
+                <outlet property="contentView" destination="slv-iY-6fR" id="cwq-sM-Jk0"/>
+                <outlet property="descriptionLabel" destination="JAf-QL-a8S" id="s11-gZ-0xZ"/>
+                <outlet property="titleLabel" destination="B3x-qP-atM" id="UjB-Qa-XEz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qCe-ho-fSD">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="slv-iY-6fR">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uc8-AV-tof">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="999" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3x-qP-atM">
+                                    <rect key="frame" x="35" y="16" width="344" height="76.5"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="You're in a Vodafone 4G area!">
+                                            <attributes>
+                                                <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAf-QL-a8S">
+                                    <rect key="frame" x="35" y="100.5" width="344" height="14.5"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="See just how fast 4G is - take our free speed test now.">
+                                            <attributes>
+                                                <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" metaFont="cellTitle"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="B3x-qP-atM" firstAttribute="top" secondItem="Uc8-AV-tof" secondAttribute="top" constant="16" id="B4C-KD-SGk"/>
+                                <constraint firstAttribute="trailing" secondItem="B3x-qP-atM" secondAttribute="trailing" constant="35" id="Hmv-TA-8GE"/>
+                                <constraint firstItem="JAf-QL-a8S" firstAttribute="leading" secondItem="Uc8-AV-tof" secondAttribute="leading" constant="35" id="L0b-Ao-gcT"/>
+                                <constraint firstItem="B3x-qP-atM" firstAttribute="leading" secondItem="Uc8-AV-tof" secondAttribute="leading" constant="35" id="a3a-dR-Dns"/>
+                                <constraint firstAttribute="trailing" secondItem="JAf-QL-a8S" secondAttribute="trailing" constant="35" id="f4B-Ro-kuf"/>
+                                <constraint firstAttribute="bottom" secondItem="JAf-QL-a8S" secondAttribute="bottom" constant="15" id="fKv-Lt-73W"/>
+                                <constraint firstItem="JAf-QL-a8S" firstAttribute="top" secondItem="B3x-qP-atM" secondAttribute="bottom" constant="8" id="h79-NG-ViC"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Uc8-AV-tof" firstAttribute="centerX" secondItem="slv-iY-6fR" secondAttribute="centerX" id="73D-i4-6nd"/>
+                        <constraint firstItem="Uc8-AV-tof" firstAttribute="centerY" secondItem="slv-iY-6fR" secondAttribute="centerY" id="XKU-R6-aNa"/>
+                        <constraint firstItem="Uc8-AV-tof" firstAttribute="width" secondItem="slv-iY-6fR" secondAttribute="width" id="acX-GZ-ZnB"/>
+                        <constraint firstItem="Uc8-AV-tof" firstAttribute="height" secondItem="slv-iY-6fR" secondAttribute="height" id="fPn-ak-ToP"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3rG-a1-09s">
+                    <rect key="frame" x="0.0" y="130" width="414" height="0.0"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="b7r-OW-pOz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="3rG-a1-09s" secondAttribute="bottom" id="54f-Yo-e2v"/>
+                <constraint firstItem="3rG-a1-09s" firstAttribute="centerX" secondItem="slv-iY-6fR" secondAttribute="centerX" id="7ck-Mh-Wze"/>
+                <constraint firstItem="3rG-a1-09s" firstAttribute="top" secondItem="slv-iY-6fR" secondAttribute="bottom" id="Rwd-Pg-KSi"/>
+                <constraint firstItem="slv-iY-6fR" firstAttribute="top" secondItem="qCe-ho-fSD" secondAttribute="top" id="ZJZ-I3-WZB"/>
+                <constraint firstItem="slv-iY-6fR" firstAttribute="width" secondItem="qCe-ho-fSD" secondAttribute="width" id="ed2-EJ-wpk"/>
+                <constraint firstItem="3rG-a1-09s" firstAttribute="top" secondItem="Uc8-AV-tof" secondAttribute="bottom" constant="0.5" id="i5g-uw-L0q"/>
+                <constraint firstItem="3rG-a1-09s" firstAttribute="width" secondItem="qCe-ho-fSD" secondAttribute="width" id="rSf-xV-xe8"/>
+                <constraint firstItem="slv-iY-6fR" firstAttribute="centerX" secondItem="qCe-ho-fSD" secondAttribute="centerX" id="xR4-iL-tTO"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="26" y="286"/>
+        </view>
+    </objects>
+</document>

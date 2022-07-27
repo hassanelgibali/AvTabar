@@ -1,0 +1,36 @@
+{
+    "fontFamily":"VodafoneRg-Regular",
+    "fontSize": 16,
+    
+    "backgroundColor":"ffffff",
+    "disabledBackgroundColor":"333333",
+    
+    "alpha":1.0,
+    "disabledAlpha":0.0,
+    
+    "correctTextColor":"333333",
+    "inCorrectTextColor":"333333",
+    "selectedTextColor":"333333",
+    "unSelectedTextColor":"666666",
+    "disabledTextColor":"333333",
+    
+    "correctBorderRadius":2.0,
+    "inCorrectBorderRadius":2.0,
+    "selectedBorderRadius":2.0,
+    "unSelectedBorderRadius":2.0,
+    "disabledBorderRadius":2.0,
+    
+    "correctBorderWidth": 2.0,
+    "inCorrectBorderWidth": 2.0,
+    "selectedBorderWidth": 2.0,
+    "unSelectedBorderWidth": 2.0,
+    "disabledBorderWidth":2.0,
+    
+    "correctBorderColor": "ffffff",
+    "inCorrectBorderColor": "ffffff",
+    "selectedBorderColor": "ffffff",
+    "unSelectedBorderColor": "ffffff",
+    "disabledBorderColor":"ffffff"
+    
+}
+

@@ -1,0 +1,76 @@
+//
+//  ItemBarView.swift
+//  TabBar
+//
+//  Created by Vodafone on 28/06/2022.
+//
+
+import UIKit
+import Kingfisher
+import VUIComponents
+import SnapKit
+
+class ItemBarView: UIView {
+    
+    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var itemLabel: AnaVodafoneLabel!
+    @IBOutlet weak var imageView: UIImageView!
+    
+    
+    var actionBlock:ActionBlock?
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        commonInit()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        commonInit()
+    }
+    
+    fileprivate func commonInit() {
+        
+        guard let view = Bundle.main.loadNibNamed("ItemBarView", owner: self, options: nil)?[0] as? UIView else {
+            return
+        }
+        
+        self.addSubview(view)
+        
+        view.snp.makeConstraints { (maker) in
+            maker.edges.equalToSuperview()
+        }
+        self.prepareUi()
+    }
+    
+    func prepareUi() {
+        let gesture:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.didTapActionBtn(_:)))
+        gesture.numberOfTapsRequired = 1
+        containerView?.isUserInteractionEnabled = true
+        containerView?.addGestureRecognizer(gesture)
+    }
+    
+    func setModel(model:String) {
+            self.itemLabel.text = model
+     
+        let url = URL(string:model)
+        imageView.kf.indicatorType = .activity
+        imageView.kf.setImage(with: url,placeholder: UIImage(named:"place_holder_side_menu"), options:[.transition(.fade(1))])
+        self.isAccessibilityElement = true
+        self.accessibilityIdentifier = model
+    }
+    
+    func setTitle(_ title:String ,_ witnImage:String) {
+        self.itemLabel.txt = title
+        self.imageView.image = UIImage(named: witnImage)
+    }
+    func setColorTitle(color:UIColor) {
+        self.itemLabel.textColor = color
+    }
+   
+    @objc fileprivate func didTapActionBtn(_ sender: UIButton) {
+        if actionBlock != nil {
+            self.actionBlock?()
+        }
+    }
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<device id="retina4_7" orientation="portrait">
+<adaptation id="fullscreen"/>
+</device>
+<dependencies>
+<deployment identifier="iOS"/>
+<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+<capability name="Safe area layout guides" minToolsVersion="9.0"/>
+<capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+</dependencies>
+<objects>
+<placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreditCardTableView">
+<connections>
+<outlet property="contentView" destination="v76-zx-RuH" id="mI3-oA-Rlc"/>
+<outlet property="tableView" destination="gFU-rr-A1h" id="MpQ-wg-LYX"/>
+</connections>
+</placeholder>
+<placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+<view contentMode="scaleToFill" id="iN0-l3-epB">
+<rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<subviews>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v76-zx-RuH">
+<rect key="frame" x="0.0" y="10" width="375" height="667"/>
+<subviews>
+<tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gFU-rr-A1h">
+<rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+<color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+</tableView>
+</subviews>
+<color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+<constraints>
+<constraint firstItem="gFU-rr-A1h" firstAttribute="centerY" secondItem="v76-zx-RuH" secondAttribute="centerY" id="KsC-kG-WvM"/>
+<constraint firstItem="gFU-rr-A1h" firstAttribute="centerX" secondItem="v76-zx-RuH" secondAttribute="centerX" id="M6p-zY-S0N"/>
+<constraint firstItem="gFU-rr-A1h" firstAttribute="height" secondItem="v76-zx-RuH" secondAttribute="height" id="bww-Rq-QSb"/>
+<constraint firstItem="gFU-rr-A1h" firstAttribute="width" secondItem="v76-zx-RuH" secondAttribute="width" id="yxy-kE-Lhs"/>
+</constraints>
+</view>
+</subviews>
+<color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstItem="v76-zx-RuH" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="DjZ-O9-wsm"/>
+<constraint firstItem="v76-zx-RuH" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="arJ-IO-p8E"/>
+<constraint firstItem="v76-zx-RuH" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="ipi-HQ-iKi"/>
+<constraint firstItem="v76-zx-RuH" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="tXo-43-Bm0"/>
+</constraints>
+<viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+<point key="canvasLocation" x="-121" y="-136"/>
+</view>
+</objects>
+</document>

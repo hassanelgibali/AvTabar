@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="VFCoreDataModel">
+    <entity name="APIModelsEntity" representedClassName=".APIModelsEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="apiType" optional="YES" attributeType="String"/>
+        <attribute name="jsonString" optional="YES" attributeType="String"/>
+        <attribute name="time" optional="YES" attributeType="String"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="UserInfoEntity" inverseName="apimodel" inverseEntity="UserInfoEntity"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="apiType"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="ElasticEntity" representedClassName=".ElasticEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="encodedData" optional="YES" attributeType="Transformable" valueTransformerName="NSKeyedUnarchiveFromDataTransformerName" customClassName="Data"/>
+        <attribute name="isPayment" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="UserInfoEntity" inverseName="elastic" inverseEntity="UserInfoEntity"/>
+    </entity>
+    <entity name="UserFlagsEntity" representedClassName=".UserFlagsEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="flags" optional="YES" attributeType="String"/>
+        <attribute name="msisdn" optional="YES" attributeType="String"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserInfoEntity" inverseName="flags" inverseEntity="UserInfoEntity"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="msisdn"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="UserInfoEntity" representedClassName=".UserInfoEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="accountNumber" optional="YES" attributeType="String"/>
+        <attribute name="adslFlag" optional="YES" attributeType="String"/>
+        <attribute name="authorities" optional="YES" attributeType="Transformable" valueTransformerName="NSKeyedUnarchiveFromDataTransformerName" customClassName="[String]"/>
+        <attribute name="billAmount" optional="YES" attributeType="String"/>
+        <attribute name="billCycleCode" optional="YES" attributeType="String"/>
+        <attribute name="billCycleDate" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="billingID" optional="YES" attributeType="String"/>
+        <attribute name="billingNumber" optional="YES" attributeType="String"/>
+        <attribute name="color" optional="YES" attributeType="String"/>
+        <attribute name="contractID" optional="YES" attributeType="String"/>
+        <attribute name="contractRole" optional="YES" attributeType="String"/>
+        <attribute name="contractStatus" optional="YES" attributeType="String"/>
+        <attribute name="contractSubType" optional="YES" attributeType="String" customClassName="UserContractSubType"/>
+        <attribute name="contractType" optional="YES" attributeType="String"/>
+        <attribute name="customerID" optional="YES" attributeType="String"/>
+        <attribute name="customerType" optional="YES" attributeType="String" customClassName="UserContractType"/>
+        <attribute name="encryptedMsisdn" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="isAccountOwner" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isCurrentUser" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isEndUser" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isEnterpriseUser" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isLoggedIn" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isLoggedInSeamless" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isLoyalAuthorized" optional="YES" attributeType="String"/>
+        <attribute name="isPaymentResponsibleFlag" optional="YES" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="isSelectedSwitchAccountSub" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isSpocUser" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="key" optional="YES" attributeType="String"/>
+        <attribute name="largeBillingAccount" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="lineType" optional="YES" attributeType="String"/>
+        <attribute name="loginType" optional="YES" attributeType="String"/>
+        <attribute name="msisdn" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="priceGroupCode" optional="YES" attributeType="String"/>
+        <attribute name="priceGroupType" optional="YES" attributeType="String" customClassName="UserPriceGroupType"/>
+        <attribute name="ratePlanCode" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="YES" customClassName="UserRatePlanCode"/>
+        <attribute name="ratePlanType" optional="YES" attributeType="String" customClassName="UserRole"/>
+        <attribute name="segmentValue" optional="YES" attributeType="String"/>
+        <attribute name="serviceClassCode" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="serviceClassName" optional="YES" attributeType="String"/>
+        <attribute name="subAccounts" optional="YES" attributeType="Transformable" valueTransformerName="NSKeyedUnarchiveFromDataTransformerName" customClassName="[String]"/>
+        <attribute name="switchAccountCached" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="switchAccountType" optional="YES" attributeType="String"/>
+        <attribute name="tariffModelName" optional="YES" attributeType="String"/>
+        <attribute name="vbaSwitchAccountIsiSFlatAccount" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="vbuSpocSubAccounts" optional="YES" attributeType="Transformable" valueTransformerName="NSKeyedUnarchiveFromDataTransformerName" customClassName="[String]"/>
+        <relationship name="apimodel" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="APIModelsEntity" inverseName="user" inverseEntity="APIModelsEntity"/>
+        <relationship name="elastic" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="ElasticEntity" inverseName="user" inverseEntity="ElasticEntity"/>
+        <relationship name="flags" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="UserFlagsEntity" inverseName="user" inverseEntity="UserFlagsEntity"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="msisdn"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="APIModelsEntity" positionX="-45" positionY="0" width="128" height="89"/>
+        <element name="ElasticEntity" positionX="-110.621826171875" positionY="182.8503265380859" width="128" height="89"/>
+        <element name="UserFlagsEntity" positionX="362.5373840332031" positionY="52.2171630859375" width="128" height="74"/>
+        <element name="UserInfoEntity" positionX="147.6932373046875" positionY="50.7218017578125" width="128" height="794"/>
+    </elements>
+</model>

@@ -10,8 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var dashboardTabar: DashboardTabBar!
+  //  let tabarView = DashboardTabBar()
     override func viewDidLoad() {
         super.viewDidLoad()
+     //   addTabbarView()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -19,6 +22,14 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
+//    func addTabbarView() {
+//        self.dashboardTabar.addSubview(tabarView)
+//        self.dashboardTabar.layoutIfNeeded()
+//        tabarView.snp.makeConstraints { (make) in
+//            make.edges.equalToSuperview()
+//        }
+//    }
 }
 

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PagerView">
+            <connections>
+                <outlet property="TriangleContainerScrollView" destination="eUc-zW-x0K" id="QMp-w7-k7L"/>
+                <outlet property="collectionPagerView" destination="Sqb-lb-CbK" id="Nye-q9-skx"/>
+                <outlet property="triangleContainerBGViewWidthConstraint" destination="LJc-NQ-gjd" id="exX-F1-JP4"/>
+                <outlet property="triangleContainerView" destination="Dxb-Wl-Er7" id="Fwk-Ts-7Ut"/>
+                <outlet property="triangleContainerViewWidthConstraint" destination="rbm-1D-zMx" id="sx8-Hq-73T"/>
+                <outlet property="triangleView" destination="ERg-MR-cCH" id="C2A-Xk-Ohd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Sqb-lb-CbK">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+                    <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Tib-ed-ZhN">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUc-zW-x0K">
+                    <rect key="frame" x="0.0" y="92" width="375" height="18"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q6e-xw-uvz">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="18"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dxb-Wl-Er7">
+                                    <rect key="frame" x="0.0" y="0.0" width="125" height="18"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ERg-MR-cCH">
+                                            <rect key="frame" x="45" y="0.0" width="36" height="18"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="36" id="wGZ-rf-lgA"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ERg-MR-cCH" firstAttribute="height" secondItem="Dxb-Wl-Er7" secondAttribute="height" id="a2R-St-JQI"/>
+                                        <constraint firstAttribute="width" constant="125" id="rbm-1D-zMx"/>
+                                        <constraint firstItem="ERg-MR-cCH" firstAttribute="centerX" secondItem="Dxb-Wl-Er7" secondAttribute="centerX" id="rjr-5F-Gri"/>
+                                        <constraint firstItem="ERg-MR-cCH" firstAttribute="centerY" secondItem="Dxb-Wl-Er7" secondAttribute="centerY" id="xYF-Tp-172"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Dxb-Wl-Er7" firstAttribute="top" secondItem="q6e-xw-uvz" secondAttribute="top" id="Jv8-Rb-H61"/>
+                                <constraint firstAttribute="width" constant="375" id="LJc-NQ-gjd"/>
+                                <constraint firstItem="Dxb-Wl-Er7" firstAttribute="centerY" secondItem="q6e-xw-uvz" secondAttribute="centerY" id="Q53-OS-ToJ"/>
+                                <constraint firstItem="Dxb-Wl-Er7" firstAttribute="leading" secondItem="q6e-xw-uvz" secondAttribute="leading" id="pOF-hb-lRk"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="GsX-Wm-A26"/>
+                        <constraint firstItem="q6e-xw-uvz" firstAttribute="leading" secondItem="eUc-zW-x0K" secondAttribute="leading" id="Hai-g9-VeP"/>
+                        <constraint firstItem="q6e-xw-uvz" firstAttribute="top" secondItem="eUc-zW-x0K" secondAttribute="top" id="Itd-OQ-3Pf"/>
+                        <constraint firstAttribute="trailing" secondItem="q6e-xw-uvz" secondAttribute="trailing" id="P8y-zC-0CK"/>
+                        <constraint firstAttribute="bottom" secondItem="q6e-xw-uvz" secondAttribute="bottom" id="Shu-f3-d9V"/>
+                        <constraint firstItem="q6e-xw-uvz" firstAttribute="height" secondItem="eUc-zW-x0K" secondAttribute="height" id="lcR-Tm-zu8"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Sqb-lb-CbK" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" constant="-16" id="T3K-Ti-EJg"/>
+                <constraint firstItem="eUc-zW-x0K" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="UvM-9u-jRX"/>
+                <constraint firstAttribute="bottom" secondItem="eUc-zW-x0K" secondAttribute="bottom" id="acl-vL-xy3"/>
+                <constraint firstItem="eUc-zW-x0K" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cxh-Sb-Bls"/>
+                <constraint firstItem="Sqb-lb-CbK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="d5r-nq-JO8"/>
+                <constraint firstItem="Sqb-lb-CbK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fJw-IC-a6X"/>
+                <constraint firstItem="Sqb-lb-CbK" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="hHJ-4I-4hE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-435.5" y="359"/>
+        </view>
+    </objects>
+</document>

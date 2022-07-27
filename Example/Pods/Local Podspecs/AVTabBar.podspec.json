@@ -1,0 +1,22 @@
+{
+  "name": "AVTabBar",
+  "version": "0.1.0",
+  "summary": "A short description of AVTabBar.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/V21HElGebally/AVTabBar",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "V21HElGebally": "hassan.gamalelgebally@vodafone.com"
+  },
+  "source": {
+    "git": "https://github.com/V21HElGebally/AVTabBar.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "AVTabBar/Classes/**/*"
+}

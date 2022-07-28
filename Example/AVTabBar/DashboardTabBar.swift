@@ -17,6 +17,9 @@ protocol DashboardTabbarViewProtocol: AnyObject {
     func didTapTobiFace()
     func didTapItem(withkey key:String , categoryNameEn:String)
 }
+enum DashboardTabbarViewIdentifier: String {
+    case tabBarList = "tabBarLis"
+}
 
 class DashboardTabBar: UIView {
     
@@ -43,7 +46,57 @@ class DashboardTabBar: UIView {
         view.snp.makeConstraints { (maker) in
             maker.edges.equalToSuperview()
         }
+        setUpDefaultTabBar()
        
+    }
+    
+    func setUpDefaultTabBar() {
+        
+        let home = ItemBarView()
+        home.setTitle("Home", "newHomeIcon")
+        home.setColorTitle(color: UIColor.red)
+        home.actionBlock = { [weak self]   in
+            self?.delegate?.didTapLogoBtn()
+        }
+        home.isAccessibilityElement = true
+        home.accessibilityIdentifier = DashboardTabbarViewIdentifier.tabBarList.rawValue + "ـhome"
+
+        let offer = ItemBarView()
+        offer.setTitle("Offers", "homeOffers")
+        offer.actionBlock = {[weak self] in
+            self?.delegate?.didTapOffersBtn()
+        }
+        offer.isAccessibilityElement = true
+        offer.accessibilityIdentifier = DashboardTabbarViewIdentifier.tabBarList.rawValue + "ـhomeOffers"
+
+        let inbox = ItemBarView()
+        inbox.setTitle("Inbox", "inbox")
+        inbox.actionBlock = {[weak self] in
+            self?.delegate?.didTapInboxBtn()
+        }
+        inbox.isAccessibilityElement = true
+        inbox.accessibilityIdentifier = DashboardTabbarViewIdentifier.tabBarList.rawValue + "ـinbox"
+        
+        let more = ItemBarView()
+        more.setTitle("More", "more")
+        more.actionBlock = {[weak self] in
+            self?.delegate?.didTapMenuBtn()
+        }
+        more.isAccessibilityElement = true
+        more.accessibilityIdentifier = DashboardTabbarViewIdentifier.tabBarList.rawValue + "ـmore"
+
+        let profile = CircleItemBarView()
+        profile.isProfile = true
+        profile.buildview()
+        profile.actionBlock = {[weak self] in
+            self?.delegate?.didTapProfileBtn()
+        }
+        profile.isAccessibilityElement = true
+        profile.accessibilityIdentifier = DashboardTabbarViewIdentifier.tabBarList.rawValue + "ـprofile"
+        
+   
+        
+        
     }
     
 

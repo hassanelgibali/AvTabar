@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C83BAB12892BA6700AF9729 /* TabBarBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83BAB02892BA6700AF9729 /* TabBarBuilderProtocol.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		1E97C6B3E4BA6DD64040FB8C /* AVTabBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AVTabBar.podspec; path = ../AVTabBar.podspec; sourceTree = "<group>"; };
 		2750761520B0D50132286DE8 /* Pods_AVTabBar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVTabBar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A87F1779C8EFA037DF34B3A /* Pods-AVTabBar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVTabBar_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AVTabBar_Tests/Pods-AVTabBar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		5C83BAB02892BA6700AF9729 /* TabBarBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarBuilderProtocol.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AVTabBar_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVTabBar_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				F705B6A2288815BC00EAB0A8 /* ItemBarView.xib */,
 				F7E9614B288EBB2900F00504 /* DashboardTabBar.xib */,
 				F7E9614D288EBCBA00F00504 /* DashboardTabBar.swift */,
+				5C83BAB02892BA6700AF9729 /* TabBarBuilderProtocol.swift */,
 			);
 			name = TabBarView;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				F76139DB288EB35400371D70 /* RollingPitTabBar.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				F7FE7F7D28882C19008ACF81 /* CircleItemBarView.swift in Sources */,
+				5C83BAB12892BA6700AF9729 /* TabBarBuilderProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVTabBar
 
 class ViewController: UIViewController {
 
@@ -16,6 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
      //   addTabbarView()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {

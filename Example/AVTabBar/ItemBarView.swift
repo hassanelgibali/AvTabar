@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Kingfisher
 import VUIComponents
 import SnapKit
 
@@ -50,14 +49,12 @@ class ItemBarView: UIView {
         containerView?.addGestureRecognizer(gesture)
     }
     
-    func setModel(model:String) {
-            self.itemLabel.text = model
-     
-        let url = URL(string:model)
-        imageView.kf.indicatorType = .activity
-        imageView.kf.setImage(with: url,placeholder: UIImage(named:"place_holder_side_menu"), options:[.transition(.fade(1))])
+    func setModel(model:ItemBarModel) {
+        self.itemLabel.text = model.categoryNameEn
+        self.imageView.image = model.barItemImage
+          
         self.isAccessibilityElement = true
-        self.accessibilityIdentifier = model
+        self.accessibilityIdentifier = model.actionValue
     }
     
     func setTitle(_ title:String ,_ witnImage:String) {

@@ -17,6 +17,7 @@ protocol DashboardTabbarViewProtocol: AnyObject {
     func didTapTobiFace()
     func didTapItem(withkey key:String , categoryNameEn:String)
 }
+
 enum DashboardTabbarViewIdentifier: String {
     case tabBarList = "tabBarLis"
 }
@@ -93,10 +94,7 @@ class DashboardTabBar: UIView {
         }
         profile.isAccessibilityElement = true
         profile.accessibilityIdentifier = DashboardTabbarViewIdentifier.tabBarList.rawValue + "ـprofile"
-        
-   
-        
-        
+
     }
     
 

@@ -18,6 +18,12 @@
 		C84F183FF848990991AB7709 /* Pods_AVTabBar_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2750761520B0D50132286DE8 /* Pods_AVTabBar_Example.framework */; };
 		F705B6A3288815BC00EAB0A8 /* ItemBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F705B6A1288815BC00EAB0A8 /* ItemBarView.swift */; };
 		F705B6A4288815BC00EAB0A8 /* ItemBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F705B6A2288815BC00EAB0A8 /* ItemBarView.xib */; };
+		F735BF3D2897FBA500DD2092 /* ItemBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735BF3C2897FBA500DD2092 /* ItemBarModel.swift */; };
+		F735BF412899273400DD2092 /* CustomTabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F735BF402899273400DD2092 /* CustomTabBarView.xib */; };
+		F735BF43289927B100DD2092 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735BF42289927B000DD2092 /* CustomTabBarView.swift */; };
+		F735BF4628992A1B00DD2092 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735BF4528992A1B00DD2092 /* UIViewExtension.swift */; };
+		F735BF4828992B6F00DD2092 /* CustomFlatTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F735BF4728992B6F00DD2092 /* CustomFlatTabBar.storyboard */; };
+		F735BF4A28992D9F00DD2092 /* CustomFlatTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735BF4928992D9E00DD2092 /* CustomFlatTabBarController.swift */; };
 		F76139DB288EB35400371D70 /* RollingPitTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76139DA288EB35400371D70 /* RollingPitTabBar.swift */; };
 		F7E9614C288EBB2900F00504 /* DashboardTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7E9614B288EBB2900F00504 /* DashboardTabBar.xib */; };
 		F7E9614E288EBCBA00F00504 /* DashboardTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E9614D288EBCBA00F00504 /* DashboardTabBar.swift */; };
@@ -58,6 +64,12 @@
 		DD474529F4752D9F43F13176 /* Pods-AVTabBar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVTabBar_Example.release.xcconfig"; path = "Target Support Files/Pods-AVTabBar_Example/Pods-AVTabBar_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F705B6A1288815BC00EAB0A8 /* ItemBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemBarView.swift; sourceTree = "<group>"; };
 		F705B6A2288815BC00EAB0A8 /* ItemBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemBarView.xib; sourceTree = "<group>"; };
+		F735BF3C2897FBA500DD2092 /* ItemBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBarModel.swift; sourceTree = "<group>"; };
+		F735BF402899273400DD2092 /* CustomTabBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTabBarView.xib; sourceTree = "<group>"; };
+		F735BF42289927B000DD2092 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
+		F735BF4528992A1B00DD2092 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		F735BF4728992B6F00DD2092 /* CustomFlatTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomFlatTabBar.storyboard; sourceTree = "<group>"; };
+		F735BF4928992D9E00DD2092 /* CustomFlatTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFlatTabBarController.swift; sourceTree = "<group>"; };
 		F76139DA288EB35400371D70 /* RollingPitTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingPitTabBar.swift; sourceTree = "<group>"; };
 		F7E9614B288EBB2900F00504 /* DashboardTabBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardTabBar.xib; sourceTree = "<group>"; };
 		F7E9614D288EBCBA00F00504 /* DashboardTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTabBar.swift; sourceTree = "<group>"; };
@@ -120,7 +132,8 @@
 		607FACD21AFB9204008FA782 /* Example for AVTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				F76139D9288EB32700371D70 /* RollingPitTabBar */,
+				F735BF44289929FE00DD2092 /* Extenstions */,
+				F735BF3F289926FE00DD2092 /* FlatTabBarView */,
 				F705B6A0288815A100EAB0A8 /* TabBarView */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
@@ -171,6 +184,7 @@
 		F705B6A0288815A100EAB0A8 /* TabBarView */ = {
 			isa = PBXGroup;
 			children = (
+				F76139D9288EB32700371D70 /* RollingPitTabBar */,
 				F7FE7F7C28882C17008ACF81 /* CircleItemBarView.swift */,
 				F705B6A1288815BC00EAB0A8 /* ItemBarView.swift */,
 				F7FE7F7E28883D7E008ACF81 /* CircleItemBarView.xib */,
@@ -178,8 +192,28 @@
 				F7E9614B288EBB2900F00504 /* DashboardTabBar.xib */,
 				F7E9614D288EBCBA00F00504 /* DashboardTabBar.swift */,
 				5C83BAB02892BA6700AF9729 /* TabBarBuilderProtocol.swift */,
+				F735BF3C2897FBA500DD2092 /* ItemBarModel.swift */,
 			);
 			name = TabBarView;
+			sourceTree = "<group>";
+		};
+		F735BF3F289926FE00DD2092 /* FlatTabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				F735BF402899273400DD2092 /* CustomTabBarView.xib */,
+				F735BF42289927B000DD2092 /* CustomTabBarView.swift */,
+				F735BF4728992B6F00DD2092 /* CustomFlatTabBar.storyboard */,
+				F735BF4928992D9E00DD2092 /* CustomFlatTabBarController.swift */,
+			);
+			name = FlatTabBarView;
+			sourceTree = "<group>";
+		};
+		F735BF44289929FE00DD2092 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				F735BF4528992A1B00DD2092 /* UIViewExtension.swift */,
+			);
+			name = Extenstions;
 			sourceTree = "<group>";
 		};
 		F76139D9288EB32700371D70 /* RollingPitTabBar */ = {
@@ -288,10 +322,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F735BF4828992B6F00DD2092 /* CustomFlatTabBar.storyboard in Resources */,
 				F7E9614C288EBB2900F00504 /* DashboardTabBar.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				F735BF412899273400DD2092 /* CustomTabBarView.xib in Resources */,
 				F7FE7F7F28883D7E008ACF81 /* CircleItemBarView.xib in Resources */,
 				F705B6A4288815BC00EAB0A8 /* ItemBarView.xib in Resources */,
 			);
@@ -321,7 +357,6 @@
 				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/JWGCircleCounter/JWGCircleCounter.framework",
 				"${BUILT_PRODUCTS_DIR}/JWTDecode/JWTDecode.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MOLH/MOLH.framework",
 				"${BUILT_PRODUCTS_DIR}/NSAttributedString+CCLFormat/NSAttributedString_CCLFormat.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
@@ -347,7 +382,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWGCircleCounter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWTDecode.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MOLH.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSAttributedString_CCLFormat.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
@@ -420,10 +454,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F735BF4A28992D9F00DD2092 /* CustomFlatTabBarController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				F735BF3D2897FBA500DD2092 /* ItemBarModel.swift in Sources */,
 				F705B6A3288815BC00EAB0A8 /* ItemBarView.swift in Sources */,
+				F735BF43289927B100DD2092 /* CustomTabBarView.swift in Sources */,
 				F7E9614E288EBCBA00F00504 /* DashboardTabBar.swift in Sources */,
 				F76139DB288EB35400371D70 /* RollingPitTabBar.swift in Sources */,
+				F735BF4628992A1B00DD2092 /* UIViewExtension.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				F7FE7F7D28882C19008ACF81 /* CircleItemBarView.swift in Sources */,
 				5C83BAB12892BA6700AF9729 /* TabBarBuilderProtocol.swift in Sources */,

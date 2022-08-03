@@ -96,10 +96,7 @@ class DashboardTabBar: UIView {
         }
         profile.isAccessibilityElement = true
         profile.accessibilityIdentifier = DashboardTabbarViewIdentifier.tabBarList.rawValue + "ـprofile"
-        
-   
-        
-        
+
     }
     
     private func setupNewTabBarWithViews() {

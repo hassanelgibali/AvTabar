@@ -15,7 +15,8 @@ class ViewController: UIViewController {
   //  let tabarView = DashboardTabBar()
     override func viewDidLoad() {
         super.viewDidLoad()
-     //   addTabbarView()
+        self.view.backgroundColor = .cyan
+    //    addTabbarView()
         // Do any additional setup after loading the view, typically from a nib.
         
     }

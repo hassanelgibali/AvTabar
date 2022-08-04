@@ -11,8 +11,7 @@ import UIKit
 
 class ItemBarModel{
     
-    var categoryNameEn:String?
-    var categoryNameAr:String?
+    var categoryName:String?
     var actionType:String?
     var actionValue:String?
     var categorized:Bool?
@@ -22,9 +21,8 @@ class ItemBarModel{
     var barItem:Bool?
     var barItemImage:UIImage?
     
-    init(categoryNameEn:String,categoryNameAr:String,actionType:String,actionValue:String,categorized:Bool,popular:Bool,isNew:Bool,isHidden:Bool,barItem:Bool,barItemImage:UIImage) {
-        self.categoryNameEn = categoryNameEn
-        self.categoryNameAr = categoryNameAr
+    init(categoryName:String,actionType:String,actionValue:String,categorized:Bool,popular:Bool,isNew:Bool,isHidden:Bool,barItem:Bool,barItemImage:UIImage) {
+        self.categoryName = categoryName
         self.actionType = actionType
         self.actionValue = actionValue
         self.categorized = categorized

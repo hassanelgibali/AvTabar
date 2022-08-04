@@ -24,7 +24,7 @@ enum DashboardTabbarViewIdentifier: String {
 
 class DashboardTabBar: UIView {
     
-    @IBOutlet private weak var tabBarView: RollingPitTabBar?
+    @IBOutlet private weak var tabBarView: RollingPitTabBar!
     @IBOutlet weak var containerView: UIView!
     
     weak var delegate: DashboardTabbarViewProtocol?
@@ -49,61 +49,14 @@ class DashboardTabBar: UIView {
         view.snp.makeConstraints { (maker) in
             maker.edges.equalToSuperview()
         }
-//        setUpDefaultTabBar()
         self.setupNewTabBarWithViews()
-    }
-    
-    func setUpDefaultTabBar() {
-        
-        let home = ItemBarView()
-        home.setTitle("Home", "newHomeIcon")
-        home.setColorTitle(color: UIColor.red)
-        home.actionBlock = { [weak self]   in
-            self?.delegate?.didTapLogoBtn()
-        }
-        home.isAccessibilityElement = true
-        home.accessibilityIdentifier = DashboardTabbarViewIdentifier.tabBarList.rawValue + "ـhome"
-
-        let offer = ItemBarView()
-        offer.setTitle("Offers", "homeOffers")
-        offer.actionBlock = {[weak self] in
-            self?.delegate?.didTapOffersBtn()
-        }
-        offer.isAccessibilityElement = true
-        offer.accessibilityIdentifier = DashboardTabbarViewIdentifier.tabBarList.rawValue + "ـhomeOffers"
-
-        let inbox = ItemBarView()
-        inbox.setTitle("Inbox", "inbox")
-        inbox.actionBlock = {[weak self] in
-            self?.delegate?.didTapInboxBtn()
-        }
-        inbox.isAccessibilityElement = true
-        inbox.accessibilityIdentifier = DashboardTabbarViewIdentifier.tabBarList.rawValue + "ـinbox"
-        
-        let more = ItemBarView()
-        more.setTitle("More", "more")
-        more.actionBlock = {[weak self] in
-            self?.delegate?.didTapMenuBtn()
-        }
-        more.isAccessibilityElement = true
-        more.accessibilityIdentifier = DashboardTabbarViewIdentifier.tabBarList.rawValue + "ـmore"
-
-        let profile = CircleItemBarView()
-        profile.isProfile = true
-        profile.buildview()
-        profile.actionBlock = {[weak self] in
-            self?.delegate?.didTapProfileBtn()
-        }
-        profile.isAccessibilityElement = true
-        profile.accessibilityIdentifier = DashboardTabbarViewIdentifier.tabBarList.rawValue + "ـprofile"
-
     }
     
     private func setupNewTabBarWithViews() {
         
         let views = generateViews()
         
-        self.buildCardsList(listViews: views, containerView: self.containerView)
+        self.buildCardsList(listViews: views, containerView: self.tabBarView)
     }
     
     func generateViews() -> [UIView] {
@@ -112,6 +65,11 @@ class DashboardTabBar: UIView {
         
         let home = ItemBarView()
         home.setTitle("Home", "newHomeIcon")
+        if #available(iOS 13.0, *) {
+            home.imageView.image = UIImage(systemName: "leaf.fill")
+        } else {
+            // Fallback on earlier versions
+        }
         home.setColorTitle(color: UIColor.red)
         home.actionBlock = { [weak self]   in
             self?.delegate?.didTapLogoBtn()
@@ -144,8 +102,13 @@ class DashboardTabBar: UIView {
         more.accessibilityIdentifier = DashboardTabbarViewIdentifier.tabBarList.rawValue + "ـmore"
         
         let profile = CircleItemBarView()
-        profile.backgroundColor
         profile.isProfile = true
+        if #available(iOS 13.0, *) {
+            profile.avatarImage.image = UIImage(systemName: "profile.fill")
+        } else {
+            // Fallback on earlier versions
+        }
+
         profile.buildview()
         profile.actionBlock = {[weak self] in
             self?.delegate?.didTapProfileBtn()

@@ -11,7 +11,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DashboardTabBar" customModule="AVTabBar_Example" customModuleProvider="target">
             <connections>
-                <outlet property="containerView" destination="WwJ-nF-zGe" id="PBe-3M-zDj"/>
                 <outlet property="tabBarView" destination="KPF-AO-jVc" id="X9U-6Q-pvr"/>
             </connections>
         </placeholder>
@@ -22,22 +21,10 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KPF-AO-jVc" customClass="RollingPitTabBar" customModule="AVTabBar_Example" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="680" height="160"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hhhhhhh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHn-C7-Fw3">
-                            <rect key="frame" x="306.5" y="69.5" width="67" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
                     <accessibility key="accessibilityConfiguration">
                         <bool key="isElement" value="YES"/>
                     </accessibility>
-                    <constraints>
-                        <constraint firstItem="DHn-C7-Fw3" firstAttribute="centerX" secondItem="KPF-AO-jVc" secondAttribute="centerX" id="5gz-6l-AS0"/>
-                        <constraint firstItem="DHn-C7-Fw3" firstAttribute="centerY" secondItem="KPF-AO-jVc" secondAttribute="centerY" id="C9X-pq-9mJ"/>
-                    </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="barBackColor">
                             <color key="value" systemColor="systemBackgroundColor"/>
@@ -49,37 +36,40 @@
                             <real key="value" value="0.0"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="circleBackColor">
-                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="value" systemColor="systemYellowColor"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="marginBottom">
                             <real key="value" value="-28"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WwJ-nF-zGe">
-                    <rect key="frame" x="0.0" y="0.0" width="680" height="160"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="WwJ-nF-zGe" secondAttribute="bottom" id="5Vu-QR-fmm"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WwJ-nF-zGe" secondAttribute="trailing" id="CWd-Rl-IR0"/>
                 <constraint firstAttribute="bottom" secondItem="KPF-AO-jVc" secondAttribute="bottom" id="JNY-TS-xMb"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KPF-AO-jVc" secondAttribute="trailing" id="Vvo-ev-x8e"/>
                 <constraint firstItem="KPF-AO-jVc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ymo-kc-mDf"/>
-                <constraint firstItem="WwJ-nF-zGe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cqU-lA-qYn"/>
-                <constraint firstItem="WwJ-nF-zGe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="rjR-Za-eoE"/>
                 <constraint firstItem="KPF-AO-jVc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="vNN-2y-ESs"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="152.17391304347828" y="99.107142857142847"/>
         </view>
     </objects>
+    <designables>
+        <designable name="KPF-AO-jVc">
+            <size key="intrinsicContentSize" width="-1" height="49"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

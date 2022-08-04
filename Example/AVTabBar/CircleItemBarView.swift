@@ -48,6 +48,15 @@ class CircleItemBarView: UIView {
         containerView?.isUserInteractionEnabled = true
         containerView?.addGestureRecognizer(gesture)
     }
+    
+    func setModel(model:ItemBarModel) {
+                self.avatarImage.image = model.barItemImage
+
+        
+        self.isAccessibilityElement = true
+        self.accessibilityIdentifier = model.actionValue
+
+    }
 
     func buildview() {
         self.buildProfileView()

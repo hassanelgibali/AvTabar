@@ -24,6 +24,10 @@
 		F735BF4628992A1B00DD2092 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735BF4528992A1B00DD2092 /* UIViewExtension.swift */; };
 		F735BF4828992B6F00DD2092 /* CustomFlatTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F735BF4728992B6F00DD2092 /* CustomFlatTabBar.storyboard */; };
 		F735BF4A28992D9F00DD2092 /* CustomFlatTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735BF4928992D9E00DD2092 /* CustomFlatTabBarController.swift */; };
+		F735BF4D28994E7000DD2092 /* CustomFabTabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F735BF4C28994E6F00DD2092 /* CustomFabTabBarView.xib */; };
+		F735BF4F28994F3A00DD2092 /* CustomFabTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735BF4E28994F3A00DD2092 /* CustomFabTabBarView.swift */; };
+		F735BF512899508700DD2092 /* CustomFabTabBarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F735BF502899508700DD2092 /* CustomFabTabBarViewController.storyboard */; };
+		F735BF53289952D800DD2092 /* CustomFabTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735BF52289952D800DD2092 /* CustomFabTabBarViewController.swift */; };
 		F76139DB288EB35400371D70 /* RollingPitTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76139DA288EB35400371D70 /* RollingPitTabBar.swift */; };
 		F7E9614C288EBB2900F00504 /* DashboardTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7E9614B288EBB2900F00504 /* DashboardTabBar.xib */; };
 		F7E9614E288EBCBA00F00504 /* DashboardTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E9614D288EBCBA00F00504 /* DashboardTabBar.swift */; };
@@ -70,6 +74,10 @@
 		F735BF4528992A1B00DD2092 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		F735BF4728992B6F00DD2092 /* CustomFlatTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomFlatTabBar.storyboard; sourceTree = "<group>"; };
 		F735BF4928992D9E00DD2092 /* CustomFlatTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFlatTabBarController.swift; sourceTree = "<group>"; };
+		F735BF4C28994E6F00DD2092 /* CustomFabTabBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomFabTabBarView.xib; sourceTree = "<group>"; };
+		F735BF4E28994F3A00DD2092 /* CustomFabTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFabTabBarView.swift; sourceTree = "<group>"; };
+		F735BF502899508700DD2092 /* CustomFabTabBarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomFabTabBarViewController.storyboard; sourceTree = "<group>"; };
+		F735BF52289952D800DD2092 /* CustomFabTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFabTabBarViewController.swift; sourceTree = "<group>"; };
 		F76139DA288EB35400371D70 /* RollingPitTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingPitTabBar.swift; sourceTree = "<group>"; };
 		F7E9614B288EBB2900F00504 /* DashboardTabBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardTabBar.xib; sourceTree = "<group>"; };
 		F7E9614D288EBCBA00F00504 /* DashboardTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTabBar.swift; sourceTree = "<group>"; };
@@ -132,9 +140,11 @@
 		607FACD21AFB9204008FA782 /* Example for AVTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				F735BF44289929FE00DD2092 /* Extenstions */,
+				F76139D9288EB32700371D70 /* RollingPitTabBar */,
+				F735BF4B289940C800DD2092 /* FabTabBarView */,
 				F735BF3F289926FE00DD2092 /* FlatTabBarView */,
 				F705B6A0288815A100EAB0A8 /* TabBarView */,
+				F735BF44289929FE00DD2092 /* Extenstions */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -184,7 +194,6 @@
 		F705B6A0288815A100EAB0A8 /* TabBarView */ = {
 			isa = PBXGroup;
 			children = (
-				F76139D9288EB32700371D70 /* RollingPitTabBar */,
 				F7FE7F7C28882C17008ACF81 /* CircleItemBarView.swift */,
 				F705B6A1288815BC00EAB0A8 /* ItemBarView.swift */,
 				F7FE7F7E28883D7E008ACF81 /* CircleItemBarView.xib */,
@@ -214,6 +223,17 @@
 				F735BF4528992A1B00DD2092 /* UIViewExtension.swift */,
 			);
 			name = Extenstions;
+			sourceTree = "<group>";
+		};
+		F735BF4B289940C800DD2092 /* FabTabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				F735BF4C28994E6F00DD2092 /* CustomFabTabBarView.xib */,
+				F735BF4E28994F3A00DD2092 /* CustomFabTabBarView.swift */,
+				F735BF502899508700DD2092 /* CustomFabTabBarViewController.storyboard */,
+				F735BF52289952D800DD2092 /* CustomFabTabBarViewController.swift */,
+			);
+			name = FabTabBarView;
 			sourceTree = "<group>";
 		};
 		F76139D9288EB32700371D70 /* RollingPitTabBar */ = {
@@ -325,8 +345,10 @@
 				F735BF4828992B6F00DD2092 /* CustomFlatTabBar.storyboard in Resources */,
 				F7E9614C288EBB2900F00504 /* DashboardTabBar.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				F735BF4D28994E7000DD2092 /* CustomFabTabBarView.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				F735BF512899508700DD2092 /* CustomFabTabBarViewController.storyboard in Resources */,
 				F735BF412899273400DD2092 /* CustomTabBarView.xib in Resources */,
 				F7FE7F7F28883D7E008ACF81 /* CircleItemBarView.xib in Resources */,
 				F705B6A4288815BC00EAB0A8 /* ItemBarView.xib in Resources */,
@@ -455,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F735BF4A28992D9F00DD2092 /* CustomFlatTabBarController.swift in Sources */,
+				F735BF53289952D800DD2092 /* CustomFabTabBarViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				F735BF3D2897FBA500DD2092 /* ItemBarModel.swift in Sources */,
 				F705B6A3288815BC00EAB0A8 /* ItemBarView.swift in Sources */,
@@ -465,6 +488,7 @@
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				F7FE7F7D28882C19008ACF81 /* CircleItemBarView.swift in Sources */,
 				5C83BAB12892BA6700AF9729 /* TabBarBuilderProtocol.swift in Sources */,
+				F735BF4F28994F3A00DD2092 /* CustomFabTabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

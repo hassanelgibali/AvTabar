@@ -1,5 +1,5 @@
 //
-//  CustomTabBarView.swift
+//  CustomFabTabBarView.swift
 //  AVTabBar_Example
 //
 //  Created by Vodafone on 02/08/2022.
@@ -7,19 +7,21 @@
 //
 
 import Foundation
+import Foundation
 import SnapKit
 import VUIComponents
 
 
 
 //MARK: - CUSTOM TAB BAR VIEW
-class CustomTabBarView: UIView {
+class CustomFabTabBarView: UIView {
     
     //MARK: PROPERTIES
-    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var containerView: RollingPitTabBar!
     private let CUSTOM_TAB_BAR_CORNER_RADIUS: CGFloat = 15.0
     private let CUSTOM_TAB_BAR_ICON_SIZE = 34
     private let CUSTOM_TAB_BAR_TITLE_HEIGHT = 16
+    
     
     var shadowLayer: UIView!
     var itemTapped: ((_ tab: Int) -> Void)?
@@ -36,13 +38,13 @@ class CustomTabBarView: UIView {
     }
     
     func commonInit() {
-        guard let viewFromXib = Bundle.main.loadNibNamed("CustomTabBarView", owner: self, options: nil)?[0] as? UIView else { return }
+        guard let viewFromXib = Bundle.main.loadNibNamed("CustomFabTabBarView", owner: self, options: nil)?[0] as? UIView else { return }
         viewFromXib.frame = self.bounds
         addSubview(viewFromXib)
     }
     
     //MARK: - SETUP TAB BAR
-    convenience init(menuItems: [TabItem], frame: CGRect) {
+    convenience init(menuItems: [ItemBarModel], frame: CGRect) {
         self.init(frame: frame)
         setupView()
         
@@ -53,11 +55,22 @@ class CustomTabBarView: UIView {
         stackViewItems.alignment = .fill
         
         //Adding items to stack
-        for i in 0 ..< menuItems.count {
-            let itemView = self.createTabItem(item: menuItems[i], index: i)
-            itemView.clipsToBounds = true
-            itemView.tag = i
-            stackViewItems.addArrangedSubview(itemView)
+        if menuItems.count > 0 {
+            let centerItem = menuItems.count / 2
+            for item in 0 ..< menuItems.count {
+                if item == centerItem {
+                    let circleItem = self.createCircleTabItem(item: menuItems[item], index: item)
+                    circleItem.clipsToBounds = true
+                    circleItem.tag = item
+                    circleItem.isAccessibilityElement = true
+                    stackViewItems.addArrangedSubview(circleItem)
+                }else{
+                    let itemView = self.createTabItem(item: menuItems[item], index: item)
+                    itemView.clipsToBounds = true
+                    itemView.tag = item
+                    stackViewItems.addArrangedSubview(itemView)
+                }
+            }
         }
         
         self.containerView.addSubview(stackViewItems)
@@ -78,18 +91,17 @@ class CustomTabBarView: UIView {
     }
     
     //MARK: - CREATE TAB ITEM VIEW
-    func createTabItem(item: TabItem, index: Int) -> UIView {
+    func createTabItem(item: ItemBarModel, index: Int) -> UIView {
         //Create View to contain icon and text
         let tabBarItem = UIView(frame: CGRect.zero)
         let itemIconView = UIImageView(frame: CGRect.zero)
         let itemTitleLabel = AnaVodafoneLabel(frame: CGRect.zero)
         
+        itemIconView.image = item.barItemImage
         
         
-        
-        itemTitleLabel.text = item.displayTitle
+        itemTitleLabel.text = item.categoryName
         itemTitleLabel.font = UIFont(name: "regularFont", size: 14.0)!
-        itemTitleLabel.textColor = UIColor(hexString: item.titleColor)
         itemTitleLabel.textAlignment = .center
         itemTitleLabel.clipsToBounds = true
         
@@ -110,6 +122,30 @@ class CustomTabBarView: UIView {
             make.leading.trailing.equalToSuperview()
             make.centerX.equalTo(itemIconView.snp.centerX)
         }
+        
+        tabBarItem.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.handleTap)))
+        return tabBarItem
+    }
+    
+    func createCircleTabItem(item: ItemBarModel, index: Int) -> UIView {
+        //Create View to contain icon and text
+        let tabBarItem = UIView(frame: CGRect.zero)
+        let itemIconView = UIImageView(frame: CGRect.zero)
+        
+        itemIconView.image = item.barItemImage
+        
+        tabBarItem.addSubview(itemIconView)
+        tabBarItem.clipsToBounds = true
+        
+        itemIconView.snp.makeConstraints { make in
+            make.height.equalTo(CUSTOM_TAB_BAR_ICON_SIZE)
+            make.width.equalTo(CUSTOM_TAB_BAR_ICON_SIZE)
+            make.top.equalTo(15)
+            make.centerX.equalTo(tabBarItem.snp.centerX)
+        }
+        tabBarItem.layer.cornerRadius = containerView.frame.size.height / 2
+        
+        
         
         tabBarItem.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.handleTap)))
         return tabBarItem

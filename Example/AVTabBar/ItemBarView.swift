@@ -50,8 +50,12 @@ class ItemBarView: UIView {
     }
     
     func setModel(model:ItemBarModel) {
-        self.itemLabel.text = model.categoryNameEn
-        self.imageView.image = model.barItemImage
+        self.itemLabel.text = model.categoryName
+        if #available(iOS 13.0, *) {
+            self.imageView.image = UIImage(systemName: "leaf.fill")
+        } else {
+            // Fallback on earlier versions
+        }
           
         self.isAccessibilityElement = true
         self.accessibilityIdentifier = model.actionValue

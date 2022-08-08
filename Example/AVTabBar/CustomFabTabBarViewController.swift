@@ -25,26 +25,12 @@ protocol FabTabbarViewProtocol: AnyObject {
     var mainVc = UIViewController()
 
     
-    //MARK:- VIEW DID LOAD
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: animated)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: animated)
-    }
     
     //MARK:- LOAD TAB
      func loadTabBar() {
         setupCustomTabBar()
         self.viewControllers = [mainVc]
-        self.selectedIndex = 0
+   //     self.selectedIndex = 0
     }
     
     //MARK:- SETUP TAB VIEW

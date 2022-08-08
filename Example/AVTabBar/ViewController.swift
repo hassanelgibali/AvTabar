@@ -12,6 +12,9 @@ import AVTabBar
 class ViewController: CustomFabTabBarController {
 
   //  let tabarView = DashboardTabBar()
+    var homeVc : UIViewController?
+    var secondVc : UIViewController?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         if #available(iOS 13.0, *) {
@@ -23,7 +26,10 @@ class ViewController: CustomFabTabBarController {
         } else {
             // Fallback on earlier versions
         }
-        mainVc = (storyboard?.instantiateViewController(withIdentifier: "Home"))!
+        homeVc  = (storyboard?.instantiateViewController(withIdentifier: "Home"))!
+        secondVc = (storyboard?.instantiateViewController(withIdentifier: "Second"))!
+        mainVc = homeVc!
+        self.viewControllers = [homeVc!,secondVc!]
         self.loadTabBar()
         self.tabBarController?.selectedIndex = 0
     //    addTabbarView()
@@ -45,6 +51,14 @@ class ViewController: CustomFabTabBarController {
 
 extension ViewController : FabTabbarViewProtocol {
     func didTapItem(tab: Int) {
+        if tab == 1 {
+            mainVc = secondVc!
+        }
+        else {
+            mainVc = homeVc!
+
+        }
         print(tab)
+        self.loadTabBar()
     }
 }

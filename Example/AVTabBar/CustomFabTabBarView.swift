@@ -161,6 +161,7 @@ class CustomFabTabBarView: UIView {
                         circleItem.isAccessibilityElement = true
         
         
+        
         return circleItem
     }
     

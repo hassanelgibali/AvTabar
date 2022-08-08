@@ -22,10 +22,10 @@
             </objects>
             <point key="canvasLocation" x="-489" y="80"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController storyboardIdentifier="Home" id="vXZ-lx-hvc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" id="vXZ-lx-hvc" customClass="HomeViewController" customModule="AVTabBar_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -40,6 +40,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shx-Fq-FaL">
+                                <rect key="frame" x="147" y="463" width="59" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Done"/>
+                                <connections>
+                                    <action selector="donePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eiK-Wc-6nR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
@@ -52,13 +61,51 @@
             </objects>
             <point key="canvasLocation" x="679" y="88"/>
         </scene>
+        <!--Second View Controller-->
+        <scene sceneID="Wvq-aq-P1t">
+            <objects>
+                <viewController storyboardIdentifier="Second" id="OhT-4R-poD" customClass="SecondViewController" customModule="AVTabBar_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G72-px-Si6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fqi-UH-jIz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yuf-rG-ecW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SecondView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gk4-pf-VXt">
+                                <rect key="frame" x="140" y="323" width="95" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGp-aR-ENA">
+                                <rect key="frame" x="215" y="444" width="59" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Done"/>
+                                <connections>
+                                    <action selector="donePressed:" destination="OhT-4R-poD" eventType="touchUpInside" id="iqQ-TG-mJd"/>
+                                    <action selector="donePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xHt-pD-3r5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="gk4-pf-VXt" firstAttribute="centerY" secondItem="yuf-rG-ecW" secondAttribute="centerY" id="3xs-Og-hD2"/>
+                            <constraint firstItem="gk4-pf-VXt" firstAttribute="centerX" secondItem="yuf-rG-ecW" secondAttribute="centerX" id="DRa-yY-xeZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Qm-Nd-hER" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1410" y="126"/>
+        </scene>
     </scenes>
-    <designables>
-        <designable name="555-EI-xt3">
-            <size key="intrinsicContentSize" width="-1" height="49"/>
-        </designable>
-    </designables>
     <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

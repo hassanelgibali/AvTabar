@@ -9,22 +9,29 @@
 import UIKit
 import AVTabBar
 
-class ViewController: UIViewController {
+class ViewController: CustomFabTabBarController {
 
-    @IBOutlet weak var dashboardTabar: DashboardTabBar!
   //  let tabarView = DashboardTabBar()
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .cyan
+        if #available(iOS 13.0, *) {
+            tabItems.append(ItemBarModel(categoryName: "home", actionType: "", actionValue: "", categorized: true, popular: false, isNew: false, isHidden: false, barItem: true, barItemImage: UIImage(systemName: "leaf.fill")!))
+            tabItems.append(ItemBarModel(categoryName: "chat with us", actionType: "", actionValue: "", categorized: true, popular: false, isNew: false, isHidden: false, barItem: true, barItemImage: UIImage(systemName: "leaf.fill")!))
+            tabItems.append(ItemBarModel(categoryName: "profile", actionType: "", actionValue: "", categorized: true, popular: false, isNew: false, isHidden: false, barItem: true, barItemImage: UIImage(systemName: "leaf.fill")!))
+            tabItems.append(ItemBarModel(categoryName: "Setting", actionType: "", actionValue: "", categorized: true, popular: false, isNew: false, isHidden: false, barItem: true, barItemImage: UIImage(systemName: "leaf.fill")!))
+            tabItems.append(ItemBarModel(categoryName: "more", actionType: "", actionValue: "", categorized: true, popular: false, isNew: false, isHidden: false, barItem: true, barItemImage: UIImage(systemName: "leaf.fill")!))
+        } else {
+            // Fallback on earlier versions
+        }
+        mainVc = (storyboard?.instantiateViewController(withIdentifier: "Home"))!
+        self.loadTabBar()
+        self.tabBarController?.selectedIndex = 0
     //    addTabbarView()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        self.customTabBarDelegate = self
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
     
     
 //    func addTabbarView() {
@@ -36,3 +43,8 @@ class ViewController: UIViewController {
 //    }
 }
 
+extension ViewController : FabTabbarViewProtocol {
+    func didTapItem(tab: Int) {
+        print(tab)
+    }
+}

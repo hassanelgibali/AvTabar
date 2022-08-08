@@ -8,9 +8,6 @@ PODS:
   - JSONModel (1.8.0)
   - JWGCircleCounter (0.2.2)
   - JWTDecode (2.6.3)
-  - Kingfisher (5.15.8):
-    - Kingfisher/Core (= 5.15.8)
-  - Kingfisher/Core (5.15.8)
   - MOLH (1.4.3)
   - "NSAttributedString+CCLFormat (1.2.0)"
   - ObjectMapper (4.2.0)
@@ -60,14 +57,10 @@ PODS:
 
 DEPENDENCIES:
   - AVTabBar (from `../`)
-  - Kingfisher (~> 5.15.8)
   - SnapKit
-  - "VFAuthKeyCloak (from `https://Fadwa-Zaghlol@github.vodafone.com/VFEG-CICD/VFAuthKeyCloak.git`)"
+  - VFAuthKeyCloak (from `https://github.vodafone.com/VFEG-CICD/VFAuthKeyCloak.git`)
 
 SPEC REPOS:
-  "https://Fadwa-Zaghlol@github.vodafone.com/VFEG-CICD/AnaVodafonePodSpecs.git":
-    - VFEG-NetworkManager
-    - VUIComponents
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - GSKStretchyHeaderView
@@ -87,19 +80,20 @@ SPEC REPOS:
     - TrustKit
     - "UIColor+Hex"
     - WYPopoverController
-  trunk:
-    - Kingfisher
+  https://github.vodafone.com/VFEG-CICD/AnaVodafonePodSpecs.git:
+    - VFEG-NetworkManager
+    - VUIComponents
 
 EXTERNAL SOURCES:
   AVTabBar:
     :path: "../"
   VFAuthKeyCloak:
-    :git: "https://Fadwa-Zaghlol@github.vodafone.com/VFEG-CICD/VFAuthKeyCloak.git"
+    :git: https://github.vodafone.com/VFEG-CICD/VFAuthKeyCloak.git
 
 CHECKOUT OPTIONS:
   VFAuthKeyCloak:
     :commit: de70143765052f6bb1a9c807e5b1823bb4e4f3d4
-    :git: "https://Fadwa-Zaghlol@github.vodafone.com/VFEG-CICD/VFAuthKeyCloak.git"
+    :git: https://github.vodafone.com/VFEG-CICD/VFAuthKeyCloak.git
 
 SPEC CHECKSUMS:
   Alamofire: 2c792affbdc2f18016e08fdbcacd60aebe1ba593
@@ -109,7 +103,6 @@ SPEC CHECKSUMS:
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
   JWGCircleCounter: 89e25c3d5e9eb41cf666a795427712bb5e52a1a1
   JWTDecode: 33e5e26e5ddbd21b2065820894c08fef0cad9509
-  Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
   MOLH: e45827d200aeb1310641090fd8cd03ad2b42ae72
   "NSAttributedString+CCLFormat": 46d1e36b72b7ab0e093323705188818b21ba9763
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
@@ -126,6 +119,6 @@ SPEC CHECKSUMS:
   VUIComponents: 28539b4d7aef6bbbcea9f43f43405d4a71465b90
   WYPopoverController: a9db25ac2841a686acdc0f3a99bdb21545db32f4
 
-PODFILE CHECKSUM: 496127a680cfcda3d8d2468b91a1a93b734633ea
+PODFILE CHECKSUM: 31e099d7fde1df9f9aee5b21a3969adbf1768b68
 
 COCOAPODS: 1.11.3

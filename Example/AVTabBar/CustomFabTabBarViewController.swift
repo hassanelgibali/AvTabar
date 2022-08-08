@@ -14,7 +14,7 @@ protocol FabTabbarViewProtocol: AnyObject {
 }
 
 
-class CustomFabTabBarController: UITabBarController {
+ class CustomFabTabBarController: UITabBarController {
     
     //MARK: PROPERTIES
     let CUSTOM_TAB_BAR_HEIGHT: CGFloat = 90.0
@@ -28,7 +28,6 @@ class CustomFabTabBarController: UITabBarController {
     //MARK:- VIEW DID LOAD
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.loadTabBar()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,7 +41,7 @@ class CustomFabTabBarController: UITabBarController {
     }
     
     //MARK:- LOAD TAB
-    private func loadTabBar() {
+     func loadTabBar() {
         setupCustomTabBar()
         self.viewControllers = [mainVc]
         self.selectedIndex = 0

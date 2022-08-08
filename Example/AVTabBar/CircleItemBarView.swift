@@ -17,7 +17,7 @@ class CircleItemBarView: UIView {
     @IBOutlet weak var avatarImage: UIImageView!
     
     var isProfile:Bool = false
-    var actionBlock : ActionBlock?
+  //  var actionBlock : ActionBlock?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -40,19 +40,17 @@ class CircleItemBarView: UIView {
         view.snp.makeConstraints { (maker) in
             maker.edges.equalToSuperview()
         }
-        self.prepareUi()
+   //     self.prepareUi()
     }
-    func prepareUi() {
-        let gesture:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.didTapActionBtn(_:)))
-        gesture.numberOfTapsRequired = 1
-        containerView?.isUserInteractionEnabled = true
-        containerView?.addGestureRecognizer(gesture)
-    }
+//    func prepareUi() {
+//        let gesture:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.didTapActionBtn(_:)))
+//        gesture.numberOfTapsRequired = 1
+//        containerView?.isUserInteractionEnabled = true
+//        containerView?.addGestureRecognizer(gesture)
+//    }
     
     func setModel(model:ItemBarModel) {
-                self.avatarImage.image = model.barItemImage
-
-        
+        self.avatarImage.image = model.barItemImage
         self.isAccessibilityElement = true
         self.accessibilityIdentifier = model.actionValue
 
@@ -67,9 +65,9 @@ class CircleItemBarView: UIView {
         containerView.layer.cornerRadius = containerView.frame.size.height / 2
     }
     
-    @objc fileprivate func didTapActionBtn(_ sender: UIButton) {
-        if actionBlock != nil {
-            self.actionBlock?()
-        }
-    }
+//    @objc fileprivate func didTapActionBtn(_ sender: UIButton) {
+//        if actionBlock != nil {
+//            self.actionBlock?()
+//        }
+//    }
 }

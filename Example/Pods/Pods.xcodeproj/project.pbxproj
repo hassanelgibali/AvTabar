@@ -1495,7 +1495,7 @@
 		00529708C43098A4DBB72F8667145D98 /* GSKStretchyHeaderView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GSKStretchyHeaderView-prefix.pch"; sourceTree = "<group>"; };
 		0063BC50045AD885277D6225C2F54082 /* AnaVodafoneTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AnaVodafoneTextField.m; path = VUIComponents/Classes/Components/AnaVodafoneTextField.m; sourceTree = "<group>"; };
 		007D36960480BD57D47BD54941BD8946 /* LocalizableButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LocalizableButton.m; path = VUIComponents/Classes/Components/LocalizablaFields/LocalizableButton.m; sourceTree = "<group>"; };
-		00CAF461DF47197DA5797E1EB912EC91 /* DisabledButtonStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = DisabledButtonStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/DisabledButtonStyle.json; sourceTree = "<group>"; };
+		00CAF461DF47197DA5797E1EB912EC91 /* DisabledButtonStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; name = DisabledButtonStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/DisabledButtonStyle.json; sourceTree = "<group>"; };
 		00E892F496746E664D361F822B482E14 /* UIColor+Hex-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex-umbrella.h"; sourceTree = "<group>"; };
 		015F4DE37510769BA8536FB283CFFDBE /* StretchHeaderView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = StretchHeaderView.xib; path = VUIComponents/Classes/Components/ExtandableHeader/StretchHeaderCardView/StretchHeaderView.xib; sourceTree = "<group>"; };
 		016E8C7318E782D242F55EFDD2D15FC7 /* RadioButtonHeaderCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RadioButtonHeaderCardView.h; path = VUIComponents/Classes/Components/TableCardView/HeaderView/RadioButtonHeaderCardView.h; sourceTree = "<group>"; };
@@ -1506,7 +1506,7 @@
 		02674BECC1090234E4554839177F4E90 /* UIApplication+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+Rx.swift"; path = "RxCocoa/iOS/UIApplication+Rx.swift"; sourceTree = "<group>"; };
 		02F648F168FE99D51A09A41EAEF79F97 /* Optional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Optional.swift; path = RxSwift/Observables/Optional.swift; sourceTree = "<group>"; };
 		037002D49E42B4ED221B8966E58E65E3 /* SpinningView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpinningView.h; path = VUIComponents/Classes/Components/Card/Subclass/LoadingCardView/SpinningView/SpinningView.h; sourceTree = "<group>"; };
-		038B30757018C365E32FFC326F825B70 /* HeroButtonQuadrtlyStyleWithoutBorder.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = HeroButtonQuadrtlyStyleWithoutBorder.json; path = VUIComponents/Classes/Components/CustomBtn/resource/HeroButtonQuadrtlyStyleWithoutBorder.json; sourceTree = "<group>"; };
+		038B30757018C365E32FFC326F825B70 /* HeroButtonQuadrtlyStyleWithoutBorder.json */ = {isa = PBXFileReference; includeInIndex = 1; name = HeroButtonQuadrtlyStyleWithoutBorder.json; path = VUIComponents/Classes/Components/CustomBtn/resource/HeroButtonQuadrtlyStyleWithoutBorder.json; sourceTree = "<group>"; };
 		038FF055735AEAB14910244DCD4D7CC4 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionView.m; path = VUIComponents/Classes/Components/ThirdParty/FSCalendar/FSCalendar/FSCalendarCollectionView.m; sourceTree = "<group>"; };
 		03AB5DFB149BB9DE325A456597AA6162 /* UIBarButtonItem+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIBarButtonItem+Rx.swift"; path = "RxCocoa/iOS/UIBarButtonItem+Rx.swift"; sourceTree = "<group>"; };
 		03B7BAD540352D622B8C861E96E1BD7B /* Platform.Darwin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Platform.Darwin.swift; path = Platform/Platform.Darwin.swift; sourceTree = "<group>"; };
@@ -1522,7 +1522,7 @@
 		0533EFF2DEA57E0B1AA8F53C9182A1A2 /* ApiRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApiRouter.swift; path = "VFEG-NetworkManager/Classes/ApiRouter.swift"; sourceTree = "<group>"; };
 		05B6981C789D66BA13FCA533BDA97FDB /* RxAlamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RxAlamofire-Info.plist"; sourceTree = "<group>"; };
 		063F23CCF2C10C00BF9F2CBD6B221E95 /* BaseCardwithHorizontalButtons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BaseCardwithHorizontalButtons.m; path = VUIComponents/Classes/Components/Card/Base/BaseCardwithHorizontalButtons.m; sourceTree = "<group>"; };
-		0647E4A64D0350A1576534F6D3D4CB85 /* PageNudgeButtonSecondaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = PageNudgeButtonSecondaryStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/PageNudgeButtonSecondaryStyle.json; sourceTree = "<group>"; };
+		0647E4A64D0350A1576534F6D3D4CB85 /* PageNudgeButtonSecondaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; name = PageNudgeButtonSecondaryStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/PageNudgeButtonSecondaryStyle.json; sourceTree = "<group>"; };
 		067CE1063624AEC99658AD13822A0953 /* NSImageView+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSImageView+Rx.swift"; path = "RxCocoa/macOS/NSImageView+Rx.swift"; sourceTree = "<group>"; };
 		06A1954B0047CBDB11BEF43D6AB50EB2 /* ConstraintDirectionalInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsetTarget.swift; path = Sources/ConstraintDirectionalInsetTarget.swift; sourceTree = "<group>"; };
 		06A2AC24D6AAD60DF4F41876E2BAFB92 /* NSTextView+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTextView+Rx.swift"; path = "RxCocoa/macOS/NSTextView+Rx.swift"; sourceTree = "<group>"; };
@@ -1532,13 +1532,13 @@
 		070D2F771EE7FF4593EAC59A35561577 /* InfiniteSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InfiniteSequence.swift; path = Platform/DataStructures/InfiniteSequence.swift; sourceTree = "<group>"; };
 		07164C4C75CF11744351613D0983F11A /* AsSingle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsSingle.swift; path = RxSwift/Observables/AsSingle.swift; sourceTree = "<group>"; };
 		078394C05414B9FE6ECE125DF74A0F1E /* ToJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToJSON.swift; path = Sources/ToJSON.swift; sourceTree = "<group>"; };
-		07D2C31125574FB4B57B0B4A15204155 /* GlamourAnimation.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = GlamourAnimation.html; path = VUIComponents/Classes/Components/Resources/GlamourAnimations/GlamourAnimation.html; sourceTree = "<group>"; };
+		07D2C31125574FB4B57B0B4A15204155 /* GlamourAnimation.html */ = {isa = PBXFileReference; includeInIndex = 1; name = GlamourAnimation.html; path = VUIComponents/Classes/Components/Resources/GlamourAnimations/GlamourAnimation.html; sourceTree = "<group>"; };
 		087B09FFC916A8E1F0F988131151BCE2 /* _RX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _RX.h; path = RxCocoa/Runtime/include/_RX.h; sourceTree = "<group>"; };
 		088471767BC16CFFB7F1848BE376E6DB /* VFCashCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VFCashCardView.m; path = VUIComponents/Classes/Components/Card/Subclass/VFCashCardView/VFCashCardView.m; sourceTree = "<group>"; };
 		08D6584A6D838F79ABA9E44AAEE4F00B /* JSONModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModel.h; path = JSONModel/JSONModel/JSONModel.h; sourceTree = "<group>"; };
 		08E6F330EC7D63CA772B65AFA4C8C40A /* CalendarCardView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CalendarCardView.xib; path = VUIComponents/Classes/Components/UI/Card/CalendarCardView.xib; sourceTree = "<group>"; };
 		08EF2C99EDB587C48921FDFF87775897 /* TableViewFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TableViewFooter.h; path = VUIComponents/Classes/Components/ButtomSheetView/bottomSheetCell/TableViewFooter.h; sourceTree = "<group>"; };
-		08FB9C549DD939C1CD6C87AF3766ECC9 /* TransparentBGButtonWithRedBorderAndTxtColor.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = TransparentBGButtonWithRedBorderAndTxtColor.json; path = VUIComponents/Classes/Components/CustomBtn/resource/TransparentBGButtonWithRedBorderAndTxtColor.json; sourceTree = "<group>"; };
+		08FB9C549DD939C1CD6C87AF3766ECC9 /* TransparentBGButtonWithRedBorderAndTxtColor.json */ = {isa = PBXFileReference; includeInIndex = 1; name = TransparentBGButtonWithRedBorderAndTxtColor.json; path = VUIComponents/Classes/Components/CustomBtn/resource/TransparentBGButtonWithRedBorderAndTxtColor.json; sourceTree = "<group>"; };
 		0931B2F908D818BAB669793490ED42C1 /* SimpleTextCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SimpleTextCardView.h; path = VUIComponents/Classes/Components/Card/Subclass/SimpleTextCardView.h; sourceTree = "<group>"; };
 		096C89CAB7C7CC8BE9469986077C04FE /* Sample.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sample.swift; path = RxSwift/Observables/Sample.swift; sourceTree = "<group>"; };
 		096E3CE9450BE2A1203D2E273A69D56B /* TSKNSURLSessionDelegateProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKNSURLSessionDelegateProxy.h; path = TrustKit/Swizzling/TSKNSURLSessionDelegateProxy.h; sourceTree = "<group>"; };
@@ -1546,7 +1546,7 @@
 		0A111F9B62C9BA9747F26F3597D31052 /* PointsDetailsCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PointsDetailsCardView.m; path = VUIComponents/Classes/Components/Card/Subclass/PointsDetailsCardView.m; sourceTree = "<group>"; };
 		0A4435338DF1E5B08F8D375B79D6C8F7 /* RxCocoa-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RxCocoa-prefix.pch"; sourceTree = "<group>"; };
 		0A49D605F8B9D17A06FE6D5D0E6B6AC3 /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarStickyHeader.h; path = VUIComponents/Classes/Components/ThirdParty/FSCalendar/FSCalendar/FSCalendarStickyHeader.h; sourceTree = "<group>"; };
-		0AE1586E2954170DA806133C4E46334C /* HeroButtonTertiaryStyleWithoutBorder.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = HeroButtonTertiaryStyleWithoutBorder.json; path = VUIComponents/Classes/Components/CustomBtn/resource/HeroButtonTertiaryStyleWithoutBorder.json; sourceTree = "<group>"; };
+		0AE1586E2954170DA806133C4E46334C /* HeroButtonTertiaryStyleWithoutBorder.json */ = {isa = PBXFileReference; includeInIndex = 1; name = HeroButtonTertiaryStyleWithoutBorder.json; path = VUIComponents/Classes/Components/CustomBtn/resource/HeroButtonTertiaryStyleWithoutBorder.json; sourceTree = "<group>"; };
 		0B00DBC91ABA2BF7B385E3F456931396 /* ObservableConvertibleType+Driver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ObservableConvertibleType+Driver.swift"; path = "RxCocoa/Traits/Driver/ObservableConvertibleType+Driver.swift"; sourceTree = "<group>"; };
 		0B40ADB426FC5BC0D6DEC51AD0CFA5E7 /* Timer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timer.swift; path = RxSwift/Observables/Timer.swift; sourceTree = "<group>"; };
 		0B69A9C220E34D1B5202A8FA7D9D271A /* AsyncLock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncLock.swift; path = RxSwift/Concurrency/AsyncLock.swift; sourceTree = "<group>"; };
@@ -1568,7 +1568,7 @@
 		0E2EF8AA03A5E2788E2F3EABA16690BC /* Pods-AVTabBar_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AVTabBar_Example-umbrella.h"; sourceTree = "<group>"; };
 		0E3F6240FBB2EEEC8C51612C53E89793 /* PaymentInfoCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PaymentInfoCardView.m; path = VUIComponents/Classes/Components/Card/Subclass/PaymentInfoCardView/PaymentInfoCardView.m; sourceTree = "<group>"; };
 		0E48A52F471E87EB8D099DBC83A70915 /* KeyCloakAVAAnalytics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyCloakAVAAnalytics.swift; path = VFAuthKeyCloak/Classes/KeyCloak/Analytics/KeyCloakAVAAnalytics.swift; sourceTree = "<group>"; };
-		0E67BD631D676425D10F26F24605BB80 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0E67BD631D676425D10F26F24605BB80 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		0E93FEEE13ACF81E9A6F8B7D59970BAC /* TableViewFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TableViewFooter.m; path = VUIComponents/Classes/Components/ButtomSheetView/bottomSheetCell/TableViewFooter.m; sourceTree = "<group>"; };
 		0EB561256EFC4B873046849741607812 /* VoiceOfVodafoneWelcomeCardView_RTL.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = VoiceOfVodafoneWelcomeCardView_RTL.xib; path = VUIComponents/Classes/Components/Card/Subclass/Home/VoiceOfVodafoneWelcomeCardView_RTL.xib; sourceTree = "<group>"; };
 		0EF688EAEF55D663295A24C9175F840A /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
@@ -1576,7 +1576,7 @@
 		0EFE2DD50AF46F9501B185B693B5D885 /* CoreDataStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreDataStorage.swift; path = VFAuthKeyCloak/Classes/DataBase/Manager/CoreDataStorage.swift; sourceTree = "<group>"; };
 		0F19F7632D9FD45FB2CFA25F309F869E /* PaymentDetailsSignPostCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PaymentDetailsSignPostCardView.m; path = VUIComponents/Classes/Components/TableCardView/CellCardView/PaymentDetailsSignPostCardView.m; sourceTree = "<group>"; };
 		0F3DEEE5C17C4178928E8A1F5B31F437 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Sources/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
-		0F6500F80E24F116B11CD752CA7F5AFE /* FormFieldOnOverlaysStyle3.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = FormFieldOnOverlaysStyle3.json; path = VUIComponents/Classes/Components/FormFields/resource/FormFieldOnOverlaysStyle3.json; sourceTree = "<group>"; };
+		0F6500F80E24F116B11CD752CA7F5AFE /* FormFieldOnOverlaysStyle3.json */ = {isa = PBXFileReference; includeInIndex = 1; name = FormFieldOnOverlaysStyle3.json; path = VUIComponents/Classes/Components/FormFields/resource/FormFieldOnOverlaysStyle3.json; sourceTree = "<group>"; };
 		0F9CB7C0889E8AD64E6310191E84346D /* TableCardView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = TableCardView.xib; path = VUIComponents/Classes/Components/TableCardView/TableCardView.xib; sourceTree = "<group>"; };
 		100DAA4A477B5D9A2EF3DEA3013D42B7 /* ConfirmationAlertCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ConfirmationAlertCardView.h; path = VUIComponents/Classes/Components/Card/Subclass/ConfirmationAlertCardView.h; sourceTree = "<group>"; };
 		10846CB84F4ACD54D8DF97BB0E9FB9A7 /* JWTDecode-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JWTDecode-dummy.m"; sourceTree = "<group>"; };
@@ -1589,7 +1589,7 @@
 		12163CA8837A0A98F903B3589A15A6D0 /* RSKImageCropViewController+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RSKImageCropViewController+Protected.h"; path = "RSKImageCropper/RSKImageCropViewController+Protected.h"; sourceTree = "<group>"; };
 		121E29B2F02C0A5B952A91E3A1F50391 /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = RxSwift/Observables/Map.swift; sourceTree = "<group>"; };
 		1249EFDB03E7AF9C1780226DE0289384 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
-		125E7ECC18422191F1C858A4B4C6F8A9 /* HeroButtonPrimaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = HeroButtonPrimaryStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/HeroButtonPrimaryStyle.json; sourceTree = "<group>"; };
+		125E7ECC18422191F1C858A4B4C6F8A9 /* HeroButtonPrimaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; name = HeroButtonPrimaryStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/HeroButtonPrimaryStyle.json; sourceTree = "<group>"; };
 		1260F28636C50332C056306D7588BCF0 /* TSKBackgroundReporter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKBackgroundReporter.h; path = TrustKit/Reporting/TSKBackgroundReporter.h; sourceTree = "<group>"; };
 		12732F5E55B6E8496E05D131C8CB79BA /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Sources/ConstraintView.swift; sourceTree = "<group>"; };
 		12B56948DE383C531200B895F44FC329 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
@@ -1607,7 +1607,7 @@
 		15D0FF626C898DE2D80A3F3A4F4C7306 /* DXLCashNetworkManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DXLCashNetworkManager.swift; path = "VFEG-NetworkManager/Classes/Managers/DXLCashNetworkManager.swift"; sourceTree = "<group>"; };
 		1603F2A90628336F86F09A5C3824B48C /* MockupHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MockupHandler.swift; path = VFAuthKeyCloak/Classes/Handler/MockupHandler.swift; sourceTree = "<group>"; };
 		16370AD8377D50B84D6B834362713F78 /* SignpostCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SignpostCardView.m; path = VUIComponents/Classes/Components/Card/Subclass/SignpostCardView.m; sourceTree = "<group>"; };
-		16469EC7393B05267EB7180F08C25399 /* RoundedCardButtonWithRedBorder.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = RoundedCardButtonWithRedBorder.json; path = VUIComponents/Classes/Components/CustomBtn/resource/RoundedCardButtonWithRedBorder.json; sourceTree = "<group>"; };
+		16469EC7393B05267EB7180F08C25399 /* RoundedCardButtonWithRedBorder.json */ = {isa = PBXFileReference; includeInIndex = 1; name = RoundedCardButtonWithRedBorder.json; path = VUIComponents/Classes/Components/CustomBtn/resource/RoundedCardButtonWithRedBorder.json; sourceTree = "<group>"; };
 		16595246C8A44D18A517BDA4F4A73598 /* RSKImageCropper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RSKImageCropper.modulemap; sourceTree = "<group>"; };
 		16B476A9578AFA56481DCFE19B6D7CD7 /* ConfirmationAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ConfirmationAlertView.h; path = "VUIComponents/Classes/Components/Alert Views/Confirmation Alert/ConfirmationAlertView.h"; sourceTree = "<group>"; };
 		16C99DDED3EDE2E2EB7B0F8D12298CFA /* RxCollectionViewDataSourceProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxCollectionViewDataSourceProxy.swift; path = RxCocoa/iOS/Proxies/RxCollectionViewDataSourceProxy.swift; sourceTree = "<group>"; };
@@ -1618,7 +1618,7 @@
 		17DB6A54447B6EA3C162A6D4805990AD /* SignpostWithBigImgCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SignpostWithBigImgCardView.h; path = VUIComponents/Classes/Components/Card/Subclass/SignpostWithBigImgCardView.h; sourceTree = "<group>"; };
 		17FD84C2FEAA7A309049D2EC9600836B /* Observable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Observable.swift; path = RxSwift/Observable.swift; sourceTree = "<group>"; };
 		1800B929B7C375B4A9173ADD01FD0979 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		18118D2F9D773C8AC54F2E496A2AC42C /* DropDownOnOverlaysStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = DropDownOnOverlaysStyle.json; path = VUIComponents/Classes/Components/FormFields/resource/DropDownOnOverlaysStyle.json; sourceTree = "<group>"; };
+		18118D2F9D773C8AC54F2E496A2AC42C /* DropDownOnOverlaysStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; name = DropDownOnOverlaysStyle.json; path = VUIComponents/Classes/Components/FormFields/resource/DropDownOnOverlaysStyle.json; sourceTree = "<group>"; };
 		181292E42CF14E02A120696F70118FAC /* Range.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Range.swift; path = RxSwift/Observables/Range.swift; sourceTree = "<group>"; };
 		186E48C9920C969AEEF9B5E7C6BD7297 /* BaseCardTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BaseCardTableViewCell.h; path = VUIComponents/Classes/Components/CardTableView/Base/BaseCardTableViewCell.h; sourceTree = "<group>"; };
 		188F6B4D1977A44A245BD669C8FE3DF2 /* TransformOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOperators.swift; path = Sources/TransformOperators.swift; sourceTree = "<group>"; };
@@ -1642,11 +1642,11 @@
 		1B4D8A03AE9484135DA7226F74FA1681 /* UIStepper+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStepper+Rx.swift"; path = "RxCocoa/iOS/UIStepper+Rx.swift"; sourceTree = "<group>"; };
 		1BAD751AE91CDE59C59ACE7805C65746 /* UserFlagsEntityStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserFlagsEntityStore.swift; path = VFAuthKeyCloak/Classes/DataBase/Store/UserFlagsEntity/UserFlagsEntityStore.swift; sourceTree = "<group>"; };
 		1BFB8145ECB3449A37B7BA67C8308E5C /* RxScrollViewDelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxScrollViewDelegateProxy.swift; path = RxCocoa/iOS/Proxies/RxScrollViewDelegateProxy.swift; sourceTree = "<group>"; };
-		1C2CE92CFDFF997B0E8E4FFDD510ACB6 /* tsk_assert.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = tsk_assert.c; path = TrustKit/Dependencies/domain_registry/private/tsk_assert.c; sourceTree = "<group>"; };
+		1C2CE92CFDFF997B0E8E4FFDD510ACB6 /* tsk_assert.c */ = {isa = PBXFileReference; includeInIndex = 1; name = tsk_assert.c; path = TrustKit/Dependencies/domain_registry/private/tsk_assert.c; sourceTree = "<group>"; };
 		1C9C0D7AFDF9E58954F0DC8D3EA7F48E /* MOLHFontLocalizableViews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MOLHFontLocalizableViews.swift; path = Sources/MOLH/MOLHFontLocalizableViews.swift; sourceTree = "<group>"; };
 		1CD31983CB0ABB29C51AAD10539B4D97 /* BillsExpandedTableView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = BillsExpandedTableView.xib; path = VUIComponents/Classes/Components/Card/BillsView/billsExpandedTableView/BillsExpandedTableView.xib; sourceTree = "<group>"; };
 		1D202AAD08D32ADCED98AF36994291F7 /* PublishSubject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PublishSubject.swift; path = RxSwift/Subjects/PublishSubject.swift; sourceTree = "<group>"; };
-		1D3D5A8A56C11786D7BBD1A7B5E994C9 /* WhiteButtonStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = WhiteButtonStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/WhiteButtonStyle.json; sourceTree = "<group>"; };
+		1D3D5A8A56C11786D7BBD1A7B5E994C9 /* WhiteButtonStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; name = WhiteButtonStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/WhiteButtonStyle.json; sourceTree = "<group>"; };
 		1D492F6B10CCC7DBD6CD36EE2DF09F3E /* ExpandSignpostCellRTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpandSignpostCellRTL.m; path = VUIComponents/Classes/Components/Card/Subclass/ExpandSignpostWithAvatarCardView/ExpandSignpostCellRTL.m; sourceTree = "<group>"; };
 		1D754704622FAFD2E78BF456BB9B29CD /* DropDownMenuTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownMenuTableViewCell.xib; path = VUIComponents/Classes/Components/FormFields/DropDown/Menu/DropDownMenuTableViewCell.xib; sourceTree = "<group>"; };
 		1D8C57BCA4E35A1C9CC5E6681D4295DD /* TSKNSURLSessionDelegateProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TSKNSURLSessionDelegateProxy.m; path = TrustKit/Swizzling/TSKNSURLSessionDelegateProxy.m; sourceTree = "<group>"; };
@@ -1697,7 +1697,7 @@
 		26580534834115272F082077918599AA /* CGGeometry+RSKImageCropper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CGGeometry+RSKImageCropper.m"; path = "RSKImageCropper/CGGeometry+RSKImageCropper.m"; sourceTree = "<group>"; };
 		265DC04822BF4119B3EC7BB3A27796D1 /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateTransform.swift; path = Sources/ISO8601DateTransform.swift; sourceTree = "<group>"; };
 		267C98F82D0AAFC61CF89FBD27A53FD9 /* ObservableConvertibleType+SharedSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ObservableConvertibleType+SharedSequence.swift"; path = "RxCocoa/Traits/SharedSequence/ObservableConvertibleType+SharedSequence.swift"; sourceTree = "<group>"; };
-		267DF4AF6FD718B898546B17FD980DD5 /* GSKGeometry.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = GSKGeometry.c; path = GSKStretchyHeaderView/Classes/GSKGeometry.c; sourceTree = "<group>"; };
+		267DF4AF6FD718B898546B17FD980DD5 /* GSKGeometry.c */ = {isa = PBXFileReference; includeInIndex = 1; name = GSKGeometry.c; path = GSKStretchyHeaderView/Classes/GSKGeometry.c; sourceTree = "<group>"; };
 		26C0A721203CC8701E343B10EA5226DF /* DXLBaseRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DXLBaseRouter.swift; path = VFAuthKeyCloak/Classes/Bases/DXLBaseRouter.swift; sourceTree = "<group>"; };
 		26E817CBE6233FBA7654E6ABF0C3FF4A /* JWTMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWTMapper.swift; path = VFAuthKeyCloak/Classes/KeyCloak/JWTMapper.swift; sourceTree = "<group>"; };
 		2790F124C94E8D29C36E868F9121BB9B /* RxCocoa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RxCocoa.debug.xcconfig; sourceTree = "<group>"; };
@@ -1705,7 +1705,7 @@
 		27ADC06FD9294EC4DFA415399E00A8EC /* CreditCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CreditCardView.m; path = VUIComponents/Classes/Components/Card/Subclass/CreditCardView/CreditCardView.m; sourceTree = "<group>"; };
 		27F30729E54565368AEA7A28BB7ADA43 /* MOLH.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MOLH.debug.xcconfig; sourceTree = "<group>"; };
 		27F97BCC26A73531A6749AE6F1AB5084 /* Binder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Binder.swift; path = RxCocoa/Common/Binder.swift; sourceTree = "<group>"; };
-		2821212DED81CBB9318BF3795B8656EE /* FormFieldOnOverlaysStyle4.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = FormFieldOnOverlaysStyle4.json; path = VUIComponents/Classes/Components/FormFields/resource/FormFieldOnOverlaysStyle4.json; sourceTree = "<group>"; };
+		2821212DED81CBB9318BF3795B8656EE /* FormFieldOnOverlaysStyle4.json */ = {isa = PBXFileReference; includeInIndex = 1; name = FormFieldOnOverlaysStyle4.json; path = VUIComponents/Classes/Components/FormFields/resource/FormFieldOnOverlaysStyle4.json; sourceTree = "<group>"; };
 		282343FE4B669A5C1B1758587C8EB781 /* A0JWT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = A0JWT.swift; path = JWTDecode/A0JWT.swift; sourceTree = "<group>"; };
 		2826C1A2DE742AE14739C6667CD8B4A4 /* KAProgressLabelVF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KAProgressLabelVF.h; path = VUIComponents/Classes/Components/ThirdParty/KAProgressLabel/KAProgressLabelVF.h; sourceTree = "<group>"; };
 		285B3417BE07DBC350B78C687B656163 /* WYPopoverController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WYPopoverController-umbrella.h"; sourceTree = "<group>"; };
@@ -1718,7 +1718,7 @@
 		2917017C5C4B232C5C51600AD973277D /* BooleanDisposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BooleanDisposable.swift; path = RxSwift/Disposables/BooleanDisposable.swift; sourceTree = "<group>"; };
 		29A99908171E03B0D9D2453068120CD3 /* KVORepresentable+Swift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "KVORepresentable+Swift.swift"; path = "RxCocoa/Foundation/KVORepresentable+Swift.swift"; sourceTree = "<group>"; };
 		2AD5466038C77D89D1089755E12C8CC0 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Sources/ConstraintMaker.swift; sourceTree = "<group>"; };
-		2B3553E80C8227079D540BAA7A876A84 /* OverlayButtonPrimaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = OverlayButtonPrimaryStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/OverlayButtonPrimaryStyle.json; sourceTree = "<group>"; };
+		2B3553E80C8227079D540BAA7A876A84 /* OverlayButtonPrimaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; name = OverlayButtonPrimaryStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/OverlayButtonPrimaryStyle.json; sourceTree = "<group>"; };
 		2B50F593D9EC15F8FD7C6B9D99F69A04 /* SignpostsWithAvatarCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SignpostsWithAvatarCardView.m; path = VUIComponents/Classes/Components/Card/Subclass/SignpostsWithAvatarCardView.m; sourceTree = "<group>"; };
 		2B757A7BB4744266DD1C7496916F6E20 /* SimpleDropDownView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SimpleDropDownView.h; path = VUIComponents/Classes/Components/FormFields/DropDown/View/SimpleDropDownView.h; sourceTree = "<group>"; };
 		2B8336B3CA6E1D864D9E608E2B54574E /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Sources/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
@@ -1763,7 +1763,7 @@
 		33E4F1858E839AA2D9359DF905D70B52 /* MCareError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MCareError.h; path = VFAuthKeyCloak/Classes/Bases/ErrorCodes/MCareError.h; sourceTree = "<group>"; };
 		345DCA544C998EDACE2C40746F319E8A /* ProfileHeaderCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ProfileHeaderCardView.m; path = VUIComponents/Classes/Components/Card/Subclass/ProfileHeaderCardView.m; sourceTree = "<group>"; };
 		3470CCA8E1432A38D4E5A96B7A62D7BA /* Bag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bag.swift; path = Platform/DataStructures/Bag.swift; sourceTree = "<group>"; };
-		34A4F8874F4ECBDFEA44A1C22520AE00 /* DropDownOnCardsStyle2.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = DropDownOnCardsStyle2.json; path = VUIComponents/Classes/Components/FormFields/resource/DropDownOnCardsStyle2.json; sourceTree = "<group>"; };
+		34A4F8874F4ECBDFEA44A1C22520AE00 /* DropDownOnCardsStyle2.json */ = {isa = PBXFileReference; includeInIndex = 1; name = DropDownOnCardsStyle2.json; path = VUIComponents/Classes/Components/FormFields/resource/DropDownOnCardsStyle2.json; sourceTree = "<group>"; };
 		34B1E8E2C109CAB00F2BB4D614713246 /* JWGCircleCounter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JWGCircleCounter.modulemap; sourceTree = "<group>"; };
 		34D350DE67388A4C9E0E6ED7062A0AA2 /* VFAuthKeyCloak-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VFAuthKeyCloak-umbrella.h"; sourceTree = "<group>"; };
 		34E47E129F094C05D89C5CCD37C26408 /* UIColor+Hex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIColor+Hex.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1927,7 +1927,7 @@
 		59EC3C23B16C63EB30C9DE321531476D /* MultiDropDownModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MultiDropDownModel.m; path = VUIComponents/Classes/Components/FormFields/DropDown/Model/MultiDropDownModel.m; sourceTree = "<group>"; };
 		5A02E09B50C1FC405394B97A5123F727 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		5A0BECB92F291863067AC1F77A72CEE3 /* BottomSheetTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = BottomSheetTableViewCell.xib; path = VUIComponents/Classes/Components/ButtomSheetView/bottomSheetCell/BottomSheetTableViewCell.xib; sourceTree = "<group>"; };
-		5A266C24A555BD2F73157E448830D433 /* OverlayButtonTertiaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = OverlayButtonTertiaryStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/OverlayButtonTertiaryStyle.json; sourceTree = "<group>"; };
+		5A266C24A555BD2F73157E448830D433 /* OverlayButtonTertiaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; name = OverlayButtonTertiaryStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/OverlayButtonTertiaryStyle.json; sourceTree = "<group>"; };
 		5A95760DA72907A8994990FF6BE25D13 /* SignpostCardViewRTL.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SignpostCardViewRTL.xib; path = VUIComponents/Classes/Components/UI/Card/SignpostCardViewRTL.xib; sourceTree = "<group>"; };
 		5A97703579BA3ABEAFC35F5C2C5F58F1 /* SimpleDropDownView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SimpleDropDownView.m; path = VUIComponents/Classes/Components/FormFields/DropDown/View/SimpleDropDownView.m; sourceTree = "<group>"; };
 		5B22A368266143183365C407D9D25B47 /* NetworkResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkResponse.swift; path = "VFEG-NetworkManager/Classes/NetworkResponse.swift"; sourceTree = "<group>"; };
@@ -1951,7 +1951,7 @@
 		5F14C54C219680202EDDF601D1340D68 /* Create.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Create.swift; path = RxSwift/Observables/Create.swift; sourceTree = "<group>"; };
 		5F6EDC2637C634716A61A6396FDE8D71 /* TrustKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TrustKit-dummy.m"; sourceTree = "<group>"; };
 		5FAFBD32832BE464952BE88ABA9A5F51 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		5FB6118069BB303CEDCDB217A7834B18 /* registry_search.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = registry_search.c; path = TrustKit/Dependencies/domain_registry/private/registry_search.c; sourceTree = "<group>"; };
+		5FB6118069BB303CEDCDB217A7834B18 /* registry_search.c */ = {isa = PBXFileReference; includeInIndex = 1; name = registry_search.c; path = TrustKit/Dependencies/domain_registry/private/registry_search.c; sourceTree = "<group>"; };
 		5FCA74A41DC410DB8EF150FA6699EB0D /* TextInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextInput.swift; path = RxCocoa/Common/TextInput.swift; sourceTree = "<group>"; };
 		5FDC0A74F4FAEC185B7FDE595CB02EB5 /* INTUAnimationEngine-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "INTUAnimationEngine-Info.plist"; sourceTree = "<group>"; };
 		602143A790C9AF9F27BEFD0FA1F5E6CE /* SignpostCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SignpostCardView.h; path = VUIComponents/Classes/Components/Card/Subclass/SignpostCardView.h; sourceTree = "<group>"; };
@@ -1963,7 +1963,7 @@
 		619551AFBDE91BD3F99B4C249E636A2B /* ControlTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ControlTarget.swift; path = RxCocoa/Common/ControlTarget.swift; sourceTree = "<group>"; };
 		61F9BA8A238B5C346438B4FA1680FFE4 /* VoiceOfVodafoneWelcomeCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VoiceOfVodafoneWelcomeCardView.h; path = VUIComponents/Classes/Components/Card/Subclass/Home/VoiceOfVodafoneWelcomeCardView.h; sourceTree = "<group>"; };
 		622A26BE0D087EA9118EC3E617337A63 /* DictionaryTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryTransform.swift; path = Sources/DictionaryTransform.swift; sourceTree = "<group>"; };
-		622C436853C36BC57318D1DF2FBF1541 /* GlamourAnimation.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = GlamourAnimation.css; path = VUIComponents/Classes/Components/Resources/GlamourAnimations/GlamourAnimation.css; sourceTree = "<group>"; };
+		622C436853C36BC57318D1DF2FBF1541 /* GlamourAnimation.css */ = {isa = PBXFileReference; includeInIndex = 1; name = GlamourAnimation.css; path = VUIComponents/Classes/Components/Resources/GlamourAnimations/GlamourAnimation.css; sourceTree = "<group>"; };
 		6264A3AE31B66623D5490AF329C583FF /* AddonAlertCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AddonAlertCardView.m; path = VUIComponents/Classes/Components/Card/Subclass/AddonAlertCardView.m; sourceTree = "<group>"; };
 		626A309D243E68A79A24747B9B0CA7DD /* RxAlamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RxAlamofire-prefix.pch"; sourceTree = "<group>"; };
 		62831DA7ECCA292FCB3201590A9E15B1 /* RSKTouchView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSKTouchView.h; path = RSKImageCropper/RSKTouchView.h; sourceTree = "<group>"; };
@@ -2035,7 +2035,7 @@
 		720FFB325E99F38B4891ED494BA76D45 /* GSKStretchyHeaderView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GSKStretchyHeaderView; path = GSKStretchyHeaderView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7231EF5DD183190DF6F292E9F1F4838D /* RxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RxSwift.release.xcconfig; sourceTree = "<group>"; };
 		7279F12B62CAF32CB882206E351CBC26 /* WYPopoverController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WYPopoverController-prefix.pch"; sourceTree = "<group>"; };
-		7294865747E3790705D6D5244727906F /* DropDownOnCardsStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = DropDownOnCardsStyle.json; path = VUIComponents/Classes/Components/FormFields/resource/DropDownOnCardsStyle.json; sourceTree = "<group>"; };
+		7294865747E3790705D6D5244727906F /* DropDownOnCardsStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; name = DropDownOnCardsStyle.json; path = VUIComponents/Classes/Components/FormFields/resource/DropDownOnCardsStyle.json; sourceTree = "<group>"; };
 		72DFB0E5ED5473B76199C863B33A72E2 /* CellCardViewImgWithSelectedOnly.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CellCardViewImgWithSelectedOnly.xib; path = VUIComponents/Classes/Components/TableCardView/CellCardView/CellCardViewImgWithSelectedOnly.xib; sourceTree = "<group>"; };
 		7301CFFEBD07DB14F63E7F0F49EBF655 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7301D4031C018A4B6C11636A57377A9E /* YearPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YearPickerView.h; path = VUIComponents/Classes/Components/ThirdParty/DatePicker/YearPickerView.h; sourceTree = "<group>"; };
@@ -2105,7 +2105,7 @@
 		83BC9747AA925546B1F9BCAE9118F023 /* WYPopoverController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WYPopoverController-Info.plist"; sourceTree = "<group>"; };
 		83C07CA9FEBF16EC03026FD770ED1C5C /* PriorityQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PriorityQueue.swift; path = Platform/DataStructures/PriorityQueue.swift; sourceTree = "<group>"; };
 		83DDC33BE9D3C5C661548CA32BE559BB /* ObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-prefix.pch"; sourceTree = "<group>"; };
-		83EB818153F7FF771B06170FDDB8ADD0 /* FormFieldOnCardsStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = FormFieldOnCardsStyle.json; path = VUIComponents/Classes/Components/FormFields/resource/FormFieldOnCardsStyle.json; sourceTree = "<group>"; };
+		83EB818153F7FF771B06170FDDB8ADD0 /* FormFieldOnCardsStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; name = FormFieldOnCardsStyle.json; path = VUIComponents/Classes/Components/FormFields/resource/FormFieldOnCardsStyle.json; sourceTree = "<group>"; };
 		847F9A05626BF853563ACCFFCD20963E /* VUIComponents-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VUIComponents-umbrella.h"; sourceTree = "<group>"; };
 		848ED6BB94015EAC6FD741D75482A897 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Sources/Debugging.swift; sourceTree = "<group>"; };
 		84DA4380F80859A0737498F3DDCC11ED /* URLSession+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSession+Rx.swift"; path = "RxCocoa/Foundation/URLSession+Rx.swift"; sourceTree = "<group>"; };
@@ -2115,7 +2115,7 @@
 		854F2809C2EB3A1F1B39B1092F00EAC1 /* RSKImageCropperStrings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = RSKImageCropperStrings.bundle; path = RSKImageCropper/RSKImageCropperStrings.bundle; sourceTree = "<group>"; };
 		857245D64456248D737F8873F98FC92C /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
 		861E8C2D59350316B4932F11879B9CBB /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Sources/Typealiases.swift; sourceTree = "<group>"; };
-		8636EA62997EE6E8E4E6E982BF12DB0C /* DropDownOnCardsStyle3.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = DropDownOnCardsStyle3.json; path = VUIComponents/Classes/Components/FormFields/resource/DropDownOnCardsStyle3.json; sourceTree = "<group>"; };
+		8636EA62997EE6E8E4E6E982BF12DB0C /* DropDownOnCardsStyle3.json */ = {isa = PBXFileReference; includeInIndex = 1; name = DropDownOnCardsStyle3.json; path = VUIComponents/Classes/Components/FormFields/resource/DropDownOnCardsStyle3.json; sourceTree = "<group>"; };
 		8643332C0976709C22C584837816908A /* NSAttributedString+CCLFormat-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NSAttributedString+CCLFormat-Info.plist"; sourceTree = "<group>"; };
 		864C293BE0E1DFE995AB87F567328B62 /* JWGCircleCounter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JWGCircleCounter-umbrella.h"; sourceTree = "<group>"; };
 		86661488B67C175350E6E7A30626FA74 /* TailRecursiveSink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TailRecursiveSink.swift; path = RxSwift/Observers/TailRecursiveSink.swift; sourceTree = "<group>"; };
@@ -2137,7 +2137,7 @@
 		8924BEF786891A65636A9819C24A3A14 /* RxRelay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RxRelay-dummy.m"; sourceTree = "<group>"; };
 		89359E4898F6260064933C7C953BB817 /* UISearchBar+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISearchBar+Rx.swift"; path = "RxCocoa/iOS/UISearchBar+Rx.swift"; sourceTree = "<group>"; };
 		89F284EA278392367FC8CCD7919B6497 /* UIColor+KVNContrast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+KVNContrast.h"; path = "VUIComponents/Classes/Components/ThirdParty/KVNProgress/Categories/UIColor+KVNContrast.h"; sourceTree = "<group>"; };
-		8A4B363F8BFCD61C49EAA95558599D78 /* CardButtonPrimaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = CardButtonPrimaryStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/CardButtonPrimaryStyle.json; sourceTree = "<group>"; };
+		8A4B363F8BFCD61C49EAA95558599D78 /* CardButtonPrimaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; name = CardButtonPrimaryStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/CardButtonPrimaryStyle.json; sourceTree = "<group>"; };
 		8AB3FDFDDA58874224D2143C97BCF691 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = RxSwift/Errors.swift; sourceTree = "<group>"; };
 		8ABC25DABAADAE144DFD6A199EA2AB99 /* SharedSequence+Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SharedSequence+Operators.swift"; path = "RxCocoa/Traits/SharedSequence/SharedSequence+Operators.swift"; sourceTree = "<group>"; };
 		8ABDDA17B0484FD5EB133FBCE327B3BB /* Disposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Disposable.swift; path = RxSwift/Disposable.swift; sourceTree = "<group>"; };
@@ -2147,7 +2147,7 @@
 		8B76290AAA209E163238BBF03110EE75 /* configuration_utils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = configuration_utils.m; path = TrustKit/configuration_utils.m; sourceTree = "<group>"; };
 		8B895AC4EE5519A650781B62EF09EBFE /* DistinctUntilChanged.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DistinctUntilChanged.swift; path = RxSwift/Observables/DistinctUntilChanged.swift; sourceTree = "<group>"; };
 		8BED48A643A0CB0CB30495C957DB3C19 /* ExpandableSignpostsWithAvatarCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpandableSignpostsWithAvatarCardView.m; path = VUIComponents/Classes/Components/Card/Subclass/ExpandableSignpostsWithAvatarCardView.m; sourceTree = "<group>"; };
-		8C970E6232F200C0E50033524B5A512A /* Pods_AVTabBar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVTabBar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C970E6232F200C0E50033524B5A512A /* Pods-AVTabBar_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AVTabBar_Example"; path = Pods_AVTabBar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C9F0BD8B0F69F85EA412FC0DC06D1D0 /* CompositeDisposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompositeDisposable.swift; path = RxSwift/Disposables/CompositeDisposable.swift; sourceTree = "<group>"; };
 		8D4BF999740B854AFF60C795BA8A9829 /* JWGCircleCounter */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JWGCircleCounter; path = JWGCircleCounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D4CD1A854B3937012590FF9883544EB /* GiftCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GiftCardView.h; path = VUIComponents/Classes/Components/Card/Subclass/GiftCardView.h; sourceTree = "<group>"; };
@@ -2162,7 +2162,7 @@
 		8EE86B22D45839476F299BF9C041DB3B /* reporting_utils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = reporting_utils.m; path = TrustKit/Reporting/reporting_utils.m; sourceTree = "<group>"; };
 		8F02088E3DE1AD39CC950EABA83CBA0A /* RxPickerViewDataSourceProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxPickerViewDataSourceProxy.swift; path = RxCocoa/iOS/Proxies/RxPickerViewDataSourceProxy.swift; sourceTree = "<group>"; };
 		8F0C81299EE1F1D2F6C4D9C7F5E9870E /* AddCreditCardFooterTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AddCreditCardFooterTableViewCell.m; path = VUIComponents/Classes/Components/FormFields/DropDown/View/AddCreditCardFooterTableViewCell.m; sourceTree = "<group>"; };
-		8F2664270FE209B8738BAF05D2F23B5B /* FormFieldOnOverlaysStyle2.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = FormFieldOnOverlaysStyle2.json; path = VUIComponents/Classes/Components/FormFields/resource/FormFieldOnOverlaysStyle2.json; sourceTree = "<group>"; };
+		8F2664270FE209B8738BAF05D2F23B5B /* FormFieldOnOverlaysStyle2.json */ = {isa = PBXFileReference; includeInIndex = 1; name = FormFieldOnOverlaysStyle2.json; path = VUIComponents/Classes/Components/FormFields/resource/FormFieldOnOverlaysStyle2.json; sourceTree = "<group>"; };
 		8F2C07D2643BFC305079184153F4301B /* SearchHeaderComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SearchHeaderComponent.h; path = VUIComponents/Classes/Components/ExtandableHeader/SearchAndFilterComponents/SearchHeaderComponent.h; sourceTree = "<group>"; };
 		8F30A48E771B1E61E5B88C57ECABD96A /* VFAuthKeyCloak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VFAuthKeyCloak.release.xcconfig; sourceTree = "<group>"; };
 		8F591153D5F69350E660BFC0004D53D5 /* INTUAnimationEngine.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = INTUAnimationEngine.modulemap; sourceTree = "<group>"; };
@@ -2233,16 +2233,16 @@
 		9D2ECF91E425C89762D789DC722EEE43 /* StepperCardViewWithLabels.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = StepperCardViewWithLabels.m; path = "VUIComponents/Classes/Components/Steps Dialoge/StepperCardViewWithLabels.m"; sourceTree = "<group>"; };
 		9D5A7F1D8358B629D411223E009F0A89 /* KeyCloakRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyCloakRouter.swift; path = VFAuthKeyCloak/Classes/Router/KeyCloakRouter.swift; sourceTree = "<group>"; };
 		9D904AC4BBA5F49ACA6B41DDE674DAB1 /* UserFlagsEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UserFlagsEntity+CoreDataProperties.swift"; path = "VFAuthKeyCloak/Classes/CoreData/UserFlagsEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DB4A32D958D61623A9219B04BA3EA84 /* VFAuthKeyCloak */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VFAuthKeyCloak; path = VFAuthKeyCloak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC3A3D0946036E321E8BA24FA6AA922 /* INTUSpringSolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = INTUSpringSolver.h; path = INTUAnimationEngine/SpringSolver/INTUSpringSolver.h; sourceTree = "<group>"; };
 		9E02F0018959FC6433C521FB7AF6AB8A /* ValidationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationError.swift; path = JWTDecode/ValidationError.swift; sourceTree = "<group>"; };
 		9E550CB816A505FFE7EC7AE99220FB33 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
 		9E7C928A49223F3F479883DFCEDF1AA2 /* INTUAnimationEngine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = INTUAnimationEngine.debug.xcconfig; sourceTree = "<group>"; };
-		9E85B02D5929536FD6362BB9878960D7 /* MgmButtonStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = MgmButtonStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/MgmButtonStyle.json; sourceTree = "<group>"; };
+		9E85B02D5929536FD6362BB9878960D7 /* MgmButtonStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; name = MgmButtonStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/MgmButtonStyle.json; sourceTree = "<group>"; };
 		9E9C7042FD0015AC2D5791EE3B7A346C /* SearchHeaderComponent.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SearchHeaderComponent.xib; path = VUIComponents/Classes/Components/ExtandableHeader/SearchAndFilterComponents/SearchHeaderComponent.xib; sourceTree = "<group>"; };
 		9EDC34BC685DAA80EDABEEFF1BB49E75 /* TextFieldCardView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = TextFieldCardView.xib; path = VUIComponents/Classes/Components/UI/Card/TextFieldCardView.xib; sourceTree = "<group>"; };
-		9EFE646EFB2D610D559B848494DFB6A8 /* BtnTransparentBG_WithBlackTitleStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = BtnTransparentBG_WithBlackTitleStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/BtnTransparentBG_WithBlackTitleStyle.json; sourceTree = "<group>"; };
+		9EFE646EFB2D610D559B848494DFB6A8 /* BtnTransparentBG_WithBlackTitleStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; name = BtnTransparentBG_WithBlackTitleStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/BtnTransparentBG_WithBlackTitleStyle.json; sourceTree = "<group>"; };
 		9EFF0A97C0065080A441F93234269368 /* GSKStretchyHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GSKStretchyHeaderView.h; path = GSKStretchyHeaderView/Classes/GSKStretchyHeaderView.h; sourceTree = "<group>"; };
 		9F05769360C02EEF17AB745822CF9D77 /* BaseCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BaseCardView.h; path = VUIComponents/Classes/Components/Card/Base/BaseCardView.h; sourceTree = "<group>"; };
 		9F27D22B6A3835C755607FAC913F0038 /* ExtendingCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExtendingCardView.m; path = VUIComponents/Classes/Components/Card/Subclass/ExtendingCardView.m; sourceTree = "<group>"; };
@@ -2304,7 +2304,7 @@
 		AB4FAF103B09021040AE9EDCFEE1355D /* ChildStepperView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChildStepperView.h; path = VUIComponents/Classes/Components/Card/Subclass/StepperCardViews/Base/ChildStepperView.h; sourceTree = "<group>"; };
 		AB9E97B8702F25A41052167B6954CC2E /* DXLNetworkBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DXLNetworkBuilder.swift; path = VFAuthKeyCloak/Classes/Network/DXLNetworkBuilder.swift; sourceTree = "<group>"; };
 		AB9F52ACC60E6D29B5804CC167CBF0B7 /* UISearchController+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISearchController+Rx.swift"; path = "RxCocoa/iOS/UISearchController+Rx.swift"; sourceTree = "<group>"; };
-		ABB0E860B32BC9EA9A3053CEE858A7D7 /* CardButtonSecondaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = CardButtonSecondaryStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/CardButtonSecondaryStyle.json; sourceTree = "<group>"; };
+		ABB0E860B32BC9EA9A3053CEE858A7D7 /* CardButtonSecondaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; name = CardButtonSecondaryStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/CardButtonSecondaryStyle.json; sourceTree = "<group>"; };
 		ABB652792E0AD1801C5EECB3CD03A35B /* RSKImageCropper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSKImageCropper-prefix.pch"; sourceTree = "<group>"; };
 		ABC2988A57B690796C4B3C86213EB6D3 /* tsk_assert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tsk_assert.h; path = TrustKit/Dependencies/domain_registry/private/tsk_assert.h; sourceTree = "<group>"; };
 		AC02EED6FC60717827BD1B26C9AB2FB5 /* SchedulerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SchedulerType.swift; path = RxSwift/SchedulerType.swift; sourceTree = "<group>"; };
@@ -2333,7 +2333,7 @@
 		B07F737A0AC47592A6C982D6B3A232FF /* RxNavigationControllerDelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxNavigationControllerDelegateProxy.swift; path = RxCocoa/iOS/Proxies/RxNavigationControllerDelegateProxy.swift; sourceTree = "<group>"; };
 		B0864F737E524F93390E451ED501B515 /* BaseCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BaseCardView.m; path = VUIComponents/Classes/Components/Card/Base/BaseCardView.m; sourceTree = "<group>"; };
 		B0C1B2B06E6EA627C70EF751B9B4B9AF /* JSONModelLib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelLib.h; path = JSONModel/JSONModelLib.h; sourceTree = "<group>"; };
-		B0EF0872F61FDD03270DA0B9C55EC48F /* BlackButtonStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = BlackButtonStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/BlackButtonStyle.json; sourceTree = "<group>"; };
+		B0EF0872F61FDD03270DA0B9C55EC48F /* BlackButtonStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; name = BlackButtonStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/BlackButtonStyle.json; sourceTree = "<group>"; };
 		B0F783CA2265B1213EC081DCF1AF6356 /* BaseDropDownView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BaseDropDownView.h; path = VUIComponents/Classes/Components/FormFields/DropDown/Base/BaseDropDownView.h; sourceTree = "<group>"; };
 		B1503D1B8E45093D21B08D442AAAF2C7 /* RxCocoa-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RxCocoa-dummy.m"; sourceTree = "<group>"; };
 		B154D07279DFBB1A9DC26B1F4ABF019A /* HistoricalSchedulerTimeConverter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HistoricalSchedulerTimeConverter.swift; path = RxSwift/Schedulers/HistoricalSchedulerTimeConverter.swift; sourceTree = "<group>"; };
@@ -2390,16 +2390,16 @@
 		BB376AC0137C6A33A7145D8022B7887F /* INTUAnimationEngine-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "INTUAnimationEngine-prefix.pch"; sourceTree = "<group>"; };
 		BB6693023891C618BA1F96032E6BDCE0 /* MultiLineRadioButtonCellModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MultiLineRadioButtonCellModel.m; path = VUIComponents/Classes/Components/TableCardView/Model/MultiLineRadioButtonCellModel.m; sourceTree = "<group>"; };
 		BB956EEB2D9E78C9AF4E21462F6FBECE /* SynchronizedDisposeType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchronizedDisposeType.swift; path = RxSwift/Concurrency/SynchronizedDisposeType.swift; sourceTree = "<group>"; };
-		BBEF01B47E6146F892B65FA0CC88CC2E /* Pods_AVTabBar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVTabBar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBEF01B47E6146F892B65FA0CC88CC2E /* Pods-AVTabBar_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AVTabBar_Tests"; path = Pods_AVTabBar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC2AF077DFB3656E68FE8E69D9BCCBC7 /* FSCalendarAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarAppearance.h; path = VUIComponents/Classes/Components/ThirdParty/FSCalendar/FSCalendar/FSCalendarAppearance.h; sourceTree = "<group>"; };
-		BC3273F0D2E2514DA5915F2711BEB983 /* AVTabBar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AVTabBar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC3273F0D2E2514DA5915F2711BEB983 /* AVTabBar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AVTabBar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BC3F5E5C4929B56D116B9D99C462131A /* KeyCloakVBAAnalytics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyCloakVBAAnalytics.swift; path = VFAuthKeyCloak/Classes/KeyCloak/Analytics/KeyCloakVBAAnalytics.swift; sourceTree = "<group>"; };
 		BC432FD48A5932251F1CAFBC4BF74894 /* RxCocoa */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RxCocoa; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC67F8BC822AB4297958FE77378C2C83 /* ExpandSignpostCellModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpandSignpostCellModel.h; path = VUIComponents/Classes/Components/Card/Subclass/ExpandSignpostWithAvatarCardView/ExpandSignpostCellModel.h; sourceTree = "<group>"; };
 		BC85DDD6EFF3897EDE9BB57EB43B331E /* Event.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Event.swift; path = RxSwift/Event.swift; sourceTree = "<group>"; };
 		BD96674DA555099AD9C77451D4E06390 /* Reduce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reduce.swift; path = RxSwift/Observables/Reduce.swift; sourceTree = "<group>"; };
 		BE0CC073B5E8BB4B00ACFC164E8975AF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		BE34AAB81C4BB9C9AB28C9DEB7A385FF /* PageNudgeButtonPrimaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = PageNudgeButtonPrimaryStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/PageNudgeButtonPrimaryStyle.json; sourceTree = "<group>"; };
+		BE34AAB81C4BB9C9AB28C9DEB7A385FF /* PageNudgeButtonPrimaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; name = PageNudgeButtonPrimaryStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/PageNudgeButtonPrimaryStyle.json; sourceTree = "<group>"; };
 		BE5BE9F335F3DEEC833BA43C7D2A91A8 /* ProfileHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ProfileHeaderView.h; path = VUIComponents/Classes/Components/ExtandableHeader/ProfileHeader/ProfileHeaderView.h; sourceTree = "<group>"; };
 		BE6703C32166CBF7432341F41AB82BBA /* AnonymousDisposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnonymousDisposable.swift; path = RxSwift/Disposables/AnonymousDisposable.swift; sourceTree = "<group>"; };
 		BE680779F0836FF2E5C49F7CF202F411 /* WYStoryboardPopoverSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WYStoryboardPopoverSegue.m; path = WYPopoverController/WYStoryboardPopoverSegue.m; sourceTree = "<group>"; };
@@ -2409,7 +2409,7 @@
 		BFBCF8B1FEDFA4ED4107A03A26FA1FDF /* Deprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecated.swift; path = RxCocoa/Deprecated.swift; sourceTree = "<group>"; };
 		BFDDE877BD50DF0FE22B3E2D8D6C7758 /* Generate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Generate.swift; path = RxSwift/Observables/Generate.swift; sourceTree = "<group>"; };
 		BFFA0E4B806DB6A573A1C2BF6E1277E6 /* FSCalendarConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarConstants.h; path = VUIComponents/Classes/Components/ThirdParty/FSCalendar/FSCalendar/FSCalendarConstants.h; sourceTree = "<group>"; };
-		BFFFEB096D3B8F6500035B9CA26FBCC7 /* INTUSpringSolver.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = INTUSpringSolver.c; path = INTUAnimationEngine/SpringSolver/INTUSpringSolver.c; sourceTree = "<group>"; };
+		BFFFEB096D3B8F6500035B9CA26FBCC7 /* INTUSpringSolver.c */ = {isa = PBXFileReference; includeInIndex = 1; name = INTUSpringSolver.c; path = INTUAnimationEngine/SpringSolver/INTUSpringSolver.c; sourceTree = "<group>"; };
 		C032E228608B82C4E0FF5334472BC90F /* TableWithHeaderCardView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = TableWithHeaderCardView.xib; path = VUIComponents/Classes/Components/TableCardView/TableWithHeaderCardView.xib; sourceTree = "<group>"; };
 		C05052962DD5E6A2D6FE20020C1CB44F /* ImmediateSchedulerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImmediateSchedulerType.swift; path = RxSwift/ImmediateSchedulerType.swift; sourceTree = "<group>"; };
 		C057DFC488E5DB52182348E23484921A /* TSKPublicKeyAlgorithm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKPublicKeyAlgorithm.h; path = TrustKit/Pinning/TSKPublicKeyAlgorithm.h; sourceTree = "<group>"; };
@@ -2424,7 +2424,7 @@
 		C14AE5E8CD8C05FED6C0CB8CA5D0E5EF /* ValidationTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ValidationTextField.h; path = VUIComponents/Classes/Components/FormFields/TextField/ValidationTextField.h; sourceTree = "<group>"; };
 		C152E7BF84CD3E921FCE79FA5C066E10 /* ObjectMapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectMapper.debug.xcconfig; sourceTree = "<group>"; };
 		C15F9A24C30F0E75C358533C3A9D08A8 /* DXLAuthModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DXLAuthModel.swift; path = VFAuthKeyCloak/Classes/DTOS/DXLAuthModel.swift; sourceTree = "<group>"; };
-		C1818CB93CAA5AFB0F30D3577A7FE328 /* ExternalGlamourAnimation.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = ExternalGlamourAnimation.js; path = VUIComponents/Classes/Components/Resources/GlamourAnimations/ExternalGlamourAnimation.js; sourceTree = "<group>"; };
+		C1818CB93CAA5AFB0F30D3577A7FE328 /* ExternalGlamourAnimation.js */ = {isa = PBXFileReference; includeInIndex = 1; name = ExternalGlamourAnimation.js; path = VUIComponents/Classes/Components/Resources/GlamourAnimations/ExternalGlamourAnimation.js; sourceTree = "<group>"; };
 		C184A23B586DF727A18E86E3613686D3 /* Completable+AndThen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Completable+AndThen.swift"; path = "RxSwift/Traits/Completable+AndThen.swift"; sourceTree = "<group>"; };
 		C19B6775CCA8B7E78E2A99217850E8EB /* RefCountDisposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RefCountDisposable.swift; path = RxSwift/Disposables/RefCountDisposable.swift; sourceTree = "<group>"; };
 		C1CE69966A974C0B02495B8B3DED513B /* FSCalendarExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarExtensions.m; path = VUIComponents/Classes/Components/ThirdParty/FSCalendar/FSCalendar/FSCalendarExtensions.m; sourceTree = "<group>"; };
@@ -2448,7 +2448,7 @@
 		C56EEA5570900A99F19E4A25CFA892B4 /* ControlEvent+Driver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ControlEvent+Driver.swift"; path = "RxCocoa/Traits/Driver/ControlEvent+Driver.swift"; sourceTree = "<group>"; };
 		C5955AAFB6D3D3295A5D290DB8411474 /* AlertCardViewWithImg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AlertCardViewWithImg.h; path = VUIComponents/Classes/Components/Card/Subclass/AlertCardViewWithImg.h; sourceTree = "<group>"; };
 		C5A147B8BB12D10BE25A090887AE1A26 /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = RxSwift/Observables/Filter.swift; sourceTree = "<group>"; };
-		C5B940426D40AD6F17A748A862B7FECB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C5B940426D40AD6F17A748A862B7FECB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		C5D1490C24733A6E9C692CEF180822FF /* GroupedObservable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupedObservable.swift; path = RxSwift/GroupedObservable.swift; sourceTree = "<group>"; };
 		C5E883534A4DF6E6DA1F6CD8CB29B797 /* ConcurrentMainScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConcurrentMainScheduler.swift; path = RxSwift/Schedulers/ConcurrentMainScheduler.swift; sourceTree = "<group>"; };
 		C61BB1516DC69D9828F6E8DFB98494FB /* BaseNetworkErrorParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseNetworkErrorParser.swift; path = "VFEG-NetworkManager/Classes/ErrorParser /BaseNetworkErrorParser.swift"; sourceTree = "<group>"; };
@@ -2468,7 +2468,7 @@
 		CAA209DFB5EA4866E8935EBBE3736D6E /* CalendarCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CalendarCardView.m; path = VUIComponents/Classes/Components/Card/Subclass/CalendarCardView/CalenderView/CalendarCardView.m; sourceTree = "<group>"; };
 		CAF5B9A77F33CA5215A6BB9F61929643 /* StepsDialog.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = StepsDialog.xib; path = "VUIComponents/Classes/Components/Steps Dialoge/StepsDialog.xib"; sourceTree = "<group>"; };
 		CB19320638B96E57FF6F10506AE4A9EF /* RxAlamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RxAlamofire.modulemap; sourceTree = "<group>"; };
-		CB28239FF5C480704EF334FE08DB720A /* CardButtonTertiaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = CardButtonTertiaryStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/CardButtonTertiaryStyle.json; sourceTree = "<group>"; };
+		CB28239FF5C480704EF334FE08DB720A /* CardButtonTertiaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; name = CardButtonTertiaryStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/CardButtonTertiaryStyle.json; sourceTree = "<group>"; };
 		CB7C1EE5F1EB42A9053E301932BF485F /* UIProgressView+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIProgressView+Rx.swift"; path = "RxCocoa/iOS/UIProgressView+Rx.swift"; sourceTree = "<group>"; };
 		CB85259AF148AAB9B8D38438520657CE /* ExpandCellCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpandCellCardView.h; path = VUIComponents/Classes/Components/TableCardView/CellCardView/ExpandCellCardView.h; sourceTree = "<group>"; };
 		CBC195AD8DF5D0EBC507C2FDC577F80C /* Sink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sink.swift; path = RxSwift/Observables/Sink.swift; sourceTree = "<group>"; };
@@ -2490,7 +2490,7 @@
 		CED3E9E646A560C23A1CF51086F5A559 /* RxTableViewDataSourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxTableViewDataSourceType.swift; path = RxCocoa/iOS/Protocols/RxTableViewDataSourceType.swift; sourceTree = "<group>"; };
 		CEF2F03F0834EC40296D0D389C0F1A5D /* Take.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Take.swift; path = RxSwift/Observables/Take.swift; sourceTree = "<group>"; };
 		CF5F3626D17BCFDDB92821897CD38F0B /* ExpandCellWithCarouselModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpandCellWithCarouselModel.h; path = VUIComponents/Classes/Components/Card/Subclass/ExpandSignpostWithAvatarCardView/ExpandCellWithCarouselModel.h; sourceTree = "<group>"; };
-		CF69D5B296DA2E0DBA036E66069769CB /* RoundedOverlayButtonStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = RoundedOverlayButtonStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/RoundedOverlayButtonStyle.json; sourceTree = "<group>"; };
+		CF69D5B296DA2E0DBA036E66069769CB /* RoundedOverlayButtonStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; name = RoundedOverlayButtonStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/RoundedOverlayButtonStyle.json; sourceTree = "<group>"; };
 		CF702A137C09FA6A9780676AB301AFC9 /* AlertView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = AlertView.xib; path = "VUIComponents/Classes/Components/Alert Views/Alert page/AlertView.xib"; sourceTree = "<group>"; };
 		CF712D2B7815F40AFB1A12778D321C99 /* ConcurrentDispatchQueueScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConcurrentDispatchQueueScheduler.swift; path = RxSwift/Schedulers/ConcurrentDispatchQueueScheduler.swift; sourceTree = "<group>"; };
 		CFA1B9064D73E42B243B45D67A049BF1 /* GetKeyChildStepperView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GetKeyChildStepperView.m; path = VUIComponents/Classes/Components/Card/Subclass/StepperCardViews/GetKeyChildStepperView.m; sourceTree = "<group>"; };
@@ -2501,7 +2501,7 @@
 		D08B16AC64D853FA43B4E44E2EBD1A69 /* ScratchCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ScratchCardView.h; path = VUIComponents/Classes/Components/Card/Subclass/ScratchCardView/ScratchCardView.h; sourceTree = "<group>"; };
 		D0E18A4E55A63C9D2D1E691807F7A693 /* Sequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sequence.swift; path = RxSwift/Observables/Sequence.swift; sourceTree = "<group>"; };
 		D0E5BC1848C149011D20262BEA061F7F /* ObserveOn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObserveOn.swift; path = RxSwift/Observables/ObserveOn.swift; sourceTree = "<group>"; };
-		D0F05B1AAA6BABBB24FA346F4C19539D /* HeroButtonSecondaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = HeroButtonSecondaryStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/HeroButtonSecondaryStyle.json; sourceTree = "<group>"; };
+		D0F05B1AAA6BABBB24FA346F4C19539D /* HeroButtonSecondaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; name = HeroButtonSecondaryStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/HeroButtonSecondaryStyle.json; sourceTree = "<group>"; };
 		D0F73D0791B6D0A7B197F99D3FFA5C07 /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
 		D0FCE132B26217A9AB1C4636186C9E3E /* BaseCardWithHeaderTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BaseCardWithHeaderTableViewController.m; path = VUIComponents/Classes/Components/CardTableView/Base/BaseCardWithHeaderTableViewController.m; sourceTree = "<group>"; };
 		D1246BDCE3D2C9BE0A13951D997256B4 /* SerialDisposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SerialDisposable.swift; path = RxSwift/Disposables/SerialDisposable.swift; sourceTree = "<group>"; };
@@ -2562,7 +2562,7 @@
 		DA58B4E2327FC1177516BFFCCEEBDE10 /* CreditCardViewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CreditCardViewModel.m; path = VUIComponents/Classes/Components/Card/Subclass/CreditCardView/CreditCardModel/CreditCardViewModel.m; sourceTree = "<group>"; };
 		DA7563202F8462C4E1C25794B2B12B9B /* NetworkErrorMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkErrorMapper.swift; path = VFAuthKeyCloak/Classes/Network/Parser/NetworkErrorMapper.swift; sourceTree = "<group>"; };
 		DAD87BA1EAD96EBA56BD7044D3CF5956 /* StretchHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = StretchHeaderView.m; path = VUIComponents/Classes/Components/ExtandableHeader/StretchHeaderCardView/StretchHeaderView.m; sourceTree = "<group>"; };
-		DAF6F6C9DA3A53CF5F4B2082040ED1A7 /* HeroButtonTertiaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = HeroButtonTertiaryStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/HeroButtonTertiaryStyle.json; sourceTree = "<group>"; };
+		DAF6F6C9DA3A53CF5F4B2082040ED1A7 /* HeroButtonTertiaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; name = HeroButtonTertiaryStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/HeroButtonTertiaryStyle.json; sourceTree = "<group>"; };
 		DAF8BA980149BEC782F4AB845B22F66D /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
 		DAFBC428CB11D1D0D3A7C79198D91044 /* ObserverBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObserverBase.swift; path = RxSwift/Observers/ObserverBase.swift; sourceTree = "<group>"; };
 		DB06E86F79EF4B4F9D56F9139FD1F453 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
@@ -2597,7 +2597,7 @@
 		DF7F8A55B53AFE6B8BF37866AB81C32B /* RxCollectionViewDataSourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxCollectionViewDataSourceType.swift; path = RxCocoa/iOS/Protocols/RxCollectionViewDataSourceType.swift; sourceTree = "<group>"; };
 		DFA0CFEB1173D45779AADE18F61410F6 /* MOLHSizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MOLHSizable.swift; path = Sources/MOLH/MOLHSizable.swift; sourceTree = "<group>"; };
 		E002ED9F24F9D71D2E9E0685308C8982 /* UserInfoModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInfoModel.swift; path = VFAuthKeyCloak/Classes/User/UserInfo/UserInfoModel.swift; sourceTree = "<group>"; };
-		E004076900DB3F03056FE4387F10F02B /* trie_search.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = trie_search.c; path = TrustKit/Dependencies/domain_registry/private/trie_search.c; sourceTree = "<group>"; };
+		E004076900DB3F03056FE4387F10F02B /* trie_search.c */ = {isa = PBXFileReference; includeInIndex = 1; name = trie_search.c; path = TrustKit/Dependencies/domain_registry/private/trie_search.c; sourceTree = "<group>"; };
 		E0B4170A4E93FF086223A7D7BDE1FF22 /* DisposeBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DisposeBase.swift; path = RxSwift/Disposables/DisposeBase.swift; sourceTree = "<group>"; };
 		E14C868FDE7951AC50D37E2E6AB67E38 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		E1AE8DD29D3D2989ACF3C7BCF1017ED0 /* ApacheNetworkManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApacheNetworkManager.swift; path = "VFEG-NetworkManager/Classes/Managers/ApacheNetworkManager.swift"; sourceTree = "<group>"; };
@@ -2636,11 +2636,11 @@
 		E7DCDD8F712B177CFB537B12FB373C53 /* ProgressArc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ProgressArc.m; path = VUIComponents/Classes/Components/ThirdParty/KAProgressLabel/ProgressArc.m; sourceTree = "<group>"; };
 		E830858327D67C7EF038EA292AA649B8 /* KeyCloakUseCaseFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyCloakUseCaseFactory.swift; path = VFAuthKeyCloak/Classes/KeyCloak/KeyCloakUseCaseFactory.swift; sourceTree = "<group>"; };
 		E89DB5E53D46D9AB25A889B8B6657C58 /* ExpandSignpostWithAvatarCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpandSignpostWithAvatarCardView.h; path = VUIComponents/Classes/Components/Card/Subclass/ExpandSignpostWithAvatarCardView/ExpandSignpostWithAvatarCardView.h; sourceTree = "<group>"; };
-		E8A426DAC1B46CBD4E2663DE83DAC833 /* init_registry_tables.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = init_registry_tables.c; path = TrustKit/Dependencies/domain_registry/private/init_registry_tables.c; sourceTree = "<group>"; };
+		E8A426DAC1B46CBD4E2663DE83DAC833 /* init_registry_tables.c */ = {isa = PBXFileReference; includeInIndex = 1; name = init_registry_tables.c; path = TrustKit/Dependencies/domain_registry/private/init_registry_tables.c; sourceTree = "<group>"; };
 		E8AF503AE521AC68765B04D0BC4E5E81 /* RxCollectionViewReactiveArrayDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxCollectionViewReactiveArrayDataSource.swift; path = RxCocoa/iOS/DataSources/RxCollectionViewReactiveArrayDataSource.swift; sourceTree = "<group>"; };
 		E9245C93F3817B0D4AF0A3D2DB439921 /* LocalizableTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LocalizableTextField.h; path = VUIComponents/Classes/Components/LocalizablaFields/LocalizableTextField.h; sourceTree = "<group>"; };
 		E92D675673E6153A65A3E4EF5ED7A9B0 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Sources/ConstraintDescription.swift; sourceTree = "<group>"; };
-		E9517ECD50C8AC994156DBF51BD45CFA /* RoundedCardButtonStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = RoundedCardButtonStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/RoundedCardButtonStyle.json; sourceTree = "<group>"; };
+		E9517ECD50C8AC994156DBF51BD45CFA /* RoundedCardButtonStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; name = RoundedCardButtonStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/RoundedCardButtonStyle.json; sourceTree = "<group>"; };
 		E98C4AC682685754D030FE0FAF640B6F /* VFEG-NetworkManager */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "VFEG-NetworkManager"; path = VFEG_NetworkManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99B0CE61D5431F873AAA1F8A97D0CBA /* AtomicInt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomicInt.swift; path = Platform/AtomicInt.swift; sourceTree = "<group>"; };
 		E9BA4A9D60B77AAFFDFA4A6F47B1ACE8 /* ExpandSignpostCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ExpandSignpostCell.xib; path = VUIComponents/Classes/Components/Card/Subclass/ExpandSignpostWithAvatarCardView/ExpandSignpostCell.xib; sourceTree = "<group>"; };
@@ -2679,7 +2679,7 @@
 		F1E97411906C22A4C9918002DDD93838 /* ExpandableBaseCardViewWithButtons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpandableBaseCardViewWithButtons.h; path = VUIComponents/Classes/Components/Card/Base/ExpandableBaseCardViewWithButtons.h; sourceTree = "<group>"; };
 		F24145C77AE39DDF7361407649FBAC32 /* VUIComponents */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VUIComponents; path = VUIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25936863C21FA3189CDE7379B75F577 /* INTUAnimationEngine */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = INTUAnimationEngine; path = INTUAnimationEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F276EC0F764F3850539B7224145CA5F3 /* GlamourAnimation.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = GlamourAnimation.js; path = VUIComponents/Classes/Components/Resources/GlamourAnimations/GlamourAnimation.js; sourceTree = "<group>"; };
+		F276EC0F764F3850539B7224145CA5F3 /* GlamourAnimation.js */ = {isa = PBXFileReference; includeInIndex = 1; name = GlamourAnimation.js; path = VUIComponents/Classes/Components/Resources/GlamourAnimations/GlamourAnimation.js; sourceTree = "<group>"; };
 		F2D2900354E99049B118F66D5F2C1D9E /* CustomButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CustomButton.m; path = VUIComponents/Classes/Components/CustomBtn/CustomButton.m; sourceTree = "<group>"; };
 		F2D71DDC3589F77E8ADAF75019FEB3E8 /* RxTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxTarget.swift; path = RxCocoa/Common/RxTarget.swift; sourceTree = "<group>"; };
 		F2DAB1152FF59B166243FA4413AE8B99 /* KVORepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KVORepresentable.swift; path = RxCocoa/Foundation/KVORepresentable.swift; sourceTree = "<group>"; };
@@ -2693,7 +2693,7 @@
 		F4F018630F9DDAF0A20A15AFD9EC32A2 /* TPPropertyAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPPropertyAnimation.h; path = VUIComponents/Classes/Components/ThirdParty/KAProgressLabel/TPPropertyAnimation.h; sourceTree = "<group>"; };
 		F4F6958206BC5608406BB336DB89D9E0 /* BaseTableCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BaseTableCell.h; path = VUIComponents/Classes/Components/TableCardView/BaseTableCell/BaseTableCell.h; sourceTree = "<group>"; };
 		F5154AC270464DDDDF03F6B93868A2FC /* TokenError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokenError.swift; path = VFAuthKeyCloak/Classes/DTOS/TokenError.swift; sourceTree = "<group>"; };
-		F5305EB5A7FA0A20654610BD62A3F92C /* OverlayButtonSecondaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = OverlayButtonSecondaryStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/OverlayButtonSecondaryStyle.json; sourceTree = "<group>"; };
+		F5305EB5A7FA0A20654610BD62A3F92C /* OverlayButtonSecondaryStyle.json */ = {isa = PBXFileReference; includeInIndex = 1; name = OverlayButtonSecondaryStyle.json; path = VUIComponents/Classes/Components/CustomBtn/resource/OverlayButtonSecondaryStyle.json; sourceTree = "<group>"; };
 		F580F677C98D0248A8D3B6D8255079C9 /* AnonymousObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnonymousObserver.swift; path = RxSwift/Observers/AnonymousObserver.swift; sourceTree = "<group>"; };
 		F582C69377A860617B12B43B3F443FB9 /* INTUAnimationEngine-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "INTUAnimationEngine-umbrella.h"; sourceTree = "<group>"; };
 		F5BAE1F6E6054BF24394A520B38D8B3C /* PagerCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = PagerCollectionViewCell.xib; path = VUIComponents/Classes/Components/ExtandableHeader/SearchAndFilterComponents/PagerView/PagerCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -2989,8 +2989,8 @@
 				A4EEE7894643E29BDBB4D6E7B3E67237 /* MOLH */,
 				9122916DD01AACDC0859A890B078D08E /* NSAttributedString+CCLFormat */,
 				B9084FE779702931E8DF1D00A2D725FB /* ObjectMapper */,
-				8C970E6232F200C0E50033524B5A512A /* Pods_AVTabBar_Example.framework */,
-				BBEF01B47E6146F892B65FA0CC88CC2E /* Pods_AVTabBar_Tests.framework */,
+				8C970E6232F200C0E50033524B5A512A /* Pods-AVTabBar_Example */,
+				BBEF01B47E6146F892B65FA0CC88CC2E /* Pods-AVTabBar_Tests */,
 				580712ADE0DDE9601ED35B000EC802D6 /* RSKImageCropper */,
 				82F1475AA0F9C33F7EA4A1459305D2AB /* RxAlamofire */,
 				BC432FD48A5932251F1CAFBC4BF74894 /* RxCocoa */,
@@ -3044,6 +3044,7 @@
 				7AEFA1AD35EC28746910540B6DCE17E0 /* Resources */,
 				7F74E04DEAF1F2277585EFDF8EAA5D8F /* Support Files */,
 			);
+			name = RSKImageCropper;
 			path = RSKImageCropper;
 			sourceTree = "<group>";
 		};
@@ -3089,6 +3090,7 @@
 				D52BA2A7EEF19ABAE4AFDAC8F2899493 /* UILayoutSupport+Extensions.swift */,
 				FD8988B466C853423F707B516A75B79F /* Support Files */,
 			);
+			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -3250,6 +3252,7 @@
 				0D35CD698446794804320D941C0CD4F5 /* WKWebView+Rx.swift */,
 				2198C6778511E03A4ADC8CAB0EC9C4AC /* Support Files */,
 			);
+			name = RxCocoa;
 			path = RxCocoa;
 			sourceTree = "<group>";
 		};
@@ -3275,6 +3278,7 @@
 				ACC465AED27A7DCA88D0799D486995B6 /* JSONValueTransformer.m */,
 				8B45E07C69D4855B7443E4DED8870F6D /* Support Files */,
 			);
+			name = JSONModel;
 			path = JSONModel;
 			sourceTree = "<group>";
 		};
@@ -3361,6 +3365,7 @@
 				7D46433B5D8E3D11F5670932172045D6 /* vendor_identifier.m */,
 				4B05FAB3A3039E021B7CD920974296A2 /* Support Files */,
 			);
+			name = TrustKit;
 			path = TrustKit;
 			sourceTree = "<group>";
 		};
@@ -3563,6 +3568,7 @@
 				DFA0CFEB1173D45779AADE18F61410F6 /* MOLHSizable.swift */,
 				B9ECB5DA5328072355D0BDF2E37FC123 /* Support Files */,
 			);
+			name = MOLH;
 			path = MOLH;
 			sourceTree = "<group>";
 		};
@@ -3626,6 +3632,7 @@
 				E2A28FDFA70D42D80C38F5B31E2B39B6 /* Utils.swift */,
 				1061D95BBB3F13ECB8F6A64E2F8ED546 /* Support Files */,
 			);
+			name = RxRelay;
 			path = RxRelay;
 			sourceTree = "<group>";
 		};
@@ -3784,6 +3791,7 @@
 				A610E0889D7C9225AF96813B5CA762B3 /* Zip+Collection.swift */,
 				C7ACD39FDE11AB3599C6B2D5C2968A6E /* Support Files */,
 			);
+			name = RxSwift;
 			path = RxSwift;
 			sourceTree = "<group>";
 		};
@@ -3793,6 +3801,7 @@
 				B5EF4E069AC4C61D0CC1EBC4CA26F4CE /* Core */,
 				B4D553997976E8946EBB0A0AAF81F8D0 /* Support Files */,
 			);
+			name = RxAlamofire;
 			path = RxAlamofire;
 			sourceTree = "<group>";
 		};
@@ -3808,6 +3817,7 @@
 				52EC7EAEB529A95BE38BB640DAE117B4 /* ValidatorJWT.swift */,
 				1FF70AC313121A6E2AC7E82F7D932B4D /* Support Files */,
 			);
+			name = JWTDecode;
 			path = JWTDecode;
 			sourceTree = "<group>";
 		};
@@ -3851,6 +3861,7 @@
 				5FAFBD32832BE464952BE88ABA9A5F51 /* Validation.swift */,
 				ABABE33BD7E2168A964933402A0018D1 /* Support Files */,
 			);
+			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -3958,6 +3969,7 @@
 				EDC5B61CB43AE80D06E2375E56696C43 /* Resources */,
 				B38ACC648B043D981DBD21D0297EE84F /* Support Files */,
 			);
+			name = VFAuthKeyCloak;
 			path = VFAuthKeyCloak;
 			sourceTree = "<group>";
 		};
@@ -3988,6 +4000,7 @@
 				5CAD47C55CE2C66EFA436E15DAD6DECB /* RxSubscriptionExtension.swift */,
 				65557DED71484604F99FB582703021B2 /* Support Files */,
 			);
+			name = "VFEG-NetworkManager";
 			path = "VFEG-NetworkManager";
 			sourceTree = "<group>";
 		};
@@ -4013,6 +4026,7 @@
 				F71118529B23B84D60DE1FF01002B7A2 /* NSAttributedString+CCLFormat.m */,
 				ABDFDFE8BCCC7857F969023EBCA9ECE3 /* Support Files */,
 			);
+			name = "NSAttributedString+CCLFormat";
 			path = "NSAttributedString+CCLFormat";
 			sourceTree = "<group>";
 		};
@@ -4025,6 +4039,7 @@
 				BE680779F0836FF2E5C49F7CF202F411 /* WYStoryboardPopoverSegue.m */,
 				D3A4701205AABA9B05898C020E7BFE06 /* Support Files */,
 			);
+			name = WYPopoverController;
 			path = WYPopoverController;
 			sourceTree = "<group>";
 		};
@@ -4098,6 +4113,7 @@
 				41B2C063CB17C70636C9F015CDC14791 /* URLTransform.swift */,
 				B98442F79299A13954D9ACFFCCD2C98C /* Support Files */,
 			);
+			name = ObjectMapper;
 			path = ObjectMapper;
 			sourceTree = "<group>";
 		};
@@ -4244,6 +4260,7 @@
 				18F8BA81F3DDFC3D96070387B0B80738 /* UIView+GSKTransplantSubviews.m */,
 				B71240FB8C03A83A56BAC03A01E96605 /* Support Files */,
 			);
+			name = GSKStretchyHeaderView;
 			path = GSKStretchyHeaderView;
 			sourceTree = "<group>";
 		};
@@ -4315,6 +4332,7 @@
 				B850786861133104427B5F18BCB73836 /* Support Files */,
 				A70CFFF15119353C20B21EE180B0F83B /* UIColor */,
 			);
+			name = "UIColor+Hex";
 			path = "UIColor+Hex";
 			sourceTree = "<group>";
 		};
@@ -4642,6 +4660,7 @@
 				5543F2298C16B25AC16476F3F8C74820 /* Resources */,
 				608C9A21C46BAC9F061F10D4AD8AF7E6 /* Support Files */,
 			);
+			name = VUIComponents;
 			path = VUIComponents;
 			sourceTree = "<group>";
 		};
@@ -4667,6 +4686,7 @@
 				3C21A53AB0165FA31A1510AE34F35CCF /* JWGCircleCounter.m */,
 				95879A41EEF921D4FF849CCB23085EDF /* Support Files */,
 			);
+			name = JWGCircleCounter;
 			path = JWGCircleCounter;
 			sourceTree = "<group>";
 		};
@@ -4699,6 +4719,7 @@
 				650B7B795E2B8FCB8BAF39316F403C41 /* SpringSolver */,
 				F575F25D130B5AC359F71CE749F49314 /* Support Files */,
 			);
+			name = INTUAnimationEngine;
 			path = INTUAnimationEngine;
 			sourceTree = "<group>";
 		};
@@ -5270,7 +5291,7 @@
 			);
 			name = "Pods-AVTabBar_Tests";
 			productName = Pods_AVTabBar_Tests;
-			productReference = BBEF01B47E6146F892B65FA0CC88CC2E /* Pods_AVTabBar_Tests.framework */;
+			productReference = BBEF01B47E6146F892B65FA0CC88CC2E /* Pods-AVTabBar_Tests */;
 			productType = "com.apple.product-type.framework";
 		};
 		5010C95FF43FC4B69F01C659B80B57DD /* VFAuthKeyCloak */ = {
@@ -5391,7 +5412,7 @@
 			);
 			name = "Pods-AVTabBar_Example";
 			productName = Pods_AVTabBar_Example;
-			productReference = 8C970E6232F200C0E50033524B5A512A /* Pods_AVTabBar_Example.framework */;
+			productReference = 8C970E6232F200C0E50033524B5A512A /* Pods-AVTabBar_Example */;
 			productType = "com.apple.product-type.framework";
 		};
 		91B86AAEAA5C74E2EB27EB4D6D1F4472 /* JWGCircleCounter */ = {
@@ -7971,7 +7992,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -9155,7 +9177,6 @@
 			children = (
 				25A1B7E836B9D46931350F61421934BD /* VFCoreDataModel.xcdatamodel */,
 			);
-			currentVersion = 25A1B7E836B9D46931350F61421934BD /* VFCoreDataModel.xcdatamodel */;
 			name = VFCoreDataModel.xcdatamodeld;
 			path = VFAuthKeyCloak/Classes/CoreData/VFCoreDataModel.xcdatamodeld;
 			sourceTree = "<group>";

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C83BAB12892BA6700AF9729 /* TabBarBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83BAB02892BA6700AF9729 /* TabBarBuilderProtocol.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -16,9 +15,7 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		66208564ED43A4C74B17710F /* Pods_AVTabBar_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF97981B079566BD6D006D0 /* Pods_AVTabBar_Tests.framework */; };
 		C84F183FF848990991AB7709 /* Pods_AVTabBar_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2750761520B0D50132286DE8 /* Pods_AVTabBar_Example.framework */; };
-		F705B6A3288815BC00EAB0A8 /* ItemBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F705B6A1288815BC00EAB0A8 /* ItemBarView.swift */; };
-		F705B6A4288815BC00EAB0A8 /* ItemBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F705B6A2288815BC00EAB0A8 /* ItemBarView.xib */; };
-		F735BF3D2897FBA500DD2092 /* ItemBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735BF3C2897FBA500DD2092 /* ItemBarModel.swift */; };
+		F729F50D28A13BB80070B117 /* ItemBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F729F50C28A13BB80070B117 /* ItemBarModel.swift */; };
 		F735BF412899273400DD2092 /* CustomTabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F735BF402899273400DD2092 /* CustomTabBarView.xib */; };
 		F735BF43289927B100DD2092 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735BF42289927B000DD2092 /* CustomTabBarView.swift */; };
 		F735BF4628992A1B00DD2092 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735BF4528992A1B00DD2092 /* UIViewExtension.swift */; };
@@ -29,8 +26,6 @@
 		F735BF512899508700DD2092 /* CustomFabTabBarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F735BF502899508700DD2092 /* CustomFabTabBarViewController.storyboard */; };
 		F735BF53289952D800DD2092 /* CustomFabTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735BF52289952D800DD2092 /* CustomFabTabBarViewController.swift */; };
 		F76139DB288EB35400371D70 /* RollingPitTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76139DA288EB35400371D70 /* RollingPitTabBar.swift */; };
-		F7E9614C288EBB2900F00504 /* DashboardTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7E9614B288EBB2900F00504 /* DashboardTabBar.xib */; };
-		F7E9614E288EBCBA00F00504 /* DashboardTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E9614D288EBCBA00F00504 /* DashboardTabBar.swift */; };
 		F7FE7F7D28882C19008ACF81 /* CircleItemBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FE7F7C28882C17008ACF81 /* CircleItemBarView.swift */; };
 		F7FE7F7F28883D7E008ACF81 /* CircleItemBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7FE7F7E28883D7E008ACF81 /* CircleItemBarView.xib */; };
 /* End PBXBuildFile section */
@@ -49,7 +44,6 @@
 		1E97C6B3E4BA6DD64040FB8C /* AVTabBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AVTabBar.podspec; path = ../AVTabBar.podspec; sourceTree = "<group>"; };
 		2750761520B0D50132286DE8 /* Pods_AVTabBar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVTabBar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A87F1779C8EFA037DF34B3A /* Pods-AVTabBar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVTabBar_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AVTabBar_Tests/Pods-AVTabBar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		5C83BAB02892BA6700AF9729 /* TabBarBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarBuilderProtocol.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AVTabBar_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVTabBar_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,9 +60,7 @@
 		D4B5306D58F2E31CEEEBBD97 /* Pods-AVTabBar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVTabBar_Example.debug.xcconfig"; path = "Target Support Files/Pods-AVTabBar_Example/Pods-AVTabBar_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D6465704B143AE66951A1367 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DD474529F4752D9F43F13176 /* Pods-AVTabBar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVTabBar_Example.release.xcconfig"; path = "Target Support Files/Pods-AVTabBar_Example/Pods-AVTabBar_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F705B6A1288815BC00EAB0A8 /* ItemBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemBarView.swift; sourceTree = "<group>"; };
-		F705B6A2288815BC00EAB0A8 /* ItemBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemBarView.xib; sourceTree = "<group>"; };
-		F735BF3C2897FBA500DD2092 /* ItemBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBarModel.swift; sourceTree = "<group>"; };
+		F729F50C28A13BB80070B117 /* ItemBarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemBarModel.swift; sourceTree = "<group>"; };
 		F735BF402899273400DD2092 /* CustomTabBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTabBarView.xib; sourceTree = "<group>"; };
 		F735BF42289927B000DD2092 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		F735BF4528992A1B00DD2092 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -79,8 +71,6 @@
 		F735BF502899508700DD2092 /* CustomFabTabBarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomFabTabBarViewController.storyboard; sourceTree = "<group>"; };
 		F735BF52289952D800DD2092 /* CustomFabTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFabTabBarViewController.swift; sourceTree = "<group>"; };
 		F76139DA288EB35400371D70 /* RollingPitTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingPitTabBar.swift; sourceTree = "<group>"; };
-		F7E9614B288EBB2900F00504 /* DashboardTabBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardTabBar.xib; sourceTree = "<group>"; };
-		F7E9614D288EBCBA00F00504 /* DashboardTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTabBar.swift; sourceTree = "<group>"; };
 		F7FE7F7C28882C17008ACF81 /* CircleItemBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleItemBarView.swift; sourceTree = "<group>"; };
 		F7FE7F7E28883D7E008ACF81 /* CircleItemBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircleItemBarView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,10 +130,11 @@
 		607FACD21AFB9204008FA782 /* Example for AVTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				F729F50B28A13BAD0070B117 /* Model */,
+				F729F50A28A13B730070B117 /* CircleButton */,
 				F76139D9288EB32700371D70 /* RollingPitTabBar */,
 				F735BF4B289940C800DD2092 /* FabTabBarView */,
 				F735BF3F289926FE00DD2092 /* FlatTabBarView */,
-				F705B6A0288815A100EAB0A8 /* TabBarView */,
 				F735BF44289929FE00DD2092 /* Extenstions */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
@@ -191,19 +182,21 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		F705B6A0288815A100EAB0A8 /* TabBarView */ = {
+		F729F50A28A13B730070B117 /* CircleButton */ = {
 			isa = PBXGroup;
 			children = (
 				F7FE7F7C28882C17008ACF81 /* CircleItemBarView.swift */,
-				F705B6A1288815BC00EAB0A8 /* ItemBarView.swift */,
 				F7FE7F7E28883D7E008ACF81 /* CircleItemBarView.xib */,
-				F705B6A2288815BC00EAB0A8 /* ItemBarView.xib */,
-				F7E9614B288EBB2900F00504 /* DashboardTabBar.xib */,
-				F7E9614D288EBCBA00F00504 /* DashboardTabBar.swift */,
-				5C83BAB02892BA6700AF9729 /* TabBarBuilderProtocol.swift */,
-				F735BF3C2897FBA500DD2092 /* ItemBarModel.swift */,
 			);
-			name = TabBarView;
+			name = CircleButton;
+			sourceTree = "<group>";
+		};
+		F729F50B28A13BAD0070B117 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F729F50C28A13BB80070B117 /* ItemBarModel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		F735BF3F289926FE00DD2092 /* FlatTabBarView */ = {
@@ -343,7 +336,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F735BF4828992B6F00DD2092 /* CustomFlatTabBar.storyboard in Resources */,
-				F7E9614C288EBB2900F00504 /* DashboardTabBar.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				F735BF4D28994E7000DD2092 /* CustomFabTabBarView.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
@@ -351,7 +343,6 @@
 				F735BF512899508700DD2092 /* CustomFabTabBarViewController.storyboard in Resources */,
 				F735BF412899273400DD2092 /* CustomTabBarView.xib in Resources */,
 				F7FE7F7F28883D7E008ACF81 /* CircleItemBarView.xib in Resources */,
-				F705B6A4288815BC00EAB0A8 /* ItemBarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,15 +470,12 @@
 				F735BF4A28992D9F00DD2092 /* CustomFlatTabBarController.swift in Sources */,
 				F735BF53289952D800DD2092 /* CustomFabTabBarViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				F735BF3D2897FBA500DD2092 /* ItemBarModel.swift in Sources */,
-				F705B6A3288815BC00EAB0A8 /* ItemBarView.swift in Sources */,
 				F735BF43289927B100DD2092 /* CustomTabBarView.swift in Sources */,
-				F7E9614E288EBCBA00F00504 /* DashboardTabBar.swift in Sources */,
 				F76139DB288EB35400371D70 /* RollingPitTabBar.swift in Sources */,
 				F735BF4628992A1B00DD2092 /* UIViewExtension.swift in Sources */,
+				F729F50D28A13BB80070B117 /* ItemBarModel.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				F7FE7F7D28882C19008ACF81 /* CircleItemBarView.swift in Sources */,
-				5C83BAB12892BA6700AF9729 /* TabBarBuilderProtocol.swift in Sources */,
 				F735BF4F28994F3A00DD2092 /* CustomFabTabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

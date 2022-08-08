@@ -10,6 +10,7 @@ import Foundation
 import Foundation
 import SnapKit
 import VUIComponents
+import UIKit
 
 
 
@@ -18,10 +19,17 @@ class CustomFabTabBarView: UIView {
     
     //MARK: PROPERTIES
     @IBOutlet weak var containerView: RollingPitTabBar!
+    let stackViewItems = UIStackView()
     private let CUSTOM_TAB_BAR_CORNER_RADIUS: CGFloat = 15.0
     private let CUSTOM_TAB_BAR_ICON_SIZE = 34
     private let CUSTOM_TAB_BAR_TITLE_HEIGHT = 16
-    
+    var hasTopNotch: Bool {
+        if #available(iOS 11.0,  *) {
+            return UIApplication.shared.delegate?.window??.safeAreaInsets.top ?? 0 > 20
+        }
+        return false
+    }
+
     
     var shadowLayer: UIView!
     var itemTapped: ((_ tab: Int) -> Void)?
@@ -40,6 +48,7 @@ class CustomFabTabBarView: UIView {
     func commonInit() {
         guard let viewFromXib = Bundle.main.loadNibNamed("CustomFabTabBarView", owner: self, options: nil)?[0] as? UIView else { return }
         viewFromXib.frame = self.bounds
+       // prepareUI()
         addSubview(viewFromXib)
     }
     
@@ -49,10 +58,11 @@ class CustomFabTabBarView: UIView {
         setupView()
         
         //Create Horizontal Stack
-        let stackViewItems = UIStackView()
         stackViewItems.axis = .horizontal
         stackViewItems.distribution  = .fillEqually
         stackViewItems.alignment = .fill
+        var arrangedSubviews = [UIView]()
+
         
         //Adding items to stack
         if menuItems.count > 0 {
@@ -63,16 +73,19 @@ class CustomFabTabBarView: UIView {
                     circleItem.clipsToBounds = true
                     circleItem.tag = item
                     circleItem.isAccessibilityElement = true
-                    stackViewItems.addArrangedSubview(circleItem)
+                    arrangedSubviews.append(circleItem)
+
                 }else{
                     let itemView = self.createTabItem(item: menuItems[item], index: item)
                     itemView.clipsToBounds = true
                     itemView.tag = item
-                    stackViewItems.addArrangedSubview(itemView)
+                    arrangedSubviews.append(itemView)
                 }
+                
             }
         }
         
+        self.setupStackView(views: arrangedSubviews)
         self.containerView.addSubview(stackViewItems)
         
         stackViewItems.snp.makeConstraints { make in
@@ -84,6 +97,15 @@ class CustomFabTabBarView: UIView {
         
         //Select index = 0
         self.activateTab(tab: 0)
+    }
+    
+    func setupStackView(views: [UIView]) {
+        for subview in stackViewItems.arrangedSubviews {
+            subview.removeFromSuperview()
+        }
+        for view in views {
+            stackViewItems.addArrangedSubview(view)
+        }
     }
     
     private func setupView() {
@@ -101,7 +123,7 @@ class CustomFabTabBarView: UIView {
         
         
         itemTitleLabel.text = item.categoryName
-        itemTitleLabel.font = UIFont(name: "regularFont", size: 14.0)!
+      //  itemTitleLabel.font = UIFont(name: "regularFont", size: 14.0)
         itemTitleLabel.textAlignment = .center
         itemTitleLabel.clipsToBounds = true
         
@@ -129,26 +151,17 @@ class CustomFabTabBarView: UIView {
     
     func createCircleTabItem(item: ItemBarModel, index: Int) -> UIView {
         //Create View to contain icon and text
-        let tabBarItem = UIView(frame: CGRect.zero)
-        let itemIconView = UIImageView(frame: CGRect.zero)
-        
-        itemIconView.image = item.barItemImage
-        
-        tabBarItem.addSubview(itemIconView)
-        tabBarItem.clipsToBounds = true
-        
-        itemIconView.snp.makeConstraints { make in
-            make.height.equalTo(CUSTOM_TAB_BAR_ICON_SIZE)
-            make.width.equalTo(CUSTOM_TAB_BAR_ICON_SIZE)
-            make.top.equalTo(15)
-            make.centerX.equalTo(tabBarItem.snp.centerX)
-        }
-        tabBarItem.layer.cornerRadius = containerView.frame.size.height / 2
+        let circleItem = CircleItemBarView()
+            circleItem.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+                        circleItem.isProfile = true
+//                        circleItem.backgroundColor = .yellow
+                        circleItem.buildview()
+                        circleItem.setModel(model: item)
+                        circleItem.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.handleTap)))
+                        circleItem.isAccessibilityElement = true
         
         
-        
-        tabBarItem.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.handleTap)))
-        return tabBarItem
+        return circleItem
     }
     
     @objc func handleTap(_ sender: UIGestureRecognizer) {

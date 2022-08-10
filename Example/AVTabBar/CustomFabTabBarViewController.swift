@@ -9,39 +9,44 @@
 import Foundation
 import SnapKit
 
-protocol FabTabbarViewProtocol: AnyObject {
-    func didTapItem(tab: Int)
+public protocol FabTabbarViewProtocol: AnyObject {
+    func didTapItem(tab: ItemBarModel)
 }
 
 
- class CustomFabTabBarController: UITabBarController {
+open class CustomFabTabBarController: UITabBarController {
     
     //MARK: PROPERTIES
     let CUSTOM_TAB_BAR_HEIGHT: CGFloat = 90.0
     var customTabBar: CustomFabTabBarView!
     weak var customTabBarDelegate: FabTabbarViewProtocol?
 
-    var tabItems: [ItemBarModel] = []
-    var mainVc = UIViewController()
+    open   var tabItems: [ItemBarModel] = []
+    open var mainVc = UIViewController()
 
     
     
     //MARK:- LOAD TAB
-     func loadTabBar() {
-        setupCustomTabBar()
+    open func loadTabBar() {
         self.viewControllers = [mainVc]
-   //     self.selectedIndex = 0
     }
+     
+    open func hideTabBar(){
+         customTabBar.view.isHidden = true
+     }
+    open func showTabBar(){
+         customTabBar.view.isHidden = false
+     }
     
     //MARK:- SETUP TAB VIEW
-    private func setupCustomTabBar() {
+     open func setupCustomTabBar() {
         let frame = tabBar.frame
         tabBar.isHidden = true
-        self.customTabBar = CustomFabTabBarView(menuItems: tabItems, frame: frame)
-        self.customTabBar.itemTapped = { [weak self] index in
+         let viewModel = CustomFabTabBarViewModel(items: tabItems)
+         self.customTabBar = CustomFabTabBarView(viewModel: viewModel, frame: frame)
+        self.customTabBar.itemTapped = { [weak self] item in
             guard let self = self else { return }
-          //  self.changeTab(tab: index)
-            self.customTabBarDelegate?.didTapItem(tab: index)
+            self.customTabBarDelegate?.didTapItem(tab: item)
         }
         self.customTabBar.didMoveToSuperview()
         self.view.addSubview(customTabBar)

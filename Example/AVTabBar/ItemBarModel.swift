@@ -9,17 +9,17 @@
 import Foundation
 import UIKit
 
-class ItemBarModel{
+open class ItemBarModel{
     
-    var categoryName:String?
-    var actionType:String?
-    var actionValue:String?
-    var categorized:Bool?
-    var popular:Bool?
-    var isNew:Bool?
-    var isHidden:Bool?
-    var barItem:Bool?
-    var barItemImage:UIImage?
+    open  var categoryName:String?
+    open  var actionType:String?
+    open  var actionValue:String?
+    open  var categorized:Bool?
+    open  var popular:Bool?
+    open  var isNew:Bool?
+    open  var isHidden:Bool?
+    open  var barItem:Bool?
+    open  var barItemImage:UIImage?
     
     init(categoryName:String,actionType:String,actionValue:String,categorized:Bool,popular:Bool,isNew:Bool,isHidden:Bool,barItem:Bool,barItemImage:UIImage) {
         self.categoryName = categoryName

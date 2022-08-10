@@ -25,7 +25,7 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="Hhl-Si-eux" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="JNq-37-CXW"/>
                 <constraint firstItem="Hhl-Si-eux" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ab4-dz-rEA"/>

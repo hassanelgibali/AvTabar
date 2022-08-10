@@ -22,7 +22,9 @@ class CustomTabBarView: UIView {
     private let CUSTOM_TAB_BAR_TITLE_HEIGHT = 16
     
     var shadowLayer: UIView!
-    var itemTapped: ((_ tab: Int) -> Void)?
+    var itemTapped: ((_ tab: ItemFlatBarModel) -> Void)?
+    var tabBarItem: [ItemFlatBarModel]?
+
     
     //MARK:- INIT
     override init(frame: CGRect) {
@@ -42,7 +44,7 @@ class CustomTabBarView: UIView {
     }
     
     //MARK: - SETUP TAB BAR
-    convenience init(menuItems: [TabItem], frame: CGRect) {
+    convenience init(menuItems: [ItemFlatBarModel], frame: CGRect) {
         self.init(frame: frame)
         setupView()
         
@@ -54,6 +56,7 @@ class CustomTabBarView: UIView {
         
         //Adding items to stack
         for i in 0 ..< menuItems.count {
+            tabBarItem = menuItems
             let itemView = self.createTabItem(item: menuItems[i], index: i)
             itemView.clipsToBounds = true
             itemView.tag = i
@@ -78,7 +81,7 @@ class CustomTabBarView: UIView {
     }
     
     //MARK: - CREATE TAB ITEM VIEW
-    func createTabItem(item: TabItem, index: Int) -> UIView {
+    func createTabItem(item: ItemFlatBarModel, index: Int) -> UIView {
         //Create View to contain icon and text
         let tabBarItem = UIView(frame: CGRect.zero)
         let itemIconView = UIImageView(frame: CGRect.zero)
@@ -88,7 +91,8 @@ class CustomTabBarView: UIView {
         
         
         itemTitleLabel.text = item.displayTitle
-        itemTitleLabel.font = UIFont(name: "regularFont", size: 14.0)!
+      //  itemTitleLabel.font = UIFont(name: "regularFont", size: 14.0)!
+        itemTitleLabel.font = itemTitleLabel.font.withSize(14.0)
         itemTitleLabel.textColor = UIColor(hexString: item.titleColor)
         itemTitleLabel.textAlignment = .center
         itemTitleLabel.clipsToBounds = true
@@ -121,7 +125,7 @@ class CustomTabBarView: UIView {
     
     //MARK: - SELECT TAB
     func activateTab(tab: Int) {
-        self.itemTapped?(tab)
+        self.itemTapped?(tabBarItem?[tab] ?? ItemFlatBarModel(id: "", viewController: UIViewController(), displayTitle: "", titleColor: "", reporting: "", iosMinVersion: "", getRedirectionType: ""))
     }
     
     //MARK: - DRAW SHADOW
@@ -135,7 +139,7 @@ class CustomTabBarView: UIView {
                                                         cornerRadii: CGSize(width: CUSTOM_TAB_BAR_CORNER_RADIUS,
                                                                             height: CUSTOM_TAB_BAR_CORNER_RADIUS)).cgPath
             shadowLayer.layer.shadowOffset = CGSize(width: 0, height: -2)
-            shadowLayer.layer.shadowOpacity = 0.3
+            shadowLayer.layer.shadowOpacity = 0.1
             shadowLayer.layer.shadowRadius = 3
             shadowLayer.layer.masksToBounds = true
             shadowLayer.clipsToBounds = false

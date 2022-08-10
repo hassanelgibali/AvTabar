@@ -18,6 +18,7 @@ import UIKit
 class CustomFabTabBarView: UIView {
     
     //MARK: PROPERTIES
+    @IBOutlet var view: UIView!
     @IBOutlet weak var containerView: RollingPitTabBar!
     let stackViewItems = UIStackView()
     private let CUSTOM_TAB_BAR_CORNER_RADIUS: CGFloat = 15.0
@@ -32,7 +33,8 @@ class CustomFabTabBarView: UIView {
 
     
     var shadowLayer: UIView!
-    var itemTapped: ((_ tab: Int) -> Void)?
+    var itemTapped: ((_ tab: ItemBarModel) -> Void)?
+    var viewModel:CustomFabTabBarViewModel!
     
     //MARK:- INIT
     override init(frame: CGRect) {
@@ -48,42 +50,61 @@ class CustomFabTabBarView: UIView {
     func commonInit() {
         guard let viewFromXib = Bundle.main.loadNibNamed("CustomFabTabBarView", owner: self, options: nil)?[0] as? UIView else { return }
         viewFromXib.frame = self.bounds
-       // prepareUI()
+        initUi()
         addSubview(viewFromXib)
     }
     
-    //MARK: - SETUP TAB BAR
-    convenience init(menuItems: [ItemBarModel], frame: CGRect) {
-        self.init(frame: frame)
-        setupView()
-        
-        //Create Horizontal Stack
-        stackViewItems.axis = .horizontal
-        stackViewItems.distribution  = .fillEqually
-        stackViewItems.alignment = .fill
-        var arrangedSubviews = [UIView]()
-
-        
-        //Adding items to stack
-        if menuItems.count > 0 {
-            let centerItem = menuItems.count / 2
-            for item in 0 ..< menuItems.count {
-                if item == centerItem {
-                    let circleItem = self.createCircleTabItem(item: menuItems[item], index: item)
-                    circleItem.clipsToBounds = true
-                    circleItem.tag = item
-                    circleItem.isAccessibilityElement = true
-                    arrangedSubviews.append(circleItem)
-
-                }else{
-                    let itemView = self.createTabItem(item: menuItems[item], index: item)
-                    itemView.clipsToBounds = true
-                    itemView.tag = item
-                    arrangedSubviews.append(itemView)
-                }
-                
+    fileprivate func initUi() {
+        if let tabBarView = containerView {
+            tabBarView.layer.masksToBounds = true
+            tabBarView.circleBackColor = UIColor.clear
+            tabBarView.circleRadius = 40
+            stackViewItems.spacing = 0
+            stackViewItems.alignment = .fill
+            stackViewItems.distribution = .fillEqually
+            stackViewItems.axis = .horizontal
+            stackViewItems.translatesAutoresizingMaskIntoConstraints = false
+            stackViewItems.isAccessibilityElement = true
+            tabBarView.addSubview(stackViewItems)
+            stackViewItems.snp.makeConstraints { (maker) in
+                maker.edges.equalToSuperview()
             }
         }
+    }
+    
+    //MARK: - SETUP TAB BAR
+    convenience init(viewModel:CustomFabTabBarViewModel, frame: CGRect) {
+        self.init(frame: frame)
+        setupView()
+        self.viewModel = viewModel
+        
+        var arrangedSubviews = [UIView]()
+        
+        if viewModel.getItemsCount() > 0 {
+            let centerItem = viewModel.getCenterItem()
+            for index in 0..<viewModel.getItemsCount() {
+                if index == centerItem {
+                    let circleItem = self.createCircleTabItem(item: self.viewModel.getSelectedItem(at: index), index: index)
+                    circleItem.clipsToBounds = true
+                    circleItem.tag = index
+                    circleItem.isAccessibilityElement = true
+                    let itemView = self.createTabItem(item: self.viewModel.getSelectedItem(at: index), index: index , ishidden: true)
+                    itemView.isUserInteractionEnabled = false
+                    itemView.backgroundColor = .clear
+                    arrangedSubviews.append(itemView)
+                   
+                }
+                else{
+                    let itemView = self.createTabItem(item: self.viewModel.getSelectedItem(at: index), index: index, ishidden: false)
+                    itemView.clipsToBounds = true
+                    itemView.tag = index
+                    arrangedSubviews.append(itemView)
+                }
+            }
+            
+            
+        }
+
         
         self.setupStackView(views: arrangedSubviews)
         self.containerView.addSubview(stackViewItems)
@@ -113,7 +134,7 @@ class CustomFabTabBarView: UIView {
     }
     
     //MARK: - CREATE TAB ITEM VIEW
-    func createTabItem(item: ItemBarModel, index: Int) -> UIView {
+    func createTabItem(item: ItemBarModel, index: Int,ishidden:Bool) -> UIView {
         //Create View to contain icon and text
         let tabBarItem = UIView(frame: CGRect.zero)
         let itemIconView = UIImageView(frame: CGRect.zero)
@@ -122,8 +143,9 @@ class CustomFabTabBarView: UIView {
         itemIconView.image = item.barItemImage
         
         
-        itemTitleLabel.text = item.categoryName
+        itemTitleLabel.text =  !ishidden ? item.categoryName : ""
       //  itemTitleLabel.font = UIFont(name: "regularFont", size: 14.0)
+        itemTitleLabel.font = itemTitleLabel.font.withSize(14.0)
         itemTitleLabel.textAlignment = .center
         itemTitleLabel.clipsToBounds = true
         
@@ -150,19 +172,33 @@ class CustomFabTabBarView: UIView {
     }
     
     func createCircleTabItem(item: ItemBarModel, index: Int) -> UIView {
-        //Create View to contain icon and text
-        let circleItem = CircleItemBarView()
-            circleItem.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-                        circleItem.isProfile = true
-//                        circleItem.backgroundColor = .yellow
-                        circleItem.buildview()
-                        circleItem.setModel(model: item)
-                        circleItem.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.handleTap)))
-                        circleItem.isAccessibilityElement = true
+
+        let centerButton = UIButton(frame: CGRect(x: 40, y:self.frame.size.height-20, width: 60, height: 60))
+        centerButton.backgroundColor = UIColor.white
+        centerButton.setShadow()
+        centerButton.imageView?.snp.makeConstraints({ (make) in
+            make.height.width.equalTo(49)
+        })
+        if #available(iOS 13.0, *) {
+            centerButton.setImage(UIImage(systemName: "leaf.fill"), for: .normal)
+        } else {
+            // Fallback on earlier versions
+        }
+        centerButton.layer.cornerRadius = centerButton.frame.size.height/2
+        view.addSubview(centerButton)
         
-        
-        
-        return circleItem
+        centerButton.snp.makeConstraints { (make) in
+            make.size.equalTo(65)
+            make.centerX.equalToSuperview()
+            if hasTopNotch {
+                make.bottom.equalToSuperview().inset(30)
+            } else {
+                make.bottom.equalToSuperview().inset(10)
+            }
+        }
+        centerButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.handleTap)))
+        self.layoutIfNeeded()
+        return centerButton
     }
     
     @objc func handleTap(_ sender: UIGestureRecognizer) {
@@ -171,7 +207,7 @@ class CustomFabTabBarView: UIView {
     
     //MARK: - SELECT TAB
     func activateTab(tab: Int) {
-        self.itemTapped?(tab)
+        self.itemTapped?(viewModel.getSelectedItem(at: tab))
     }
     
     //MARK: - DRAW SHADOW
@@ -185,7 +221,7 @@ class CustomFabTabBarView: UIView {
                                                         cornerRadii: CGSize(width: CUSTOM_TAB_BAR_CORNER_RADIUS,
                                                                             height: CUSTOM_TAB_BAR_CORNER_RADIUS)).cgPath
             shadowLayer.layer.shadowOffset = CGSize(width: 0, height: -2)
-            shadowLayer.layer.shadowOpacity = 0.3
+          //  shadowLayer.layer.shadowOpacity = 0.2
             shadowLayer.layer.shadowRadius = 3
             shadowLayer.layer.masksToBounds = true
             shadowLayer.clipsToBounds = false

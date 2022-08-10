@@ -27,6 +27,9 @@
 		F735BF512899508700DD2092 /* CustomFabTabBarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F735BF502899508700DD2092 /* CustomFabTabBarViewController.storyboard */; };
 		F735BF53289952D800DD2092 /* CustomFabTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735BF52289952D800DD2092 /* CustomFabTabBarViewController.swift */; };
 		F76139DB288EB35400371D70 /* RollingPitTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76139DA288EB35400371D70 /* RollingPitTabBar.swift */; };
+		F78C186528A26D5A006238FE /* ItemFlatBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78C186428A26D5A006238FE /* ItemFlatBarModel.swift */; };
+		F7D80B4528A3C0A90032A1F1 /* CustomFabTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D80B4428A3C0A90032A1F1 /* CustomFabTabBarViewModel.swift */; };
+		F7D80B4D28A3E1CE0032A1F1 /* AVTabBar_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D80B4C28A3E1CE0032A1F1 /* AVTabBar_ExampleTests.swift */; };
 		F7DE722928A1488D001A7855 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DE722828A1488D001A7855 /* SecondViewController.swift */; };
 		F7FE7F7D28882C19008ACF81 /* CircleItemBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FE7F7C28882C17008ACF81 /* CircleItemBarView.swift */; };
 		F7FE7F7F28883D7E008ACF81 /* CircleItemBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7FE7F7E28883D7E008ACF81 /* CircleItemBarView.xib */; };
@@ -39,6 +42,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
 			remoteInfo = AVTabBar;
+		};
+		F7D80B4E28A3E1CE0032A1F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
+			remoteInfo = AVTabBar_Example;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -74,6 +84,10 @@
 		F735BF502899508700DD2092 /* CustomFabTabBarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomFabTabBarViewController.storyboard; sourceTree = "<group>"; };
 		F735BF52289952D800DD2092 /* CustomFabTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFabTabBarViewController.swift; sourceTree = "<group>"; };
 		F76139DA288EB35400371D70 /* RollingPitTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingPitTabBar.swift; sourceTree = "<group>"; };
+		F78C186428A26D5A006238FE /* ItemFlatBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemFlatBarModel.swift; sourceTree = "<group>"; };
+		F7D80B4428A3C0A90032A1F1 /* CustomFabTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFabTabBarViewModel.swift; sourceTree = "<group>"; };
+		F7D80B4A28A3E1CE0032A1F1 /* AVTabBar_ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVTabBar_ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7D80B4C28A3E1CE0032A1F1 /* AVTabBar_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVTabBar_ExampleTests.swift; sourceTree = "<group>"; };
 		F7DE722828A1488D001A7855 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F7FE7F7C28882C17008ACF81 /* CircleItemBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleItemBarView.swift; sourceTree = "<group>"; };
 		F7FE7F7E28883D7E008ACF81 /* CircleItemBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircleItemBarView.xib; sourceTree = "<group>"; };
@@ -93,6 +107,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				66208564ED43A4C74B17710F /* Pods_AVTabBar_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7D80B4728A3E1CE0032A1F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +137,7 @@
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for AVTabBar */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				F7D80B4B28A3E1CE0032A1F1 /* AVTabBar_ExampleTests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				26FBF3F5C14F0C6882DFE851 /* Pods */,
 				FDD19606AF2FEEBCB13FE56C /* Frameworks */,
@@ -127,6 +149,7 @@
 			children = (
 				607FACD01AFB9204008FA782 /* AVTabBar_Example.app */,
 				607FACE51AFB9204008FA782 /* AVTabBar_Tests.xctest */,
+				F7D80B4A28A3E1CE0032A1F1 /* AVTabBar_ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				F729F50C28A13BB80070B117 /* ItemBarModel.swift */,
+				F78C186428A26D5A006238FE /* ItemFlatBarModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -229,6 +253,7 @@
 			children = (
 				F735BF4C28994E6F00DD2092 /* CustomFabTabBarView.xib */,
 				F735BF4E28994F3A00DD2092 /* CustomFabTabBarView.swift */,
+				F7D80B4428A3C0A90032A1F1 /* CustomFabTabBarViewModel.swift */,
 				F735BF502899508700DD2092 /* CustomFabTabBarViewController.storyboard */,
 				F735BF52289952D800DD2092 /* CustomFabTabBarViewController.swift */,
 			);
@@ -241,6 +266,14 @@
 				F76139DA288EB35400371D70 /* RollingPitTabBar.swift */,
 			);
 			name = RollingPitTabBar;
+			sourceTree = "<group>";
+		};
+		F7D80B4B28A3E1CE0032A1F1 /* AVTabBar_ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7D80B4C28A3E1CE0032A1F1 /* AVTabBar_ExampleTests.swift */,
+			);
+			path = AVTabBar_ExampleTests;
 			sourceTree = "<group>";
 		};
 		FDD19606AF2FEEBCB13FE56C /* Frameworks */ = {
@@ -293,13 +326,31 @@
 			productReference = 607FACE51AFB9204008FA782 /* AVTabBar_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F7D80B4928A3E1CE0032A1F1 /* AVTabBar_ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7D80B5028A3E1CE0032A1F1 /* Build configuration list for PBXNativeTarget "AVTabBar_ExampleTests" */;
+			buildPhases = (
+				F7D80B4628A3E1CE0032A1F1 /* Sources */,
+				F7D80B4728A3E1CE0032A1F1 /* Frameworks */,
+				F7D80B4828A3E1CE0032A1F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7D80B4F28A3E1CE0032A1F1 /* PBXTargetDependency */,
+			);
+			name = AVTabBar_ExampleTests;
+			productName = AVTabBar_ExampleTests;
+			productReference = F7D80B4A28A3E1CE0032A1F1 /* AVTabBar_ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
@@ -312,6 +363,12 @@
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = 8FN6JYTJBN;
 						LastSwiftMigration = 0900;
+						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
+					F7D80B4928A3E1CE0032A1F1 = {
+						CreatedOnToolsVersion = 13.1;
+						DevelopmentTeam = R6H5MJDCRG;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -332,6 +389,7 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* AVTabBar_Example */,
 				607FACE41AFB9204008FA782 /* AVTabBar_Tests */,
+				F7D80B4928A3E1CE0032A1F1 /* AVTabBar_ExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -353,6 +411,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		607FACE31AFB9204008FA782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7D80B4828A3E1CE0032A1F1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -478,10 +543,12 @@
 				F735BF53289952D800DD2092 /* CustomFabTabBarViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				F735BF43289927B100DD2092 /* CustomTabBarView.swift in Sources */,
+				F7D80B4528A3C0A90032A1F1 /* CustomFabTabBarViewModel.swift in Sources */,
 				F76139DB288EB35400371D70 /* RollingPitTabBar.swift in Sources */,
 				F735BF4628992A1B00DD2092 /* UIViewExtension.swift in Sources */,
 				F729F50D28A13BB80070B117 /* ItemBarModel.swift in Sources */,
 				F729F50F28A141780070B117 /* HomeViewController.swift in Sources */,
+				F78C186528A26D5A006238FE /* ItemFlatBarModel.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				F7FE7F7D28882C19008ACF81 /* CircleItemBarView.swift in Sources */,
 				F735BF4F28994F3A00DD2092 /* CustomFabTabBarView.swift in Sources */,
@@ -496,6 +563,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F7D80B4628A3E1CE0032A1F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7D80B4D28A3E1CE0032A1F1 /* AVTabBar_ExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -503,6 +578,11 @@
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* AVTabBar_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
+		};
+		F7D80B4F28A3E1CE0032A1F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 607FACCF1AFB9204008FA782 /* AVTabBar_Example */;
+			targetProxy = F7D80B4E28A3E1CE0032A1F1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -701,6 +781,71 @@
 			};
 			name = Release;
 		};
+		F7D80B5128A3E1CE0032A1F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = R6H5MJDCRG;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "TestApp.com.AVTabBar-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AVTabBar_Example.app/AVTabBar_Example";
+			};
+			name = Debug;
+		};
+		F7D80B5228A3E1CE0032A1F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R6H5MJDCRG;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "TestApp.com.AVTabBar-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AVTabBar_Example.app/AVTabBar_Example";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -727,6 +872,15 @@
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,
 				607FACF41AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7D80B5028A3E1CE0032A1F1 /* Build configuration list for PBXNativeTarget "AVTabBar_ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7D80B5128A3E1CE0032A1F1 /* Debug */,
+				F7D80B5228A3E1CE0032A1F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
